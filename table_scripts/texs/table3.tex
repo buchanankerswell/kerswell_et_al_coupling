@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{bibentry}
+
+\newcolumntype{L}[1]{>{\hsize=#1\hsize\raggedright\arraybackslash}X}%
+\newcolumntype{R}[1]{>{\hsize=#1\hsize\raggedleft\arraybackslash}X}%
+\newcolumntype{C}[1]{>{\hsize=#1\hsize\centering\arraybackslash}X}%
+\begin{document}
+	\bibliographystyle{apalike}
+	\nobibliography{kerswell_et_al_coupling_G3_bib}
+\begin{sidewaystable}
+	\begin{threeparttable}
+		\captionsetup{labelformat=empty}
+		\caption{Modern subduction zone segments}
+	\setlength{\tabcolsep}{4pt}
+	\begin{tabularx}{\textwidth}{L{1.5} R{1} R{1} R{1} R{1} R{1} R{0.5}}
+		
+		\toprule
+		
+		Segment & Lithospheric Thickness (km) & Thermal Parameter (km/100) & Coupling Depth (km) & Thermal Parameter* (km/100) & Surface Heat Flow (mW/m$^2$) & Heat Flow Ref \\
+		
+		\midrule
+		
+		N. Cascadia & 74.2 & 3.44 & 90.5 & 2.2 & 75 & 1\\
+		Nankai & 96.3 & 6.9 & 109 & 3.9 & 69 & 1 \\
+		Mexico & 98.1 & 7.15 & 111 & 4.2 & 72 & 1
+\\
+		Columbia-Ecuador & 66.4 & 10.4 & 84.5 & 4.5 & 80 & 2 \\
+		S.C. Chile & 66.4 & 20 & 83.6 & 8.6 & 80 & 2
+\\
+		Kyushu & 83.2 & 13.5 & 96.6 & 10.5 & 69 & 1
+\\
+		N. Sumatra & 26.8 & 25 & 64.8 & 11.2 & 120 & 3
+\\
+		Alaska & 66.4 & 25.3 & 83.1 & 13.3 & 80 & 2
+\\
+		N. Chile & 58.7 & 38.4 & 77.1 & 13.4 & 85 & 1
+\\
+		N. Costa Rica & 58.5 & 20.4 & 78.7 & 17.1 & 80 & 2
+\\
+		Aleutians & 51.6 & 39.6 & 73.1 & 22.8 & 75 & 1
+\\
+		N. Hikurangi & 58.5 & 41 & 76.7 & 22.9 & 80 & 2
+\\
+		Mariana & 47.5 & 54.6 & 69.7 & 36.7 & 80 & 2
+\\
+		Kermadec & 47.5 & 60 & 69.2 & 47.3 & 80 & 2
+\\
+		Kamchatka & 80.2 & 77 & 88.3 & 47.8 & 70 & 1
+\\
+		Izu & 47.5 & 77 & 67.6 & 52.2 & 80 & 2
+\\
+		NE Japan & 47.7 & 108 & 64.9 & 52.3 & 88 & 1
+\\
+		
+		\bottomrule
+		
+		
+	\end{tabularx}
+\begin{tablenotes}
+	\item [*] These thermal parameter values, from \cite{Wada2009}, are equivalent to the values in column three multiplied by the sine of the dip angle. Only values in column three should be applied to equation (5).
+	\item [1] \cite{Currie2006}
+	\item [2] \cite[Global average from]{Currie2006}
+	\item [3] \cite{Wada2009}
+\end{tablenotes}
+\end{threeparttable}
+\end{sidewaystable}
+\end{document}
