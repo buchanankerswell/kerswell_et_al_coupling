@@ -1,6 +1,6 @@
 library(shiny)
 library(shinythemes)
-library(ggplot2)
+library(tidyverse)
 library("PerformanceAnalytics")
 library(cowplot)
 library(viridis)
@@ -337,17 +337,17 @@ server <- function(input, output, session) {
                       color = 'deeppink4') +
             xlim(0, input$xlim) +
             ylim(input$ylim, 0) +
-            xlab(expression(bold('Temperature' ~ (degree * C)))) +
+            xlab(expression('Temperature' ~ (degree * C))) +
             ylab('Depth (km)') +
             theme(
                 axis.ticks.length = unit(-0.25, "cm"),
                 axis.text.x = element_text(margin = unit(c(0.5, 0, 0, 0), "cm")),
                 axis.text.y = element_text(margin = unit(c(0, 0.5, 0, 0), "cm")),
                 panel.border = element_rect(size = 2, color = 'black'),
-                axis.text = element_text(face = 'bold', color = 'black'),
+                axis.text = element_text(face = 'plain', color = 'black'),
                 axis.ticks = element_line(size = 1, color = 'black'),
                 legend.position = 'none',
-                axis.title = element_text(size = 14, face = 'bold')
+                axis.title = element_text(size = 14, face = 'plain')
             )
         pbase <-
             if (abs(vals$df$T[which.min(abs(vals$df$T - 1100))] - 1100) < 10) {
@@ -371,29 +371,28 @@ server <- function(input, output, session) {
         req(vals$qs)
         #### Countour plot ######
         p2 <-
-            ggplot(data = nonLinContourData, aes(x = tparam, y = z1100, z = z.coupling)) +
+            ggplot(data = cubicContourData, aes(x = tparam, y = z1100, z = z.coupling)) +
             geom_contour(aes(color = ..level..),
-                         size = 1,
+                         size = 0.5,
                          binwidth = 10) +
-            scale_x_continuous(limits = vals$plot2x) +
-            scale_y_continuous(limits = vals$plot2y) +
-            xlab(expression(bold(paste('Slab Thermal Parameter ', Phi, '/100 (km)')))) +
-            ylab(expression(bold(paste('Lithospheric Thickness, ',z[1100], ' (km)')))) +
-            # scale_color_viridis_c(direction = -1)+
+            xlab(expression(paste('Slab Thermal Parameter ', Phi, '/100 (km/100)'))) +
+            ylab(expression(paste('Lithospheric Thickness, ', z[1100], ' (km)'))) +
             scale_color_gradient(low = 'grey', high = 'black') +
-            theme_bw(base_size = 16) +
+            coord_cartesian(xlim = vals$plot2x, ylim = vals$plot2y) +
+            theme_bw(base_size = 14) +
             theme(
                 axis.ticks.length = unit(-0.25, "cm"),
                 axis.text.x = element_text(margin = unit(c(0.5, 0, 0, 0), "cm")),
                 axis.text.y = element_text(margin = unit(c(0, 0.5, 0, 0), "cm")),
                 panel.border = element_rect(size = 2, color = 'black'),
-                axis.text = element_text(face = 'bold', color = 'black'),
+                axis.text = element_text(face = 'plain', color = 'black'),
                 axis.ticks = element_line(size = 1, color = 'black'),
                 legend.position = 'none',
-                axis.title = element_text(size = 14, face = 'bold')
+                axis.title = element_text(size = 12, face = 'plain')
             )
+        dl.config <<- list('calc.boxes', box.color = 'white', 'draw.rects')
         p2 <-
-            direct.label(p2, list(fontface = 'bold', cex = 1.25, 'top.bumpup'))
+            direct.label(p2, list(fontface = 'plain', cex = 0.8, 'top.pieces', vjust=0.5, 'dl.config'))
         if (!is.null(input$inTparam)) {
             req(vals$z1100)
             if (input$segment == 'All') {
@@ -401,7 +400,7 @@ server <- function(input, output, session) {
                     geom_point(
                         data = segs,
                         aes(x = tparam, y = z1100),
-                        size = 4,
+                        size = 2,
                         color = 'deeppink4'
                     ),
                     geom_text_repel(data = segs,
@@ -415,8 +414,8 @@ server <- function(input, output, session) {
             }
             else {
                 vals$zcouple <- round(
-                    (-0.31 * vals$z1100) + (0.00714 * vals$z1100 ^ 2) + (-0.0927 * input$inTparam) +
-                        73.8
+                    (0.00495 * vals$z1100 ^ 2) + (-0.0927 * input$inTparam) +
+                        63.6
                     ,
                     1
                 )
@@ -431,14 +430,14 @@ server <- function(input, output, session) {
                         data = dfpoint,
                         aes(x = tparam, y = z1100),
                         color = 'deeppink4',
-                        size = 4
+                        size = 2
                     ),
                     annotate(
                         'text',
                         x = dfpoint$tparam,
                         y = dfpoint$z1100 - 5,
                         label = round(dfpoint$z.coupling),
-                        size = 5
+                        size = 4
                     )
                 )
             }
@@ -504,7 +503,7 @@ server <- function(input, output, session) {
         plot1_debounce()
     })
     output$plot2 <- renderPlot({
-        plot2_debounce <- plot2 %>% debounce(100)
+        plot2_debounce <- plot2 %>% debounce(150)
         plot2_debounce()
     })
 }
