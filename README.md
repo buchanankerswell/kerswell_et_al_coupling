@@ -6,7 +6,7 @@ This repository stores supplementary material for the manuscript *Backarc lithos
 - A web-based application for calculating lithospheric thickness and predicting coupling depth
 
 ## Reproducing results
-The dataset directory contains raw output from the thermomechanical code I2VIS (dataset > numerical_models; Gerya and Yuen, 2003) and measurements (dataset > heatflow). Data from [Wada & Wang (2009)](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2009GC002570) can be found in the regressions directory (regressions > segment_z1100.txt). These directories and files are all that is needed to reproduce all of the results, tables, and figures in the paper.
+The dataset directory contains raw output from the thermomechanical code I2VIS (dataset > numerical_models; [Gerya and Yuen, 2003](https://www.sciencedirect.com/science/article/pii/S0031920103001900?casa_token=5ZIFpFKE41IAAAAA:HMw6o_z2VJymwtw600c74_9MvJCM5yl7ejm2aimfrDUsBE6wZdbN9_N7qaMGRFftlTUqKp5Oczw)) and measurements (dataset > heatflow). Data from [Wada & Wang (2009)](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2009GC002570) can be found in the regressions directory (regressions > segment_z1100.txt). These directories and files are all that is needed to reproduce all of the results, tables, and figures in the paper.
 
 ### Reading and reducing the raw data
 Simply run the R sript 'read_process_data.R' with the following files and and directories in the same directory as 'read_process_data.R':
