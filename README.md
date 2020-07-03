@@ -5,14 +5,16 @@ This repository stores supplementary material for the manuscript *Backarc lithos
 - Scripts to reproduce all results (reduce and visualize the complete dataset)
 - A web-based application for calculating lithospheric thickness and predicting coupling depth
 
+I recommend cloning this repository. This will ensure that the scripts run without issue.
+
 ## Reproducing results
 The dataset directory contains raw output from the thermomechanical code I2VIS (dataset > numerical_models; [Gerya and Yuen, 2003](https://www.sciencedirect.com/science/article/pii/S0031920103001900?casa_token=5ZIFpFKE41IAAAAA:HMw6o_z2VJymwtw600c74_9MvJCM5yl7ejm2aimfrDUsBE6wZdbN9_N7qaMGRFftlTUqKp5Oczw)) and measurements (dataset > heatflow). Data from [Wada & Wang (2009)](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2009GC002570) can be found in the regressions directory (regressions > segment_z1100.txt). These directories and files are all that is needed to reproduce all of the results, tables, and figures in the paper.
 
 ### Reading and reducing the raw data
 Simply run the R sript 'read_process_data.R' with the following files and and directories in the same directory as 'read_process_data.R':
-- 'antstability.csv'
-- 'PD15.csv'
-- 'model_geotherms.csv'
+- antstability.csv
+- PD15.csv
+- model_geotherms.csv
 - './heatflow/' (heatflow directory)
 
 An R data file called 'reduced_coupling_data.RData' will be saved.
