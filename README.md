@@ -41,7 +41,7 @@ The directory 'figure_scripts' contains a single script to reproduce each figure
 
 To run the R scripts, just make sure that the two R data files 'reduced_coupling_data.RData' and 'regressions_data.RData' are present in the directory.
 
-The MATLAB scripts will ask for the parent directory to the raw numerical dataset, so it will be necessary to put in the correct path to the directory at the top of each script. For example, `directory = ['/path/to/your/directory/' nname];` and again `cd(['/path/to/your/directory/' nname]);` making sure that `nname='cdf78';` is the model you want to visualize.
+The MATLAB scripts will ask for the parent directory to the raw numerical dataset (i.e. `./numerical_models/`), so it will be necessary to put in the correct path to the directory at the top of each script. For example, `directory = ['/path/to/your/directory/' nname];` and again `cd(['/path/to/your/directory/' nname]);` making sure that `nname='cdf78';` is the model you want to visualize. The 'numerical_models' dataset can be downloaded [here](https://www.sciencedirect.com/science/article/pii/S0031920103001900?casa_token=5ZIFpFKE41IAAAAA:HMw6o_z2VJymwtw600c74_9MvJCM5yl7ejm2aimfrDUsBE6wZdbN9_N7qaMGRFftlTUqKp5Oczw).
 
 ## Web App
 There are a few options for running the web application located in the 'coupling_app' directory:
