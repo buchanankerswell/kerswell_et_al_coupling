@@ -1,4 +1,4 @@
-# Read heatflow data 
+# Read data 
 # Load Libraries
 library(tidyverse)
 # Set working directory to this scripts' location
@@ -18,7 +18,7 @@ geotherms <- read.csv('model_geotherms.csv')
 # Reading data for 46km lithosphere models ----
 
 # Go into folder containing data for 46km thick lithosphere experiments
-setwd('./heatflow/46km')
+setwd('./46km')
 # List files
 filelist <- list.files(pattern="*.txt")
 # Extract model names from filenames (e.g. "cda46" from "cda46_hf10ma.txt")
@@ -33,7 +33,7 @@ lith46models <- sapply(file_names46, FUN = function(file_names46){
 # Set working directory to this scripts' location
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # Go into folder containing data for 62km thick lithosphere experiments
-setwd('./heatflow/62km')
+setwd('./62km')
 # List files
 filelist <- list.files(pattern="*.txt")
 # Extract model names from filenames (e.g. "cda62" from "cda62_hf10ma.txt")
@@ -48,7 +48,7 @@ lith62models <- sapply(file_names62, FUN = function(file_names62){
 # Set working directory to this scripts' location
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # Go into folder containing data for 62km thick lithosphere experiments
-setwd('./heatflow/78km')
+setwd('./78km')
 # List files
 filelist <- list.files(pattern="*.txt")
 # Extract model names from filenames (e.g. "cda78" from "cda78_hf10ma.txt")
@@ -63,7 +63,7 @@ lith78models <- sapply(file_names78, FUN = function(file_names78){
 # Set working directory to this scripts' location
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # Go into folder containing data for 94km thick lithosphere experiments
-setwd('./heatflow/94km')
+setwd('./94km')
 # List files
 filelist <- list.files(pattern="*.txt")
 # Extract model names from filenames (e.g. "cda94" from "cda94_hf10ma.txt")
