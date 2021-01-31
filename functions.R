@@ -1,13 +1,15 @@
 # Load Libraries
-cat('Loading packages')
-lapply(
-  c('ggplot2', 'broom', 'dplyr', 'scales', 'patchwork', 'purrr', 'directlabels', 'readr'),
-  FUN = function(x) {
-    if (!require(x, character.only = TRUE)) {
-      install.packages(x, dependencies = TRUE)
-      library(x, character.only = TRUE)
+cat('Loading packages\n')
+suppressMessages(
+  lapply(
+    c('ggplot2', 'broom', 'dplyr', 'scales', 'patchwork', 'purrr', 'directlabels', 'readr'),
+    FUN = function(x) {
+      if (!require(x, character.only = TRUE)) {
+        install.packages(x, dependencies = TRUE)
+        library(x, character.only = TRUE)
+      }
     }
-  }
+  )
 )
 
 m.lin <- function(data,
@@ -84,31 +86,31 @@ m.lin <- function(data,
     if(!is.null(z)){
       cat('Constructing linear model:\n', y, '~', x, '+', x, '^2+', z, '\n', sep = '')
       # Construct model
-      m <- lm(get(y) ~ poly(get(x), 2) + get(z), data = data)
+      m <- lm(get(y) ~ poly(get(x), 2, raw = T) + get(z), data = data)
       # Coefficients
       cf <- m %>% tidy() %>% mutate(term = c('Intercept', x, paste0(x, '^2'), z))
       # Fit
       ft <- glance(m)
       # Residuals
       rs <- augment(m) %>% 
-        rename(!!x := `poly(get(x), 2)`, !!y := `get(y)`, !!z := `get(z)`)
+        rename(!!x := names(.)[2], !!y := `get(y)`, !!z := `get(z)`)
       # Plot label
       p.lab <- bquote(atop(z==.(round(cf$estimate[2], 1))~x+
-                             .(round(cf$estimate[3], 1))~x^2+
+                             .(scientific(cf$estimate[3], digits = 3))~x^2+
                              .(round(cf$estimate[4], 3))~y+
                              .(round(cf$estimate[1], 1)),
                            R^2==.(round(ft$r.squared, 2))))
     } else {
       cat('Constructing linear model:\n', y, '~', x, '+', x, '^2\n', sep = '')
       # Construct model
-      m <- lm(get(y) ~ poly(get(x), 2), data = data)
+      m <- lm(get(y) ~ poly(get(x), 2, raw = T), data = data)
       # Coefficients
       cf <- m %>% tidy() %>% mutate(term = c('Intercept', x, paste0(x, '^2')))
       # Fit
       ft <- glance(m)
       # Residuals
       rs <- augment(m) %>% 
-        rename(!!x := `poly(get(x), 2)`, !!y := `get(y)`)
+        rename(!!x := names(.)[2], !!y := `get(y)`)
       # Plot label
       p.lab <- bquote(atop(y==.(round(cf$estimate[3], 1))~x+
                              .(round(cf$estimate[2], 1))~x^2+
@@ -123,9 +125,8 @@ m.lin <- function(data,
     # Anova
     aov(get(y) ~ as.factor(get(x)), data = data) %>%
       tidy() %>%
-      mutate(term = c(x, 'Residuals'))
-    # Print
-    print(m.anova)
+      mutate(term = c(x, 'Residuals')) %>% 
+      print()
     # Bartlet test for equal variance among groups
     cat('Bartlett test for equal variances among groups:\nNull hypothesis is that variance is the same among groups\npvalue > 0.05 means variances are equal')
     bartlett.test(get(y) ~ as.factor(get(x)), data = data) %>%
