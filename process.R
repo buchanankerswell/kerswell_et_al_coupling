@@ -1,8 +1,8 @@
 source('functions.R')
   
 # Load dataset
-cat('Loading compiled data from "reduced_data.RData"\n')
-load('reduced_data.RData')
+cat('Loading compiled data from "data.RData"\n')
+load('data/data.RData')
 ls.rm <- ls()
 
 # Experiments table
@@ -41,14 +41,14 @@ suppressWarnings({
 
 # Predict coupling depth for Wada & Wang (2009) segments
 cat('Predicting coupling depth for Wada & Wang (2009) segments:\n')
-segs <- suppressMessages(read_tsv('coupling_data/segments.tsv')) %>% 
+segs <- suppressMessages(read_tsv('data/segments.tsv')) %>% 
   mutate(zc.lin = mvm.lin$model$estimate[1] + mvm.lin$model$estimate[2]*z1100 + mvm.lin$model$estimate[3]*phi,
          zc.quad1 = mvm.quad1$model$estimate[1] + mvm.quad1$model$estimate[2]*z1100*z1100 + mvm.quad1$model$estimate[3]*phi,
          zc.quad2 = mvm.quad2$model$estimate[1] + mvm.quad2$model$estimate[2]*z1100 + mvm.quad2$model$estimate[3]*z1100*z1100 + mvm.quad2$model$estimate[4]*phi,
          .before = z1100.ref)
 print(segs)
 
-# Table
+# Segments table
 cat('Saving predicted coupling depth results to tables/predicted_zc.pdf\n')
 segs %>% 
   select(segment, qs, phi, z1100, zc.lin, zc.quad1, zc.quad2) %>% 
@@ -104,7 +104,7 @@ bvm.z1100.lin$anova %>%
            escape = F) %>%
   save_kable(file = 'tables/anova.pdf')
 
-# Regression table
+# Regression summary table
 cat('Saving regression results to tables/regression.pdf\ntables/reg_fits.pdf\n')
 map_df(list(bvm.phi.lin,
          bvm.z1100.lin,
@@ -138,6 +138,7 @@ map_df(list(bvm.phi.lin,
            escape = F) %>%
   save_kable(file = 'tables/regression.pdf')
 
+# Regression fits table
 map_df(list(bvm.phi.lin,
             bvm.z1100.lin,
             bvm.z1100.quad1,
@@ -168,9 +169,27 @@ map_df(list(bvm.phi.lin,
            escape = F) %>%
   save_kable(file = 'tables/reg_fits.pdf')
 
+# Read I2VIS output
+cat('Reading raw model data for visualization\n')
+n.init <- read_nodes('data/cdf78_0.prn')
+r.init <- read_rock_nodes('data/cdf78_c0.txt')
+
+# Read I2VIS output
+cat('Reading raw model data for visualization\n')
+n <- read_nodes('data/cdf78_250.prn')
+r <- read_rock_nodes('data/cdf78_c250.txt')
+
+# Save
+save(n.init, r.init, n, r, file = 'data/cdf78.RData')
+
+# Clean up environment
+rm(n.init, r.init, n, r)
+
 # Clean up environment
 rm(list = ls.rm)
 rm(ls.rm)
+rm(list=lsf.str())
 
 # Save
-save.image(file = 'regression_data.RData')
+cat('Saving regression data to data/regressions.RData')
+save.image(file = 'data/regressions.RData')

@@ -6,3 +6,9 @@
 coupling_app/.DS_Store
 dataset/.DS_Store
 table_scripts/.DS_Store
+data/cdf78_0.prn
+data/cdf78_240.prn
+data/cdf78_250.prn
+data/cdf78_0.txt
+data/cdf78_240.txt
+data/cdf78_250.txt
