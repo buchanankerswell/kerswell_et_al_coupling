@@ -2,7 +2,7 @@
 cat("Loading packages\n")
 suppressMessages(lapply(c("progress", "metR", "knitr", "kableExtra", "directlabels",
   "patchwork", "scales", "ggplot2", "broom", "dplyr", "purrr", "readr", "tidyr", "forcats",
-  "shadowtext"),
+  "ggrepel"),
   FUN = function(x) {
     if (!require(x, character.only = TRUE)) {
       install.packages(x, dependencies = TRUE)
@@ -365,8 +365,8 @@ read_rock_nodes <- function(txt) {
 }
 
 draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = -18,
-  down = 200, left = 0, right = 2000), leg.pos = "right", base.size = 11, p.type = c("rocks",
-  "stress", "strain", "density", "temperature", "viscosity", "stream", "hf"), v.pal = "magma",
+  down = 200, left = 0, right = 2000), arrows = FALSE, leg.pos = "right", base.size = 11, p.type = c("rocks",
+  "stress", "strain", "density", "temperature", "viscosity", "heat", "stream", "hf"), v.pal = "magma",
   v.direction = 1, transparent = TRUE) {
   n <- nodes
   r <- rocks
@@ -384,6 +384,15 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         unique() %>% order()], breaks = unique(r$type)[as.factor(r$type) %>%
         unique() %>% order()], na.value = 'white') + theme_minimal(base_size = base.size) + theme(legend.position = leg.pos,
         axis.text = element_text(color = "black"))
+      if(arrows == TRUE){
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = vz), skip = 5, alpha = 0.3, show.legend = F) +
+          geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
+                       size = 0.15,
+                       color = "white",
+                       na.rm = T,
+                       breaks = c(0, seq(100, 1900, 200))) +
+          geom_text_contour(aes(x = x/1000, y = z/1000, z = tk - 273), stroke = 0.2, size = 3, breaks = c(0, seq(100, 1900,200)))
+      }
     }
   } else if (p.type == "temperature") {
     if (!is.null(n)) {
@@ -396,6 +405,10 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         box[1])) + scale_x_continuous(limits = c(box[3], box[4])) + scale_fill_viridis_c(option = v.pal,
         direction = v.direction, na.value = "transparent") + theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
+      if(arrows == TRUE){
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = vz), skip = 5, alpha = 0.3, show.legend = F) +
+          geom_text_contour(aes(x = x/1000, y = z/1000, z = tk - 273), stroke = 0.2, size = 3, breaks = c(0, seq(100, 1900,200)))
+      }
     }
   } else if (p.type == "stress") {
     if (!is.null(n)) {
@@ -409,6 +422,15 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         box[1])) + scale_x_continuous(limits = c(box[3], box[4])) + scale_fill_viridis_c(option = v.pal,
         direction = v.direction, na.value = "transparent") + theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
+      if(arrows == TRUE){
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = vz), skip = 5, alpha = 0.3, show.legend = F) +
+          geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
+                       size = 0.15,
+                       color = "white",
+                       na.rm = T,
+                       breaks = c(0, seq(100, 1900, 200))) +
+          geom_text_contour(aes(x = x/1000, y = z/1000, z = tk - 273), stroke = 0.2, size = 3, breaks = c(0, seq(100, 1900,200)))
+      }
     }
   } else if (p.type == "strain") {
     if (!is.null(n)) {
@@ -422,6 +444,15 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         box[1])) + scale_x_continuous(limits = c(box[3], box[4])) + scale_fill_viridis_c(option = v.pal,
         direction = v.direction, na.value = "transparent") + theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
+      if(arrows == TRUE){
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = vz), skip = 5, alpha = 0.3, show.legend = F) +
+          geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
+                       size = 0.15,
+                       color = "white",
+                       na.rm = T,
+                       breaks = c(0, seq(100, 1900, 200))) +
+          geom_text_contour(aes(x = x/1000, y = z/1000, z = tk - 273), stroke = 0.2, size = 3, breaks = c(0, seq(100, 1900,200)))
+      }
     }
   } else if (p.type == "density") {
     if (!is.null(n)) {
@@ -435,6 +466,15 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         box[1])) + scale_x_continuous(limits = c(box[3], box[4])) + scale_fill_viridis_c(option = v.pal,
         direction = v.direction, na.value = "transparent") + theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
+      if(arrows == TRUE){
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = vz), skip = 5, alpha = 0.3, show.legend = F) +
+          geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
+                       size = 0.15,
+                       color = "white",
+                       na.rm = T,
+                       breaks = c(0, seq(100, 1900, 200))) +
+          geom_text_contour(aes(x = x/1000, y = z/1000, z = tk - 273), stroke = 0.2, size = 3, breaks = c(0, seq(100, 1900,200)))
+      }
     }
   } else if (p.type == "viscosity") {
     if (!is.null(n)) {
@@ -443,11 +483,72 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         z = tk - 273), size = 0.15, color = "white", na.rm = T, breaks = c(0,
         seq(100, 1900, 200))) + geom_text_contour(aes(x = x/1000, y = z/1000,
         z = tk - 273), stroke = 0.2, size = 3, breaks = c(0, seq(100, 1900,
-        200))) + labs(x = "km", y = "km", fill = bquote(Pa %.% s), title = paste0("Log Viscosity  ",
+        200))) + labs(x = "km", y = "km", fill = bquote(log(Pa %.% s)), title = paste0("Log Viscosity  ",
         time, " Ma")) + coord_equal(expand = F) + scale_y_reverse(limits = c(box[2],
         box[1])) + scale_x_continuous(limits = c(box[3], box[4])) + scale_fill_viridis_c(option = v.pal,
         direction = v.direction, na.value = "transparent") + theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
+      if(arrows == TRUE){
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = vz), skip = 5, alpha = 0.3, show.legend = F) +
+          geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
+                       size = 0.15,
+                       color = "white",
+                       na.rm = T,
+                       breaks = c(0, seq(100, 1900, 200))) +
+          geom_text_contour(aes(x = x/1000, y = z/1000, z = tk - 273), stroke = 0.2, size = 3, breaks = c(0, seq(100, 1900,200)))
+      }
+    }
+  } else if(p.type == 'heat') {
+    if (!is.null(n)) {
+      p <-
+        n %>% ggplot() + geom_contour_fill(aes(
+          x = x / 1000,
+          y = z / 1000,
+          z = ht
+        ),
+        size = 0.1,
+        color = NA) + geom_contour(
+          aes(
+            x = x / 1000,
+            y = z / 1000,
+            z = tk - 273
+          ),
+          size = 0.15,
+          color = "white",
+          na.rm = T,
+          breaks = c(0,
+                     seq(100, 1900, 200))
+        ) + geom_text_contour(
+          aes(
+            x = x / 1000,
+            y = z / 1000,
+            z = tk - 273
+          ),
+          stroke = 0.2,
+          size = 3,
+          breaks = c(0, seq(100, 1900,
+                            200))
+        ) + labs(
+          x = "km",
+          y = "km",
+          fill = bquote(Wm^-3),
+          title = paste0("Heat Sources  ",
+                         time, " Ma")
+        ) + coord_equal(expand = F) + scale_y_reverse(limits = c(box[2],
+                                                                 box[1])) + scale_x_continuous(limits = c(box[3], box[4])) + scale_fill_viridis_c(option = v.pal,
+                                                                                                                                                  direction = v.direction,
+                                                                                                                                                  na.value = "transparent") + theme_minimal(base_size = base.size) +
+        theme(legend.position = leg.pos,
+              axis.text = element_text(color = "black"))
+      if(arrows == TRUE){
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = vz), skip = 5, alpha = 0.3, show.legend = F) +
+          geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
+                       size = 0.15,
+                       color = "white",
+                       na.rm = T,
+                       breaks = c(0, seq(100, 1900, 200))) +
+          geom_text_contour(aes(x = x/1000, y = z/1000, z = tk - 273), stroke = 0.2, size = 3, breaks = c(0, seq(100, 1900,200)))
+      }
     }
   } else if (p.type == "stream") {
     if (!is.null(n)) {
@@ -539,6 +640,15 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         scale_fill_viridis_c(option = v.pal, direction = v.direction, na.value = "transparent") +
         theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
+      if(arrows == TRUE){
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = vz), skip = 5, alpha = 0.3, show.legend = F) +
+          geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
+                       size = 0.15,
+                       color = "white",
+                       na.rm = T,
+                       breaks = c(0, seq(100, 1900, 200))) +
+          geom_text_contour(aes(x = x/1000, y = z/1000, z = tk - 273), stroke = 0.2, size = 3, breaks = c(0, seq(100, 1900,200)))
+      }
     }
   } else if (p.type == "hf") {
     if (!is.null(h)) {
@@ -559,7 +669,7 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
 }
 
 plot_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, rock.rows = 3, n.row = NULL, n.col = 1, leg.pos = "bottom",
-  leg.box = "horizontal", leg.dir = "vertical", leg.title.pos = "top", leg.title.vjust = 0.5,
+  leg.collect = TRUE, leg.box = "horizontal", leg.dir = "vertical", leg.title.pos = "top", leg.title.vjust = 0.5,
   leg.title.hjust = 0.5, transparent = TRUE, tag = TRUE) {
   # Nodes plots
   if (!is.null(nodes)) {
@@ -613,10 +723,16 @@ plot_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, rock.rows = 3, n.ro
       )
   } else {
     p <- wrap_plots(list(hf = p.hf, rocks = p.rocks) %>% append(p.nodes) %>% compact()) + theme(axis.text.x = element_text(color = "black"),
-                                                                                                axis.title.x = element_text(color = "black")) + plot_layout(ncol = n.col, nrow = n.row, guides = "collect",
-                                                                                                                                                            heights = 1, widths = 1) + plot_annotation(theme = theme(plot.margin = margin(0,
+                                                                                                axis.title.x = element_text(color = "black")) + plot_annotation(theme = theme(plot.margin = margin(0,
                                                                                                                                                                                                                                                             10, 0, 10))) & theme(legend.position = leg.pos, legend.box = leg.box, legend.direction = leg.dir,
                                                                                                                                                                                                                                                                                  plot.title = element_text(hjust = 1))
+    if(leg.collect == T){
+      p <- p + plot_layout(ncol = n.col, nrow = n.row, guides = "collect",
+                           heights = 1, widths = 1)
+    } else {
+      p <- p + plot_layout(ncol = n.col, nrow = n.row, guides = 'keep',
+                         heights = 1, widths = 1)
+    }
   }
   # Transparent background
   if (transparent == TRUE) {

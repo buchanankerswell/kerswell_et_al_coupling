@@ -171,19 +171,37 @@ map_df(list(bvm.phi.lin,
 
 # Read I2VIS output
 cat('Reading raw model data for visualization\n')
-n.init <- read_nodes('data/cdf78_0.prn')
-r.init <- read_rock_nodes('data/cdf78_c0.txt')
+n46.init <- read_nodes('data/46km/cdf46_0.prn')
+r46.init <- read_rock_nodes('data/46km/cdf46_c0.txt')
+n62.init <- read_nodes('data/62km/cdf62_0.prn')
+r62.init <- read_rock_nodes('data/62km/cdf62_c0.txt')
+n78.init <- read_nodes('data/78km/cdf78_0.prn')
+r78.init <- read_rock_nodes('data/78km/cdf78_c0.txt')
+n94.init <- read_nodes('data/94km/cdf94_0.prn')
+r94.init <- read_rock_nodes('data/94km/cdf94_c0.txt')
 
 # Read I2VIS output
 cat('Reading raw model data for visualization\n')
-n <- read_nodes('data/cdf78_250.prn')
-r <- read_rock_nodes('data/cdf78_c250.txt')
+n46 <- read_nodes('data/46km/cdf46_250.prn')
+r46 <- read_rock_nodes('data/46km/cdf46_c250.txt')
+n62 <- read_nodes('data/62km/cdf62_250.prn')
+r62 <- read_rock_nodes('data/62km/cdf62_c250.txt')
+n78 <- read_nodes('data/78km/cdf78_250.prn')
+r78 <- read_rock_nodes('data/78km/cdf78_c250.txt')
+n94 <- read_nodes('data/94km/cdf94_250.prn')
+r94 <- read_rock_nodes('data/94km/cdf94_c250.txt')
 
 # Save
-save(n.init, r.init, n, r, file = 'data/cdf78.RData')
+save(n46.init, r46.init, n46, r46, file = 'data/46km/cdf46.RData')
+save(n62.init, r62.init, n62, r62, file = 'data/62km/cdf62.RData')
+save(n78.init, r78.init, n78, r78, file = 'data/78km/cdf78.RData')
+save(n94.init, r94.init, n94, r94, file = 'data/94km/cdf94.RData')
 
 # Clean up environment
-rm(n.init, r.init, n, r)
+rm(n46.init, r46.init, n46, r46,
+   n62.init, r62.init, n62, r62,
+   n78.init, r78.init, n78, r78,
+   n94.init, r94.init, n94, r94)
 
 # Clean up environment
 rm(list = ls.rm)
