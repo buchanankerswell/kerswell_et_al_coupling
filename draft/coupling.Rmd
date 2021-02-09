@@ -51,6 +51,7 @@ knitr::opts_chunk$set(
 )
 suppressMessages({
   library(dplyr)
+  library(purrr)
   library(knitr)
   library(kableExtra)
   library(scales)
@@ -100,26 +101,24 @@ tibble(
   h.r = c(2, 1, 1, 0.25, 0.25, 0.25, 0.022, 0.022, 0.022, 0.022),
   h.l = c(300, 300, 300, 380, 380, 380, 380, 300, 300, 300),
   fl.law = c('Wet quartzite', 'Wet quartzite', 'Wet quartzite', 'Wet quartzite', 'Wet quartzite', 'Plag An$_{75}$', 'Dry olivine', 'Wet olivine', 'Wet olivine', 'Wet olivine'),
-  eta.min = rep(1e18, 10),
-  eta.max = rep(1e26, 10),
-  E = c(154, 154, 0, 154, 0, 238, 532, 470, 470, 0),
-  n = c(2.3, 2.3, 1, 2.3, 1, 3.2, 3.5, 4, 4, 1),
+  E = c(154, 154, 0, 154, 0, 238, 532, 470, 8.9, 0),
+  n = c(2.3, 2.3, 1, 2.3, 1, 3.2, 3.5, 3, 3.8, 1),
   A = c(scientific(1*10^-3.5, digits = 3), scientific(1*10^-3.5, digits = 3), scientific(1*10^-3.5, digits = 3), scientific(1*10^-3.5, digits = 3), scientific(1*10^-3.5, digits = 3), scientific(1*10^-3.5, digits = 3), scientific(1*10^4.4, digits = 3), scientific(1*10^3.3, digits = 3), scientific(1*10^3.3, digits = 3), scientific(1*10^4.4, digits = 3)),
-  V = c(0, 0, 0, 0, 0, 0, 8, 8, 8, 8),
+  V = c(3, 3, 3, 8, 3, 8, 20, 10, 3.2, 20),
   C = c(10, 10, 1, 10, 1, 10, 10, 1, 1, 1),
   sin.phi = c(0.15, 0.15, 0, 0.1, 0, 0.6, 0.6, 0, 0, 0),
   h2o = c(5, 0, 0.5, 5, 0.5, 0, 0, 0.5, 2, 0.5)
 ) %>% 
-  rbind(c('Reference$^2$', 'a, b', 'c', 'c', 'd', 'a', 'a, b', 'd', 'd', 'd', 'a, d', 'a, d', 'a, d', 'a, d', 'a, d', '')) %>% 
-  kbl(col.names = c('', '$\\frac{kg}{m^3}$', 'a', 'b', '$\\frac{\\mu W}{m^3}$', '$\\frac{kJ}{kg}$', '', '$Pa\\cdot s$', '$Pa\\cdot s$', '$\\frac{kJ}{mol}$', '', '$\\frac{1}{MPa^{II}s}$', '$\\frac{1}{MPa\\cdot mol}$', '$MPa$', '', '$wt\\%$'),
+  rbind(c('Reference$^2$', 'a, b', 'c', 'c', 'd', 'a', 'a, b', 'd', 'a, d', 'a, d', 'a, d', 'a, d', 'a, d', '')) %>% 
+  kbl(col.names = c('', '$\\frac{kg}{m^3}$', 'a', 'b', '$\\frac{\\mu W}{m^3}$', '$\\frac{kJ}{kg}$', '', '$\\frac{kJ}{mol}$', '', '$\\frac{1}{MPa^{II}s}$', '$\\frac{1}{MPa\\cdot mol}$', '$MPa$', '', '$wt\\%$'),
       caption = 'Material properties used in numerical experiments',
       escape = F,
       booktabs = T,
       format = 'latex') %>% 
-  add_header_above(c('Material', '$\\\\rho_0$', '$\\\\kappa$ constants$^1$' = 2, '$H_r$', '$H_L$', 'Flow Law$$', '$\\\\eta_{min}$', '$\\\\eta_{max}$', '$E$', '$n$', '$A_D$', '$V$', '$C$', '$sin(\\\\phi)$', '$H_2O$'), line = T, escape = F) %>% 
+  add_header_above(c('Material', '$\\\\rho_0$', '$\\\\kappa$ constants$^1$' = 2, '$H_r$', '$H_L$', 'Flow Law$$', '$E$', '$n$', '$A_D$', '$V$', '$C$', '$sin(\\\\phi)$', '$H_2O$'), line = T, escape = F) %>% 
   row_spec(10, hline_after = T) %>% 
   kable_styling(latex_options = c("hold_position", "scale_down", "striped")) %>%
-  landscape() %>% 
+  landscape() %>%
   kable_classic() %>%
   footnote(general = c('$\\\\rho_0$=initial density, $\\\\kappa$=thermal conductivity, $H_r$=radiogenic heat production, $H_L$=latent heat, $\\\\eta$=viscosity, $E$=activation energy, $n$=power law exponent, $A_D$=material constant, $V$=activation volume, $C$=cohesion, $\\\\phi$=angle of internal friction for dry rocks, $C_p$=1000 $J/kg$ for all rock types'),
            number = c('$\\\\kappa = \\\\left[ a + \\\\frac{b}{T+77} \\\\right] \\\\cdot exp(4.0x10^{-5} \\\\cdot P_{MPa})$', 'a=Turcotte and Schubert (2002), b=Bittner and Schmeling (1995), c=Clauser and Huenges (1995), d=Ranalli (1995)'),
@@ -173,13 +172,35 @@ tibble(
 ```
 
 
-<center>
-
-
 ![](../tables/melt.png){width='100%'}
 
 
 </center>
+
+
+```{r rock.type}
+tibble(
+  type = c(seq(0, 19, 1), seq(23, 31, 1), seq(34, 38, 1)),
+  name = c('Air', 'Water', 'Sediments', 'Sediments', 'Sediments', 'Felsic Crust', 'Felsic Crust', 'Basalt', 'Gabbro', 'Dry Mantle', 'Dry Mantle', 'Hydrated Mantle', 'Depleted Mantle', 'Serpentinized Mantle', 'Mantle Residue', 'Quenched Sediments', 'Quenced Basalt from Basalt', 'Quenched Basalt from Gabbro', 'Quenched Basalt from Mantle', 'Dry Lower-Density Mantle', 'Molten Sediments', 'Molten Sediments', 'Molten Felsic Crust', 'Molten Felsic Crust', 'Molten Basalt', 'Molten Basalt', 'Molten Dry Mantle', 'Molten Dry Mantle', 'Molten Dry Mantle', 'Molten Hydrated Mantle', 'Molten Quenched Sediments', 'Molten Basalt from Basalt', 'Molten Basalt from Gabbro', 'Molten Basalt from Mantle')
+) %>% 
+  kable(col.names = c('Number', 'Rock Type'),
+        caption = 'Key for rock types used in model visualizations',
+        escape = F,
+        booktabs = T,
+        format = 'latex') %>% 
+  kable_styling(latex_options = c("hold_position", "striped")) %>%
+  kable_classic() %>%
+  as_image(file = '../tables/rock.types.png', width = 9)
+```
+
+
+<center>
+
+
+![](../tables/rock.types.png)
+
+
+<center>
 
 
 ## Initial setup and boundary conditions
@@ -190,7 +211,7 @@ Our two-dimensional model was 2000 $km$ wide and 300 $km$ deep ([@fig:init]). In
 <center>
 
 
-![Initial model configuration and boundary conditions. (a) A free sedimentation/erosion boundary at the surface is maintained by implementing a layer of “sticky” air and water, and an infinite-like open boundary at the bottom allows for slab penetration. {++The left and right boundaries are free slip and insulative.++} {++The initial material distribution includes 7 $km$ of oceanic crust (2 $km$ basalt, 5 $km$ gabbro), 1 $km$ of oceanic sediments, and 35 $km$ of continental crust, thinning ocean-ward.++} {++(b)++} Oceanic lithosphere is continually created at the left boundary{-- and convergence velocities are imposed at stationary regions far from the trench--}. {++The oceanic geotherm is calculated using a half-space cooling model and the continental geotherm is calculated using a one-dimensional steady-state conductive cooling model to 1300 $^{\circ}C$. The base of the lithosphere is defined mechanically through visualization of viscosity and generally coincides with the 1100 $^{\circ}C$ isotherm ($z_{1100}$).++} {--The left and right boundaries are free slip and insulative.--}{--(b) --}{--The initial material distribution includes 7 $km$ of oceanic crust (2 $km$ basalt, 5 $km$ gabbro), 1 $km$ of oceanic sediments,  and 35 $km$ of continental crust, thinning ocean-ward.--}{++(c)++} The oceanic crust is bent under loading from passive margin sediments, and a weak zone {--(high pore fluid pressure)--} extends from the deflected oceanic crust, through the lithosphere, to help induce subduction.{--(c)--}{--The oceanic geotherm is calculated using a half-space cooling model and the continental geotherm is calculated using a one-dimensional steady-state conductive cooling model to 1300 $^{\circ}C$. The base of the lithosphere is defined mechanically through visualization of viscosity and generally coincides with the 1100 $^{\circ}C$ isotherm ($z_{1100}$).--} {++Convergence velocities are imposed at stationary regions far from the trench.++}](../figs/fig1.png){width='100%' #fig:init}
+![Initial model configuration and boundary conditions. (a) A free sedimentation/erosion boundary at the surface is maintained by implementing a layer of “sticky” air and water, and an infinite-like open boundary at the bottom allows for slab penetration. {++The left and right boundaries are free slip and insulative.++} {++The initial material distribution includes 7 $km$ of oceanic crust (2 $km$ basalt, 5 $km$ gabbro), 1 $km$ of oceanic sediments, and 35 $km$ of continental crust, thinning ocean-ward.++} {++(b)++} Oceanic lithosphere is continually created at the left boundary{-- and convergence velocities are imposed at stationary regions far from the trench--}. {++The oceanic geotherm is calculated using a half-space cooling model and the continental geotherm is calculated using a one-dimensional steady-state conductive cooling model to 1300 $^{\circ}C$. The base of the lithosphere is defined mechanically through visualization of viscosity and generally coincides with the 1100 $^{\circ}C$ isotherm ($z_{1100}$).++} {--The left and right boundaries are free slip and insulative.--}{--(b) --}{--The initial material distribution includes 7 $km$ of oceanic crust (2 $km$ basalt, 5 $km$ gabbro), 1 $km$ of oceanic sediments,  and 35 $km$ of continental crust, thinning ocean-ward.--}{++(c)++} The oceanic crust is bent under loading from passive margin sediments, and a weak zone {--(high pore fluid pressure)--} extends from the deflected oceanic crust, through the lithosphere, to help induce subduction.{--(c)--}{--The oceanic geotherm is calculated using a half-space cooling model and the continental geotherm is calculated using a one-dimensional steady-state conductive cooling model to 1300 $^{\circ}C$. The base of the lithosphere is defined mechanically through visualization of viscosity and generally coincides with the 1100 $^{\circ}C$ isotherm ($z_{1100}$).--} {++Convergence velocities are imposed at stationary regions far from the trench. Rock type colors are given in Table 3.++}](../figs/fig1.png){width='100%' #fig:init}
 
 </center>
 
@@ -264,7 +285,7 @@ For each run ([e.g., @fig:comp]) we made calculations at $\sim$ 10 $Ma$ for surf
 <center>
 
 
-![Visualization of model cdf with a 78 $km$-thick backarc lithosphere at $\sim$ 10 $Ma$. Arc {~~positions are marked by triangles~>position is marked by a triangle~~}. (a) Surface heat flow calculated at a depth of 2 $km$ beneath the surface{--(see text for explanation)--}. (b) Rock type for the entire model domain. (c) {~~Rock type in the region from the trench to approximately 220 $km$ into the backarc. By 10 $Ma$ a serpentine channel has formed, entraining material from the top of the down-going slab and lubricating the interface between slab and mantle.~>Rock type in the region from the trench to approximately 220 $km$ into the backarc shows a serpentine layer has formed by 10 $Ma$, lubricating the interface between slab and mantle. Melt is conspicuous in the arc region because of low melt volumes and quick extraction. The effects of melting are apparent in (e) and (f).~~} (d) {~~Temperature distribution.~>Temperature distribution shows strong thermal gradients near the coupling point where serpentine becomes unstable.~~} (e) {~~Log viscosity. The viscosity contrast between the slab and serpentinized mantle in the forearc effectively decouples the slab and mantle wedge mechanically, but abruptly diminishes as the principally weak material (antigorite) is removed by reaction.~>Log viscosity shows high contrast between the slab and serpentinized mantle in the forearc and low contrast where serpentine becomes unstable~~} (f) {~~Log strain rate. In the shallow forearc, strain is localized in the weak serpentine channel. At the antigorite-out reaction, strain localization jumps towards the warm core of the mantle wedge. Circulation in the mantle wedge is restricted to beneath the stiff lithosphere.~>Log strain rate shows localized strain in the serpentine layer, which jumps towards the warm core of the mantle wedge where serpentine becomes unstable. Deofrmation in the mantle wedge is restricted to beneath the stiff lithosphere.~~} (g) {--Effective P\'{e}clet number. An effective P\'{e}clet number is the ratio of advective:conductive heat transport, scaled to the local thermal gradients (see text for formulation). “Cooler” colors (blues) vs. “warmer” colors (reds) indicate advection up vs. down the thermal gradient, i.e., high values show advection in the same direction as diffusion. An absolute value between 0 and ~10 (green) indicates much greater efficiency of heat transfer via thermal diffusion than via advection, whereas absolute values greater than ~40 (blues and reds) indicate high efficiency of heat transfer via advection and/or a small local thermal gradient. Note the narrow region of dark red streaming towards the coupling point, indicating high efficiency of heat advection into the coupling region.--} {++ Isotherms increase from 100$^\circ$C to 1300$^\circ$C by 200$^\circ$C increments.++}](../figs/fig3.png){#fig:comp}
+![Visualization of model cdf with a 78 $km$-thick backarc lithosphere at $\sim$ 10 $Ma$. Arc {~~positions are marked by triangles~>position is marked by a triangle~~}. (a) Surface heat flow calculated at a depth of 2 $km$ beneath the surface{--(see text for explanation)--}. (b) Rock type for the entire model domain. (c) {~~Rock type in the region from the trench to approximately 220 $km$ into the backarc. By 10 $Ma$ a serpentine channel has formed, entraining material from the top of the down-going slab and lubricating the interface between slab and mantle.~>Rock type in the region from the trench to approximately 220 $km$ into the backarc shows a serpentine layer has formed by 10 $Ma$, lubricating the interface between slab and mantle. Melt is conspicuous in the arc region because of low melt volumes and quick extraction. The effects of melting are apparent in (e) and (f).~~} (d) {~~Temperature distribution.~>Temperature distribution shows strong thermal gradients near the coupling point where serpentine becomes unstable.~~} (e) {~~Log viscosity. The viscosity contrast between the slab and serpentinized mantle in the forearc effectively decouples the slab and mantle wedge mechanically, but abruptly diminishes as the principally weak material (antigorite) is removed by reaction.~>Log viscosity shows high contrast between the slab and serpentinized mantle in the forearc and low contrast where serpentine becomes unstable~~} (f) {~~Log strain rate. In the shallow forearc, strain is localized in the weak serpentine channel. At the antigorite-out reaction, strain localization jumps towards the warm core of the mantle wedge. Circulation in the mantle wedge is restricted to beneath the stiff lithosphere.~>Log strain rate shows localized strain in the serpentine layer, which jumps towards the warm core of the mantle wedge where serpentine becomes unstable. Deofrmation in the mantle wedge is restricted to beneath the stiff lithosphere.~~} (g) {--Effective P\'{e}clet number. An effective P\'{e}clet number is the ratio of advective:conductive heat transport, scaled to the local thermal gradients (see text for formulation). “Cooler” colors (blues) vs. “warmer” colors (reds) indicate advection up vs. down the thermal gradient, i.e., high values show advection in the same direction as diffusion. An absolute value between 0 and ~10 (green) indicates much greater efficiency of heat transfer via thermal diffusion than via advection, whereas absolute values greater than ~40 (blues and reds) indicate high efficiency of heat transfer via advection and/or a small local thermal gradient. Note the narrow region of dark red streaming towards the coupling point, indicating high efficiency of heat advection into the coupling region.--}{++ Rock type colors are given in Table 3.++}](../figs/fig3.png){#fig:comp}
 
 
 </center>
@@ -278,7 +299,7 @@ We determined the mechanical coupling depth, $z_c$, by visualizing viscosity at 
 
 ## Coupling depth predictors
 
-Across all 64 numerical models ([@fig:results], Table 3) coupling depth correlates strongly, but not linearly, with increasing backarc lithospheric thickness ({--$z_{1100}$, --}[@fig:biv]a). This correlation is a key result of our experiments. Slab thermal parameter alone does not correlate obviously with coupling depth ([@fig:biv]b). {~~We determined the best fit model by considering standard least squares regressions that include all possible permutations of the variables $z_{1100}$, $z_{1100}^2$, and $\Phi$ (Tables A1, A2):~>We used standard least squares regressions, including all possible permutations of the variables $z_{1100}$, $z_{1100}^2$, and $\Phi$, to formulate a predictive model ([@eq:zc]) for coupling depth. We considered the number of parameters, p value, and $R^2$ in determining the best regression (Tables A1, A2):~~}
+Across all 64 numerical models ([@fig:results], Table 4) coupling depth correlates strongly, but not linearly, with increasing backarc lithospheric thickness ({--$z_{1100}$, --}[@fig:biv]a). This correlation is a key result of our experiments. Slab thermal parameter alone does not correlate obviously with coupling depth ([@fig:biv]b). {~~We determined the best fit model by considering standard least squares regressions that include all possible permutations of the variables $z_{1100}$, $z_{1100}^2$, and $\Phi$ (Tables A1, A2):~>We used standard least squares regressions, including all possible permutations of the variables $z_{1100}$, $z_{1100}^2$, and $\Phi$, to formulate a predictive model ([@eq:zc]) for coupling depth. We considered the number of parameters, p value, and $R^2$ in determining the best regression (Tables A1, A2):~~}
 
 $$z_{c} = 4.95\times10^{-3}z_{1100}^2-9.27\times10^{-2}\Phi+63.6$$ {#eq:zc}
 
@@ -331,7 +352,7 @@ d <- mods %>%
 </center>
 
 
-In a plot of lithospheric thickness vs. slab thermal parameter ([@fig:multiv]a), contours of coupling depth are shallowly sloped, indicating that lithospheric thickness is more important than slab thermal parameter in predicting coupling depth. The misfit between [@eq:zc] and model estimates is normally distributed, indicating an uncertainty in predicted coupling depth of 0 $\pm$ 11 $km$ (2$\sigma$, [@fig:multiv]c). Predicted coupling depth for 17 modern subduction segments where backarc heat flow data are adequate for inverting for lithospheric thickness [Table 4, [@fig:multiv]b, data from @Wada2009] show a wide range of predicted coupling depths, similar to our model simulations. Predicted coupling depths for modern subduction zones are distributed normally, with a mean of $\sim$ 82 $km$ and variation of $\pm$ 14 $km$ (2$\sigma$ [@fig:multiv]d).
+In a plot of lithospheric thickness vs. slab thermal parameter ([@fig:multiv]a), contours of coupling depth are shallowly sloped, indicating that lithospheric thickness is more important than slab thermal parameter in predicting coupling depth. The misfit between [@eq:zc] and model estimates is normally distributed, indicating an uncertainty in predicted coupling depth of 0 $\pm$ 11 $km$ (2$\sigma$, [@fig:multiv]c). Predicted coupling depth for 17 modern subduction segments where backarc heat flow data are adequate for inverting for lithospheric thickness [Table 5, [@fig:multiv]b, data from @Wada2009] show a wide range of predicted coupling depths, similar to our model simulations. Predicted coupling depths for modern subduction zones are distributed normally, with a mean of $\sim$ 82 $km$ and variation of $\pm$ 14 $km$ (2$\sigma$ [@fig:multiv]d).
 
 ```{r segs}
 segs %>% 
@@ -346,7 +367,7 @@ segs %>%
   add_header_above(c('Segment', '$q_s^a$', 'z_{1100}', '$\\\\Phi^b$', '$z_c^c$', '$z_c^d$', '$z_c^e$', 'Ref$^f$'), escape = F) %>% 
   kable_styling(latex_options = c("hold_position", "striped")) %>%
   kable_classic() %>%
-  footnote(alphabet = c('Avg. backarc heat flow from Currie and Hyndman (2006)', '$\\\\Phi=age \\\\cdot convergence~velocity$; applicable to Equation 4',  '$z_c=z_{1100}+\\\\Phi$', '$z_c=z_{1100}^2+\\\\Phi$', '$z_c=z_{1100}+z_{1100}^2+\\\\Phi$', '1=Currie and Hyndman (2006), 2=Wada and Wang (2009)'), escape = F) %>% 
+  footnote(alphabet = c('Avg. backarc heat flow from Currie and Hyndman (2006)', '$\\\\Phi=age \\\\cdot convergence~velocity$; applicable to Equation 4',  '$z_c=z_{1100}+\\\\Phi$', '$z_c=z_{1100}^2+\\\\Phi$', '$z_c=z_{1100}+z_{1100}^2+\\\\Phi$', '1=Currie and Hyndman (2006), 2=Wada and Wang (2009)'), escape = F, general_title = '') %>% 
   as_image(file = '../tables/zc.modern.png', width = 9)
 ```
 
@@ -363,7 +384,7 @@ segs %>%
 <center>
 
 
-![Multivariate regression{++s++} and {--evaluation of--} predicted coupling depths for {--models and for--} present-day arc segments. {--(a) --}Contour plot{++s++} show{--s--} predicted coupling depths (contours) as a function of slab thermal parameter and lithospheric thickness {--using our Equation 6--}{++for linear (a) and quadratic (b, c) regressions, where (b) is the best fit regression (Equation 4, see Tables A1, A2)++}. Each {++square++} data point represents {~~one~>a~~} numerical model {++and white points are the predicted coupling depths for modern-day subudction zones (Table 4)++}. {--The size and shades of the data points correspond to their measured coupling depth.--}{~~Including thermal parameter improves quality of fit (see Table A2) although coupling depth depends much more strongly on lithospheric thickness than thermal parameter.~>Coupling depth strongly depends on lithospheric thickness, regardless of the regression. ~~}{-- (b) Plotting positions of 17 modern subduction zone segments based on data from Wada and Wang (2009).--} Subduction systems with similar thermal parameters can have quite different predicted coupling depths (e.g., Alaska vs. N. Sumatra), while subduction systems with quite different thermal parameters can have quite similar predicted coupling depths (e.g., Kamchatka vs. N. Cascadia) {--(c) The difference between measured vs. predicted coupling depths for all 64 numerical models, indicating a precision of 0 $\pm$ 11 $km$.--}(d) Distribution of predicted coupling depths for the 17 modern subduction zones shown in {~~(b)~>(a), (b), and (c)~~}. {--The light dashed line is the probability density of the data if Nankai and Mexico are considered outliers and excluded. Considering outliers does not significantly change the mean or median.--}These 17 segments span a large range of thermal parameters but are predicted to have coupling depths of 82 $\pm$ 14 $km$.](../figs/fig6.png){#fig:multiv}
+![Multivariate regression{++s++} and {--evaluation of--} predicted coupling depths for {--models and for--} present-day arc segments. {--(a) --}Contour plot{++s++} show{--s--} predicted coupling depths (contours) as a function of slab thermal parameter and lithospheric thickness {--using our Equation 6--}{++for linear (a) and quadratic (b, c) regressions, where (b) is the best fit regression (Equation 4, see Tables A1, A2)++}. Each {++square++} data point represents {~~one~>a~~} numerical model {++and white points are the predicted coupling depths for modern-day subudction zones (Table 5)++}. {--The size and shades of the data points correspond to their measured coupling depth.--}{~~Including thermal parameter improves quality of fit (see Table A2) although coupling depth depends much more strongly on lithospheric thickness than thermal parameter.~>Coupling depth strongly depends on lithospheric thickness, regardless of the regression. ~~}{-- (b) Plotting positions of 17 modern subduction zone segments based on data from Wada and Wang (2009).--} Subduction systems with similar thermal parameters can have quite different predicted coupling depths (e.g., Alaska vs. N. Sumatra), while subduction systems with quite different thermal parameters can have quite similar predicted coupling depths (e.g., Kamchatka vs. N. Cascadia) {--(c) The difference between measured vs. predicted coupling depths for all 64 numerical models, indicating a precision of 0 $\pm$ 11 $km$.--}(d) Distribution of predicted coupling depths for the 17 modern subduction zones shown in {~~(b)~>(a), (b), and (c)~~}. {--The light dashed line is the probability density of the data if Nankai and Mexico are considered outliers and excluded. Considering outliers does not significantly change the mean or median.--}These 17 segments span a large range of thermal parameters but are predicted to have coupling depths of 82 $\pm$ 14 $km$.](../figs/fig6.png){#fig:multiv}
 
 
 </center>
@@ -455,12 +476,181 @@ Four important results are highlighted in this study:
 
 
 
+# Appendix
 
-\appendix
-
+<!-- \appendix -->
 <!-- \section{Here is a sample appendix} -->
 
-\acknowledgments
+## Subduction duration to achieve steady state
+
+In our models, the stability depth of antigorite along the slab-mantle interface increases with time as the subducting slab cools and hydrates the mantle wedge. We observed this process proceeding for the first 5 $Ma$ of subduction with the antigorite stability depth remaining constant for ca. 10 $Ma$ afterwards (Figure A1). The change in the antigorite stability depth, and therefore the slab-mantle mechanical coupling depth, through ca. 10 $Ma$ emerges self-consistently in our models and can help explain how similar configurations, in terms of the depth to the slab beneath arcs [@England2004] and thin backarc lithospheres [@Currie2006], occur in subduction zones with different slab ages, convergence rates, geometries, and subduction durations. Our modelling results indicate that subduction zones quickly ($<$ 5 $Ma$) develop and stabilize quasi-permanent, generalized configurations with a slab-mantle mechanical coupling depth dependent on the thickness of the backarc lithosphere.
+
+Exceptions occur in our models with the thinnest backarc lithospheres ($z_{1100}$ = 46 $km$), which exhibited transient behavior after ca. 5 $Ma$ (Figure A1a). Our models rapidly ($<$ 5 $Ma$) develop spreading centers in the backarc for these models because of their extremely thin (weak) backarc lithospheres. The proximity of a spreading center in the backarc region could divert enough heat from the circulating mantle wedge to stabilize antigorite to deeper levels in the forearc than in a similar system that does not develop a backarc spreading center. {++It is possible that systems with high rates of backarc spreading would have deeper coupling in this case, which contradicts our hypothesis that thin backarcs have shallow coupling. The effect of extremely thin and weak lithospheres on coupling is paradoxical and unclear from our results.++} This may be tested by artificially increasing the strength of the backarc lithosphere for models with very thin backarc lithospheres {++to prevent high rates of backarc spreading++}.
+
+## Absolute minimum coupling depths?
+
+The form of our preferred quadratic regression model shows shallowing of coupling depths decelerating with progressively thinner upper plate lithospheres, reaching a minimum of ca. 60 $km$. This implies that the antigorite-out reaction should eventually stabilize at $\geq$ 60 $km$ depth even during nascent subduction and in warm systems with thin upper plate lithospheres. From a theoretical point of view, a thin upper plate lithosphere could allow high heat transport to the shallow mantle wedge and hinder stabilization of antigorite all together. Olivine plus pyroxene would be the stable mantle minerals and strong, shallow coupling between plates would be expected [@Gerya2008]. However, our models show that even the warmest subduction systems eventually stabilize antigorite in the shallow mantle wedge. This is evident by the increasing depth of mechanical coupling with time for the first 5 $Ma$ of subduction (Figure A1).
+
+
+<center>
+
+
+![The depth of antigorite stability at the slab-mantle interface vs. time for models with 46{-- (a)--}, 62{-- (b)--}, 78{-- (c)--}, and 94 $km$-thick{-- (d)--} backarc lithospheres. Antigorite stabilization deepens for the first ca. 5 $Ma$ of subduction and then remains roughly constant for ca. 10 $Ma$. The exceptions are models with very thin backarc lithospheres{-- (a)--}, which exhibit transient behavior for at least 15 $Ma$. The final achieved stability depth of antigorite increases with increasing backarc lithospheric thickness.](../figs/figA1.png){#fig:antstab}
+
+
+</center>
+
+
+## (De-)hydration model
+
+The material properties used in our experiments are listed in Tables 1, 2. For details about the sedimentation and erosion, melting and extraction, and rheological models, please refer to Sizova2010. Here we only discuss the hydrodynamic model, because it is the most relevant aspect of our results.
+
+The hydrodynamics in our models are especially relevant to our results and conclusions since it controls the timing and magnitude of mantle wedge hydration. The main sources of water delivered to the mantle are altered basaltic crust and seafloor sediments, which we assumed {++to++} contain up to 5 $wt.\% H_2O$. We assumed a gradual expulsion of water from pore space and through quasi-continuous dehydration reactions occurring within the slab. Water content is computed using the following equation:
+
+$$ \chi_{H_2O(wt.\%)}=\chi_{H_2O(p_0)}\times \left(1-\frac{\Delta z}{150\cdot 10^3}\right) $${#eq:dehydration}
+
+where $\chi_{H_2O(p_0)}$=5 $wt.\%$ and $\Delta z$ is a marker's depth below the topographical surface.
+
+If a rock marker dehydrates, an independent water particle is instantaneously generated at the same location with the respective $H_2O$ content. The new water particle is moved in accordance to the local velocity field, described by the following equation:
+
+$$\begin{alignedat}{2} v_{water}&=(v_x,v_z) \\
+  v_z&=v_z-v_{z(percolation)} \end{alignedat}$${#eq:perc}
+
+where $v_{water}$ is the velocity vector of the water particle, $v_x$ and $v_z$ are the local velocity vectors {~~in the mantle~>of the the solid state mantle~~}, and $v_{z(percolation)}$ is a prescribed upward percolation velocity (10 $cm/year$). We implicitly neglect kinetics of reactions, as material properties of markers change instantaneously at equilibrium reactions.
+
+## Approaches for implementing slab-mantle mechanical coupling
+
+Numerical models employ different approaches to simulate the mechanical decoupling-coupling transition along the slab-mantle interface. A simple but highly effective approach is to prescribe a weak layer extending from the surface to some arbitrary depth or temperature that inhibits transfer of shear stress across the slab-mantle interface. This approach is analogous to implementing a no-slip condition and effectively decouples the slab from the mantle. Numerous models use this method [e.g., @Peacock1996; @Peacock1999b; @Wada2009; @Syracuse2010] in part because it allows models to be fine-tuned to specific subduction zone configurations. Serpentine-or talc-rich horizons are typically invoked to justify mechanical decoupling along the shallow interface.
+
+Our approach does not explicitly define slab-mantle mechanical coupling, rather we use a rheologic model that explicitly follows experimentally determined flow laws and mineral stability fields. Conceptually, our approach follows and extends petrologic explanations for a shallow weak interface{~~:~>.~~} at lower temperatures, a hydrated, serpentine-rich{~~ (or possibly talc-rich)~>, or possibly talc-rich,~~} layer mechanically decouples the mantle wedge from the subducting slab [@Hyndman2003; Peacock1999a]. If so, as a corollary, dehydration of serpentine{~~ (or possibly talc)~>, or possibly talc,~~} at high temperatures must strengthen the interface. In that context, and noting that talc is unstable at P $>$ 2.0 $GPa$ in an ultramafic rock [@Schmidt1998], we assigned a serpentine rheology for P-T conditions below the serpentine-out reaction, and a wet peridotite rheology above it{-- (where water was present)--}.
+
+To test the sensitivity of coupling on our rheologic model, we ran diverse experiments that adjusted the rheology of antigorite, the shape and position of the antigorite-out reaction, and certain hydrodynamic parameters. For brevity, these results are not presented here. The experiments included: 1) antigorite = wet olivine flow law, 2) antigorite and wet olivine = dry olivine flow law, 3) isothermal antigorite equilibrium reaction (straight, vertical reaction line) at 690 $^{\circ}C$, 4) equilibrium antigorite reaction with positive nonlinear Clapeyron slope until 715 $^{\circ}C$, where it changes to isothermal (kinked reaction line), 5) linear equilibrium antigorite reaction with positive Clapeyron slope (straight, sloped reaction line), 6) linear release of antigorite-bound $H_2O$ with depth (instead of abrupt release at equilibrium dehydration reaction), and 7) no fluid-induced weakening (pore-pressure = 0).
+
+Only experiments 5 and 7 listed above were inconsistent with the results presented in the present study. Experiment 5 resulted in transient coupling depths and disjointed antigorite stability in the mantle wedge, whereas experiment 7 resulted in two-sided subduction [e.g., @Gerya2008]. These experiments suggest that the coupling mechanism in our models is mostly contingent on the availability of fluid flux into the mantle wedge and the shape of the equilibrium antigorite reaction, and relatively insensitive to the exact flow law parameters.
+
+## Web application for predicting coupling depth
+
+Instructions on how to run and use the web-based application and a complete set of tools for reproducing all of the results, tables, and figures presented in this study can be found at `https://github.com/buchanankerswell/kerswell_et_al_coupling`. One can also use the official data repository for this study found at `https://doi.org/10.17605/OSF.IO/ZJAC3`.
+
+```{r anova}
+bvm.z1100.lin$anova %>% 
+  select(-null.value) %>% 
+  mutate('estimate' = round(estimate, 1),
+         'conf.low' = round(conf.low, 1),
+         'conf.high' = round(conf.high, 1),
+         'adj.p.value' = scientific(adj.p.value, digits = 3),
+         'term' = '$z_{1100}$') %>% 
+  kbl(col.names = c('', '', '$km$', '$km$', '$km$', ''),
+      booktabs = T,
+      caption = 'Summary of ANOVA test',
+      format = 'latex',
+      escape = F) %>% 
+  add_header_above(c('Term', 'Contrast', 'Estimate', 'Upper Bound', 'Lower Bound', 'p value'),
+                   escape = F,
+                   line = F) %>% 
+  kable_classic() %>% 
+  kable_styling(latex_options = c('scale_down')) %>% 
+  footnote(general = c("Pair-wise Tukey's test comparing means between groups",
+                       'Estimates are differences between means',
+                       'Null hypothesis is that means are not different'),
+           threeparttable = T,
+           escape = F,
+           general_title = '') %>%
+  as_image(file = '../tables/anova.png', width = 9)
+```
+
+
+<center>
+
+
+![](../tables/anova.png)
+
+
+</center>
+
+
+```{r reg.summary}
+map_df(list(bvm.phi.lin,
+         bvm.z1100.lin,
+         bvm.z1100.quad1,
+         bvm.z1100.quad2,
+         mvm.lin,
+         mvm.quad1,
+         mvm.quad2),
+    ~.x$model, .id = 'reg') %>% 
+  select(-statistic) %>% 
+  mutate('estimate' = round(estimate, 1),
+         'std.error' = round(std.error, 1),
+         'p.value' = scientific(p.value, digits = 3),
+         'term' = ifelse(term == 'phi', '$\\phi$',
+                         ifelse(term == 'z1100', '$z_{1100}',
+                                ifelse(term == 'z1100^2', 'z_{1100}^2', term)))) %>% 
+  kbl(col.names = c('Model', 'Term', 'Estimate', 'Std. Error', 'p value'),
+      booktabs = T,
+      caption = 'Summary of regression models',
+      format = 'latex',
+      escape = F) %>% 
+  kable_classic() %>%
+  footnote(number = c('$z_c=\\\\phi$',
+                      '$z_c=z_{1100}$',
+                      '$z_c=z_{1100}^2$',
+                      '$z_c=z_{1100}+z_{1100}^2$',
+                      '$z_c=z_{1100}+\\\\phi$',
+                      '$z_c=z_{1100}^2+\\\\phi$',
+                      '$z_c=z_{1100}+z_{1100}^2+\\\\phi$'),
+           threeparttable = T,
+           escape = F, general_title = '') %>%
+  as_image(file = '../tables/reg.summary.png', width = 9)
+```
+
+
+<center>
+
+
+![](../tables/reg.summary.png)
+
+
+</center>
+
+
+<center>
+
+
+![Cumulative probability versus peak metamorphic pressures for metamorphic rocks exhumed from subduction zones. {++(a) The compiled dataest for exhumed metamorphic rocks from Penniston-Dorland et al. (2015).++} {++(b) Cumulative probability of exhuming a rock from the range of pressures calculated from (a).++} The break in slope at ca. 2.5 $GPa$ (ca. 80 $km$) suggests that the relative probability that a rock will exhume from pressures less than ca. 2.5 $GPa$ is substantially greater (steeper slope) than for higher pressure rocks (shallower slope). Nearly all rocks exhumed from pressures greater than ca. 2.5 $GPa$ derive from continental crust and were exhumed during collision. Paucity of data below 0.5 $GPa$ reflects sampling bias because these rocks are at best incipiently metamorphosed and not conducive to thermobarometry.{-- Data are from Penniston-Dorland et al. (2015)5--}](../figs/figA2.png){#fig:pd15}
+
+
+</center>
+
+
+<center>
+
+
+![Visualization of rock type (a), {~~log viscosity~>temperature~~} (b), {~~log shear heating~>log viscosity~~} (c), {~~effective Péclet number~>streamlines~~} (d), for the standard model cdf78 at 1.64 $Ma$. Early subduction is facilitated by the prescribed initial weak layer{-- (high pore fluid pressure)--} cutting the lithosphere. {~~The Péclet number in the mantle wedge is less than the Péclet number of the slab. Heat sinks from the upper mantle wedge to lower in the mantle through thermal diffusion into the slab and advection of that heat downwards by the slab~>Strain is localized in the weak serpentine layer at the slab-mantle interface. The mantle wedge is stagnant and loses heat to the slab, which promotes antigorite stabiliization to greater depths~~}.{-- Antigorite stabilizes to deeper depths.--}{++ Rock type colors are given in Table 3.++}](../figs/figA3.png)
+
+
+</center>
+
+
+<center>
+
+
+![Visualization of rock type (a), {~~log viscosity~>temperature~~} (b), {~~log shear heating~>log viscosity~~} (c), {~~effective Péclet number~>streamlines~~} (d), for the standard model cdf78 at 5.05 $Ma$. By 5 $Ma$ balanced is achieved between heat sinking from the upper mantle wedge to lower parts of the mantle by strong advection of heat in the circulating part of the mantle wedge.{--The ratio of mantle-slab P\'{e}clet number increases abruptly at approx. 80-90 $km$ depth from the surface.--} A feedback has already developed---heat advection {~~destabilizing~>inhibiting~~} antigorite {++stabilization to greater depths++}{--, resulting in slab-mantle coupling, driving mantle wedge circulation, advecting heat towards the coupling region quicker than can be sunk by the slab--}.{++ Rock type colors are given in Table 3.++}](../figs/figA4.png)
+
+
+</center>
+
+
+<center>
+
+
+![Visualization of rock type (a), {~~log viscosity~>temperature~~} (b), {~~log shear heating~>log viscosity~~} (c), {~~effective Péclet number~>streamlines~~} for the standard model cdf78 at 9.93 $Ma$. The geodynamics and thermal structure remain approximately constant from 5 $Ma$ (cf. Figure A4). The system remains in steady state for as long as enough water is supplied to the upper mantle wedge to stabilize antigorite.{++ Rock type colors are given in Table 3.++}](../figs/figA5.png)
+
+
+</center>
+
+<!-- \acknowledgments -->
+
+# Acknowledgements
 
 We thank the Geophysical Fluid Dynamics group at the Institut für Geophysik, ETH Zürich, for their computing resources and invaluable instruction, discussion, and support on the numerical modelling methods. We also thank P. Agard, L. Le Pourhiet, and their students at ISTeP, Sorbonne Université, for suggestions on the numerical modelling methods and discussions that greatly enhanced this study. We thank {~~two~>the~~} anonymous reviewers for their helpful comments and suggestions, which {--prompted our formulation of an effective Péclet number and--}{++greatly++} improved the manuscript. This work was supported by the National Science Foundation grant OIA1545903 to M. Kohn, S. Penniston-Dorland, and M. Feineman. Datasets and tools for reproducing the research in this study are available at the official data repository (`https://doi.org/10.17605/OSF.IO/ZJAC3`) or at `https://github.com/buchanankerswell/kerswell_et_al_coupling`
 

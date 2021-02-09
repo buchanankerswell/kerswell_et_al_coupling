@@ -1,8 +1,10 @@
 source('functions.R')
 load('data/46km/cdf46.RData')
 load('data/62km/cdf62.RData')
-load('data/78km/cdf78.RData')
 load('data/94km/cdf94.RData')
+load('data/78km/cdf78_50.RData')
+load('data/78km/cdf78_130.RData')
+load('data/78km/cdf78_250.RData')
 load('data/regressions.RData')
 load('data/data.RData')
 
@@ -150,46 +152,46 @@ cat('Drawing figure 3\n')
 
 p3.grids <- list(
   hf = draw_grid(hf = mods %>% filter(model == 'cdf78' && tstep == 250) %>% unnest(hf),
-                 time = round(r78$time1/e6, 2),
+                 time = round(r78_250$time1/e6, 2),
                  p.type = 'hf'),
-  rocks = draw_grid(nodes = n78$nodes,
-                    rocks = r78$grid,
-                    time = round(r78$time/1e6, 2),
+  rocks = draw_grid(nodes = n78_250$nodes,
+                    rocks = r78_250$grid,
+                    time = round(r78_250$time/1e6, 2),
                     p.type = 'rocks',
                     leg.pos = 'bottom'),
-  rocks.zoom = draw_grid(nodes = n78$nodes,
-                         rocks = r78$grid,
-                         time = round(r78$time/1e6, 2),
+  rocks.zoom = draw_grid(nodes = n78_250$nodes,
+                         rocks = r78_250$grid,
+                         time = round(r78_250$time/1e6, 2),
                          p.type = 'rocks',
                          leg.pos = 'bottom',
                          box = c(-18, 180, 900, 1600)),
-  temperature = draw_grid(nodes = n78$nodes,
-                          rocks = r78$grid,
-                          time = round(r78$time/1e6, 2),
+  temperature = draw_grid(nodes = n78_250$nodes,
+                          rocks = r78_250$grid,
+                          time = round(r78_250$time/1e6, 2),
                           p.type = 'temperature',
                           v.pal = 'magma',
                           box = c(-18, 180, 900, 1600)),
-  viscosity = draw_grid(nodes = n78$nodes,
-                        rocks = r78$grid,
-                        time = round(r78$time/1e6, 2),
+  viscosity = draw_grid(nodes = n78_250$nodes,
+                        rocks = r78_250$grid,
+                        time = round(r78_250$time/1e6, 2),
                         p.type = 'viscosity',
                         v.pal = 'viridis',
                         box = c(-18, 180, 900, 1600)),
-  strain = draw_grid(nodes = n78$nodes,
-                     rocks = r78$grid,
-                     time = round(r78$time/1e6, 2),
+  strain = draw_grid(nodes = n78_250$nodes,
+                     rocks = r78_250$grid,
+                     time = round(r78_250$time/1e6, 2),
                      p.type = 'strain',
                      v.pal = 'viridis',
                      box = c(-18, 180, 900, 1600)),
-  shear = draw_grid(nodes = n78$nodes,
-                    rocks = r78$grid,
-                    time = round(r78$time/1e6, 2),
+  shear = draw_grid(nodes = n78_250$nodes,
+                    rocks = r78_250$grid,
+                    time = round(r78_250$time/1e6, 2),
                     p.type = 'shear',
                     v.pal = 'viridis',
                     box = c(-18, 180, 900, 1600)),
-  stream = draw_grid(nodes = n78$nodes,
-                     rocks = r78$grid,
-                     time = round(r78$time/1e6, 2),
+  stream = draw_grid(nodes = n78_250$nodes,
+                     rocks = r78_250$grid,
+                     time = round(r78_250$time/1e6, 2),
                      p.type = 'stream',
                      v.pal = 'viridis',
                      box = c(-18, 180, 900, 1600))
@@ -270,9 +272,9 @@ p5.a <- mods %>%
   geom_point(aes(x = phi, y = zc)) +
   geom_smooth(aes(x = phi, y = zc), method = 'lm', formula = y ~ x, color = 'black', size = 0.5, se = F) +
   annotate('text', x = Inf, y = -Inf, vjust = -0.2, hjust = 1.1,
-           label = bquote(z[c] == .(scientific(bvm.phi.lin78$model$estimate[2], digits = 3)) ~ Phi +
-                            .(round(bvm.phi.lin78$model$estimate[1], 1)) ~~~~
-                            R^2 == .(round(bvm.phi.lin78$fit$r78.squared, 2)))) +
+           label = bquote(z[c] == .(scientific(bvm.phi.lin$model$estimate[2], digits = 3)) ~ Phi +
+                            .(round(bvm.phi.lin$model$estimate[1], 1)) ~~~~
+                            R^2 == .(round(bvm.phi.lin$fit$r.squared, 2)))) +
   labs(x = bquote(Phi~(km/100)), y = bquote(z[c]~(km))) +
   theme_classic() +
   theme(axis.text = element_text(color = 'black'),
@@ -285,7 +287,7 @@ p5.b <- mods %>%
   annotate('text', x = Inf, y = -Inf, vjust = -0.2, hjust = 1.1,
            label = bquote(z[c] == .(scientific(bvm.z1100.quad1$model$estimate[2], digits = 3)) ~ z[1100]^2 +
                             .(round(bvm.z1100.quad1$model$estimate[1], 1)) ~~~~
-                            R^2 == .(round(bvm.z1100.quad1$fit$r78.squared, 2)))) +
+                            R^2 == .(round(bvm.z1100.quad1$fit$r.squared, 2)))) +
   labs(x = bquote(z[1100]~(km)), y = bquote(z[c]~(km))) +
   theme_classic() +
   theme(axis.text = element_text(color = 'black'),
@@ -293,7 +295,7 @@ p5.b <- mods %>%
         panel.background = element_rect(fill = 'transparent', color = NA))
 
 # Composition
-cat('Saving figure 5 to figs/fig5.png')
+cat('Saving figure 5 to figs/fig5.png\n')
 p5 <- p5.a + p5.b + plot_annotation(tag_levels = 'a')
 suppressWarnings(ggsave(filename = 'figs/fig5.png',
                         plot = p5,
@@ -366,11 +368,12 @@ p6.d <- cp %>%
   scale_fill_grey(start = 0.1, end = 0.7) +
   theme_classic() +
   theme(axis.text = element_text(color = 'black'),
-        strip.background = element_rect(fill = 'transparent', color = NA)) +
+        strip.background = element_rect(fill = 'transparent', color = NA),
+        strip.text = element_text(size = 12)) +
   facet_wrap(~mod)
 
 # Composition
-cat('Saving figure 6 to figs/fig6.png')
+cat('Saving figure 6 to figs/fig6.png\n')
 p6 <- p6.a + p6.b + p6.c + p6.d +
   plot_layout(nrow = 2, ncol = 2) +
   plot_annotation(tag_levels = 'a', theme = theme(plot.margin = margin())) &
@@ -386,7 +389,6 @@ suppressWarnings(ggsave(filename = 'figs/fig6.png',
 
 # Figure 7
 cat('Drawing figure 7\n')
-
 p7 <- mods %>% 
   unnest(hf) %>% 
   group_by(z1100) %>% 
@@ -410,7 +412,7 @@ p7 <- mods %>%
         panel.background = element_rect(fill = 'transparent', color = NA),
         legend.background = element_rect(fill = 'transparent', color = NA),
         strip.background = element_rect(fill = 'transparent', color = NA))
-cat('Saving figure 7 to figs/fig7.png')
+cat('Saving figure 7 to figs/fig7.png\n')
 suppressWarnings(ggsave(filename = 'figs/fig7.png',
                         plot = p7,
                         device = 'png',
@@ -421,7 +423,6 @@ suppressWarnings(ggsave(filename = 'figs/fig7.png',
 
 # Figure 8
 cat('Drawing figure 8\n')
-
 p8 <- mods[grepl('cdf', mods$model),] %>% 
   unnest(hf) %>% 
   ggplot() +
@@ -443,28 +444,28 @@ p8 <- mods[grepl('cdf', mods$model),] %>%
         panel.background = element_rect(fill = 'transparent', color = NA),
         legend.background = element_rect(fill = 'transparent', color = NA),
         strip.background = element_rect(fill = 'transparent', color = NA))
-cat('Saving figure 8 to figs/fig8.png')
+cat('Saving figure 8 to figs/fig8.png\n')
 suppressWarnings(ggsave(filename = 'figs/fig8.png',
                         plot = p8,
                         device = 'png',
                         type = 'cairo',
-                        width = 5,
-                        height = 5,
+                        width = 4,
+                        height = 4,
                         bg = 'transparent'))
 
 # Figure 9
 cat('Drawing figure 9\n')
 p9.grids <- list(
-  temperature = draw_grid(nodes = n78$nodes,
-                          rocks = r78$grid,
-                          time = round(r78$time/1e6, 2),
+  temperature = draw_grid(nodes = n78_250$nodes,
+                          rocks = r78_250$grid,
+                          time = round(r78_250$time/1e6, 2),
                           p.type = 'temperature',
                           v.pal = 'magma',
                           arrows = T,
                           box = c(30, 180, 1300, 1600)),
-  viscosity = draw_grid(nodes = n78$nodes,
-                        rocks = r78$grid,
-                        time = round(r78$time/1e6, 2),
+  viscosity = draw_grid(nodes = n78_250$nodes,
+                        rocks = r78_250$grid,
+                        time = round(r78_250$time/1e6, 2),
                         p.type = 'viscosity',
                         v.pal = 'viridis',
                         arrows = T,
@@ -483,7 +484,7 @@ p9 <- plot_grid(nodes = p9.grids,
           leg.dir = 'horizontal',
           leg.title.hjust = 0,
           leg.collect = T)
-cat('Saving figure 9 to figs/fig9.png')
+cat('Saving figure 9 to figs/fig9.png\n')
 suppressWarnings(ggsave(filename = 'figs/fig9.png',
                         plot = p9,
                         device = 'png',
@@ -507,9 +508,9 @@ p10.grids <- list(
                      p.type = 'stream',
                      v.pal = 'viridis',
                      box = c(-18, 180, 900, 1600)),
-  stream = draw_grid(nodes = n78$nodes,
-                     rocks = r78$grid,
-                     time = round(r78$time/1e6, 2),
+  stream = draw_grid(nodes = n78_250$nodes,
+                     rocks = r78_250$grid,
+                     time = round(r78_250$time/1e6, 2),
                      p.type = 'stream',
                      v.pal = 'viridis',
                      box = c(-18, 180, 900, 1600)),
@@ -521,11 +522,212 @@ p10.grids <- list(
                      box = c(-18, 180, 900, 1600))
 )
 p10 <- plot_grid(nodes = p10.grids, leg.collect = F) & theme(legend.position = 'none')
-cat('Saving figure 10 to figs/fig10.png')
+cat('Saving figure 10 to figs/fig10.png\n')
 suppressWarnings(ggsave(filename = 'figs/fig10.png',
                         plot = p10,
                         device = 'png',
                         type = 'cairo',
                         width = 8,
                         height = 11,
+                        bg = 'transparent'))
+# Figure A1
+cat('Drawing figure A1\n')
+pA1 <- antstab %>% 
+  group_by(model) %>% 
+  ggplot() +
+  geom_point(aes(x = time, y = depth, group = model), size = 0.5) +
+  geom_path(aes(x = time, y = depth, group = model)) +
+  labs(x = 'Time (Ma)', y = 'Depth (km)') +
+  scale_y_reverse() +
+  theme_classic() +
+  theme(plot.background = element_rect(fill = 'transparent', color = NA),
+        panel.background = element_rect(fill = 'transparent', color = NA),
+        strip.background = element_rect(fill = 'transparent', color = NA),
+        strip.text = element_text(size = 12),
+        axis.text = element_text(color = 'black')) +
+  facet_grid(vars(model), vars(z1100), labeller = labeller(z1100 = c('46' = '46km', '62' = '62km', '78' = '78km', '94' = '94km')))
+cat('Saving figure A1 to figs/figA1.png\n')
+suppressWarnings(ggsave(filename = 'figs/figA1.png',
+                        plot = pA1,
+                        device = 'png',
+                        type = 'cairo',
+                        width = 5,
+                        height = 5,
+                        bg = 'transparent'))
+# Figure A2
+cat('Drawing figure A2\n')
+pA2.a <- PD15 %>% 
+  bind_rows(PD15 %>% mutate(data.group = 'all')) %>% 
+  group_by(data.group) %>% 
+  ggplot() +
+  geom_point(data = PD15 %>% select(-data.group), aes(x = temperature, y = pressure), size = 0.5, color = 'grey50', alpha = 0.5) +
+  geom_point(aes(x = temperature, y = pressure, color = data.group), size = 0.5, show.legend = F) +
+  scale_color_manual(values = c('#111111', RColorBrewer::brewer.pal(5, 'Set1')),
+                     breaks=c("all", "Alps", "CircumAtlantic", "CircumPacific", "Cont_Asia", "T-I-G"),
+                     labels=c("All", "Alps", "Circum Atlantic", "Circum Pacific", "Continental Asia", "Turkey-Greece-Iran")) +
+  labs(x = 'Temperature ˚C', y = 'Pressure (GPa)', color = NULL) +
+  theme_classic() +
+  theme(plot.background = element_rect(fill = 'transparent', color = NA),
+        panel.background = element_rect(fill = 'transparent', color = NA),
+        strip.background = element_rect(fill = 'transparent', color = NA),
+        strip.text = element_text(size = 12),
+        axis.text = element_text(color = 'black')) +
+  facet_wrap(~data.group, nrow = 2, labeller = labeller(data.group = c("all" = "All", "Alps" = "Alps", "CircumAtlantic" = "Circum Atlantic", "CircumPacific" = "Circum Pacific", "Cont_Asia" = "Continental Asia", "T-I-G" = "Turkey-Greece-Iran")))
+pA2.b <- PD15 %>% 
+  ggplot() +
+  geom_path(aes(x = pressure, y = cumulative)) +
+  geom_point(aes(x = pressure, y = cumulative)) +
+  labs(x = 'Pressure (GPa)', y = 'Cumulative Probability') +
+  scale_x_continuous(limits = c(0, 4.5)) +
+  theme_classic() +
+  theme(plot.background = element_rect(fill = 'transparent', color = NA),
+        panel.background = element_rect(fill = 'transparent', color = NA),
+        axis.text = element_text(color = 'black'))
+pA2 <- pA2.a / pA2.b + plot_layout(heights = c(2,1)) + plot_annotation(tag_levels = 'a') & theme(plot.background = element_rect(fill = 'transparent', color = NA),
+                                                                 panel.background = element_rect(fill = 'transparent', color = NA),
+                                                                 strip.background = element_rect(fill = 'transparent', color = NA),
+                                                                 strip.text = element_text(size = 10),
+                                                                 axis.text = element_text(color = 'black'))
+cat('Saving figure A2 to figs/figA2.png\n')
+suppressWarnings(ggsave(filename = 'figs/figA2.png',
+                        plot = pA2,
+                        device = 'png',
+                        type = 'cairo',
+                        width = 6,
+                        height = 6,
+                        bg = 'transparent'))
+
+# Figure A3
+cat('Drawing figure A3\n')
+pA3.grids <- list(
+  rocks.zoom = draw_grid(nodes = n78_50$nodes,
+                         rocks = r78_50$grid,
+                         time = round(r78_50$time/1e6, 2),
+                         p.type = 'rocks',
+                         leg.pos = 'bottom',
+                         box = c(-18, 180, 1050, 1750)),
+  temperature = draw_grid(nodes = n78_50$nodes,
+                          time = round(r78_50$time/1e6, 2),
+                          p.type = 'temperature',
+                          v.pal = 'magma',
+                          box = c(-18, 180, 1050, 1750)),
+  viscosity = draw_grid(nodes = n78_50$nodes,
+                        time = round(r78_50$time/1e6, 2),
+                        p.type = 'viscosity',
+                        v.pal = 'viridis',
+                        box = c(-18, 180, 1050, 1750)),
+  # strain = draw_grid(nodes = n78_50$nodes,
+  #                    time = round(r78_50$time/1e6, 2),
+  #                    p.type = 'strain',
+  #                    v.pal = 'viridis',
+  #                    box = c(-18, 180, 1050, 1750)),
+  # shear = draw_grid(nodes = n78_50$nodes,
+  #                   time = round(r78_50$time/1e6, 2),
+  #                   p.type = 'shear',
+  #                   v.pal = 'viridis',
+  #                   box = c(-18, 180, 1050, 1750)),
+  stream = draw_grid(nodes = n78_50$nodes,
+                     time = round(r78_50$time/1e6, 2),
+                     p.type = 'stream',
+                     v.pal = 'viridis',
+                     box = c(-18, 180, 1050, 1750))
+)
+pA3 <- plot_grid(rocks = pA3.grids[[1]], nodes = pA3.grids[2:4])
+cat('Saving figure A3 to figs/figA3.png\n')
+suppressWarnings(ggsave(filename = 'figs/figA3.png',
+                        plot = pA3,
+                        device = 'png',
+                        type = 'cairo',
+                        width = 5,
+                        height = 9,
+                        bg = 'transparent'))
+
+# Figure A4
+cat('Drawing figure A4\n')
+pA4.grids <- list(
+  rocks.zoom = draw_grid(nodes = n78_130$nodes,
+                         rocks = r78_130$grid,
+                         time = round(r78_130$time/1e6, 2),
+                         p.type = 'rocks',
+                         leg.pos = 'bottom',
+                         box = c(-18, 180, 1050, 1750)),
+  temperature = draw_grid(nodes = n78_130$nodes,
+                          time = round(r78_130$time/1e6, 2),
+                          p.type = 'temperature',
+                          v.pal = 'magma',
+                          box = c(-18, 180, 1050, 1750)),
+  viscosity = draw_grid(nodes = n78_130$nodes,
+                        time = round(r78_130$time/1e6, 2),
+                        p.type = 'viscosity',
+                        v.pal = 'viridis',
+                        box = c(-18, 180, 1050, 1750)),
+  # strain = draw_grid(nodes = n78_130$nodes,
+  #                    time = round(r78_130$time/1e6, 2),
+  #                    p.type = 'strain',
+  #                    v.pal = 'viridis',
+  #                    box = c(-18, 180, 1050, 1750)),
+  # shear = draw_grid(nodes = n78_130$nodes,
+  #                   time = round(r78_130$time/1e6, 2),
+  #                   p.type = 'shear',
+  #                   v.pal = 'viridis',
+  #                   box = c(-18, 180, 1050, 1750)),
+  stream = draw_grid(nodes = n78_130$nodes,
+                     time = round(r78_130$time/1e6, 2),
+                     p.type = 'stream',
+                     v.pal = 'viridis',
+                     box = c(-18, 180, 1050, 1750))
+)
+pA4 <- plot_grid(rocks = pA4.grids[[1]], nodes = pA4.grids[2:4])
+cat('Saving figure A4 to figs/figA4.png\n')
+suppressWarnings(ggsave(filename = 'figs/figA4.png',
+                        plot = pA4,
+                        device = 'png',
+                        type = 'cairo',
+                        width = 5,
+                        height = 9,
+                        bg = 'transparent'))
+
+# Figure A5
+cat('Drawing figure A5\n')
+pA5.grids <- list(
+  rocks.zoom = draw_grid(nodes = n78_250$nodes,
+                         rocks = r78_250$grid,
+                         time = round(r78_250$time/1e6, 2),
+                         p.type = 'rocks',
+                         leg.pos = 'bottom',
+                         box = c(-18, 180, 900, 1600)),
+  temperature = draw_grid(nodes = n78_250$nodes,
+                          time = round(r78_250$time/1e6, 2),
+                          p.type = 'temperature',
+                          v.pal = 'magma',
+                          box = c(-18, 180, 900, 1600)),
+  viscosity = draw_grid(nodes = n78_250$nodes,
+                        time = round(r78_250$time/1e6, 2),
+                        p.type = 'viscosity',
+                        v.pal = 'viridis',
+                        box = c(-18, 180, 900, 1600)),
+  # strain = draw_grid(nodes = n78_250$nodes,
+  #                    time = round(r78_250$time/1e6, 2),
+  #                    p.type = 'strain',
+  #                    v.pal = 'viridis',
+  #                    box = c(-18, 180, 900, 1600)),
+  # shear = draw_grid(nodes = n78_250$nodes,
+  #                   time = round(r78_250$time/1e6, 2),
+  #                   p.type = 'shear',
+  #                   v.pal = 'viridis',
+  #                   box = c(-18, 180, 900, 1600)),
+  stream = draw_grid(nodes = n78_250$nodes,
+                     time = round(r78_250$time/1e6, 2),
+                     p.type = 'stream',
+                     v.pal = 'viridis',
+                     box = c(-18, 180, 900, 1600))
+)
+pA5 <- plot_grid(rocks = pA5.grids[[1]], nodes = pA5.grids[2:4])
+cat('Saving figure A5 to figs/figA5.png\n')
+suppressWarnings(ggsave(filename = 'figs/figA5.png',
+                        plot = pA5,
+                        device = 'png',
+                        type = 'cairo',
+                        width = 5,
+                        height = 9,
                         bg = 'transparent'))
