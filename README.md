@@ -93,6 +93,6 @@ Listening on http://127.0.0.1:6247
 
 Open a web browser and navigate to `http://127.0.0.1:6247`
 
-2. [Run](https://kerswell.shinyapps.io/coupling_app/) the version hosted online
+2. [Run](https://kerswell.shinyapps.io/app/) the version hosted online
 
 *There is a cap of 25hr of app runtime per month for the online version. If you are blocked this may be the case and you can run the app locally. This app is not intended for research purposes, but as a tool for exploring the concepts presented in the paper.*
