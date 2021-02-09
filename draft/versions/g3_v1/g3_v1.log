@@ -1,0 +1,3953 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  9 FEB 2021 00:01
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**g3_v1.tex
+(./g3_v1.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06> (./assets/agujournal2019.cls
+
+LaTeX Warning: You have requested document class `assets/agujournal2019',
+               but the document class provides `agujournal2019'.
+
+Document Class: agujournal2019 01/14/2019
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen134
+\Gin@req@width=\dimen135
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count167
+\output=\toks16
+\linenoprevgraf=\count168
+\linenumbersep=\dimen136
+\linenumberwidth=\dimen137
+\c@linenumber=\count169
+\c@pagewiselinenumber=\count170
+\c@LN@truepage=\count171
+\c@internallinenumber=\count172
+\c@internallinenumbers=\count173
+\quotelinenumbersep=\dimen138
+\bframerule=\dimen139
+\bframesep=\dimen140
+\bframebox=\box45
+LaTeX Info: Redefining \\ on input line 3056.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip47
+\RaggedLeftLeftskip=\skip48
+\RaggedRightLeftskip=\skip49
+\CenteringRightskip=\skip50
+\RaggedLeftRightskip=\skip51
+\RaggedRightRightskip=\skip52
+\CenteringParfillskip=\skip53
+\RaggedLeftParfillskip=\skip54
+\RaggedRightParfillskip=\skip55
+\JustifyingParfillskip=\skip56
+\CenteringParindent=\skip57
+\RaggedLeftParindent=\skip58
+\RaggedRightParindent=\skip59
+\JustifyingParindent=\skip60
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count174
+\rotFPtop=\skip61
+\rotFPbot=\skip62
+\rot@float@box=\box46
+\rot@mess@toks=\toks17
+)
+\draftskip=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
+\abovecaptionskip=\skip63
+\belowcaptionskip=\skip64
+\c@appendnum=\count183
+\bibindent=\dimen141
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/apacite/apacite.sty
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count184
+\bibleftmargin=\skip65
+\bibindent=\skip66
+\bibparsep=\skip67
+\bibitemsep=\skip68
+\biblabelsep=\skip69
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks18
+\SOUL@lasttoken=\toks19
+\SOUL@cmds=\toks20
+\SOUL@buffer=\toks21
+\SOUL@token=\toks22
+\SOUL@spaceskip=\skip70
+\SOUL@ttwidth=\dimen142
+\SOUL@uldp=\dimen143
+\SOUL@ulht=\dimen144
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen145
+\ar@mcellbox=\box47
+\extrarowheight=\dimen146
+\NC@list=\toks23
+\extratabsurround=\skip71
+\backup@length=\skip72
+\ar@cellbox=\box48
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen147
+\captionmargin@=\dimen148
+\captionwidth=\dimen149
+\caption@tempdima=\dimen150
+\caption@indent=\dimen151
+\caption@parindent=\dimen152
+\caption@hangindent=\dimen153
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->{\small \ifx \@captype \xfigure \vskip \abovecaptionskip \fi {\ifturnofflinenums \else \ifnumlines \internallinenumbers \fi \fi \sbox \@tempboxa {\bf #1.\quad \rm #2}\ifdim \wd \@tempboxa >.9\hsize \bf #1.\quad \rm \relax #2\par \else {\centering \bf #1.\rm \quad #2 \vskip 1sp} \fi } \ifx \@captype \xfigure \else \vskip \belowcaptionskip \fi } on input line 1082.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count185
+\c@continuedfloat=\count186
+Package caption Info: rotating package is loaded.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-03-06 L3 programming layer (loader) 
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count187
+\l__pdf_internal_box=\box49
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-03-06 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count188
+\g__xparse_grabber_int=\count189
+\l__xparse_m_args_int=\count190
+\l__xparse_v_nesting_int=\count191
+)
+Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks24
+\ex@=\dimen154
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box50
+\l__siunitx_tmp_dim=\dimen155
+\l__siunitx_tmp_int=\count192
+\l__siunitx_number_mantissa_length_int=\count193
+\l__siunitx_number_uncert_length_int=\count194
+\l__siunitx_round_int=\count195
+\l__siunitx_process_decimal_int=\count196
+\l__siunitx_process_uncertainty_int=\count197
+\l__siunitx_process_fixed_int=\count198
+\l__siunitx_process_integer_min_int=\count199
+\l__siunitx_process_precision_int=\count266
+\l__siunitx_group_min_int=\count267
+\l__siunitx_angle_marker_box=\box51
+\l__siunitx_angle_unit_box=\box52
+\l__siunitx_angle_marker_dim=\dimen156
+\l__siunitx_angle_unit_dim=\dimen157
+\l__siunitx_unit_int=\count268
+\l__siunitx_unit_denominator_int=\count269
+\l__siunitx_unit_numerator_int=\count270
+\l__siunitx_unit_prefix_int=\count271
+\l__siunitx_unit_prefix_base_int=\count272
+\l__siunitx_unit_prefix_gram_int=\count273
+\l__siunitx_number_product_int=\count274
+\c__siunitx_one_fill_skip=\skip73
+\l__siunitx_table_unit_align_skip=\skip74
+\l__siunitx_table_exponent_dim=\dimen158
+\l__siunitx_table_integer_dim=\dimen159
+\l__siunitx_table_mantissa_dim=\dimen160
+\l__siunitx_table_marker_dim=\dimen161
+\l__siunitx_table_result_dim=\dimen162
+\l__siunitx_table_uncert_dim=\dimen163
+\l__siunitx_table_fill_pre_dim=\dimen164
+\l__siunitx_table_fill_post_dim=\dimen165
+\l__siunitx_table_fill_mid_dim=\dimen166
+\l__siunitx_table_pre_box=\box53
+\l__siunitx_table_post_box=\box54
+\l__siunitx_table_mantissa_box=\box55
+\l__siunitx_table_result_box=\box56
+\l__siunitx_table_number_align_skip=\skip75
+\l__siunitx_table_text_align_skip=\skip76
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks25
+\minrowclearance=\skip77
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip78
+\multirow@cntb=\count275
+\multirow@dima=\skip79
+\bigstrutjot=\dimen167
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count276
+\calc@Bcount=\count277
+\calc@Adimen=\dimen168
+\calc@Bdimen=\dimen169
+\calc@Askip=\skip80
+\calc@Bskip=\skip81
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count278
+\calc@Cskip=\skip82
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen170
+\TX@old@table=\dimen171
+\TX@old@col=\dimen172
+\TX@target=\dimen173
+\TX@delta=\dimen174
+\TX@cols=\count279
+\TX@ftn=\toks26
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box57
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip83
+\LTright=\skip84
+\LTpre=\skip85
+\LTpost=\skip86
+\LTchunksize=\count280
+\LTcapwidth=\dimen175
+\LT@head=\box58
+\LT@firsthead=\box59
+\LT@foot=\box60
+\LT@lastfoot=\box61
+\LT@cols=\count281
+\LT@rows=\count282
+\c@LT@tables=\count283
+\c@LT@chunks=\count284
+\LT@p@ftn=\toks27
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen176
+\WF@size=\dimen177
+\c@WF@wrappedlines=\count285
+\WF@box=\box62
+\WF@everypar=\toks28
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen178
+\lightrulewidth=\dimen179
+\cmidrulewidth=\dimen180
+\belowrulesep=\dimen181
+\belowbottomsep=\dimen182
+\aboverulesep=\dimen183
+\abovetopsep=\dimen184
+\cmidrulesep=\dimen185
+\cmidrulekern=\dimen186
+\defaultaddspace=\dimen187
+\@cmidla=\count286
+\@cmidlb=\count287
+\@aboverulesep=\dimen188
+\@belowrulesep=\dimen189
+\@thisruleclass=\count288
+\@lastruleclass=\count289
+\@thisrulewidth=\dimen190
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip87
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen191
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count290
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count291
+\leftroot@=\count292
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count293
+\DOTSCASE@=\count294
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box63
+\strutbox@=\box64
+\big@size=\dimen192
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count295
+\c@MaxMatrixCols=\count296
+\dotsspace@=\muskip17
+\c@parentequation=\count297
+\dspbrk@lvl=\count298
+\tag@help=\toks29
+\row@=\count299
+\column@=\count300
+\maxfields@=\count301
+\andhelp@=\toks30
+\eqnshift@=\dimen193
+\alignsep@=\dimen194
+\tagshift@=\dimen195
+\tagwidth@=\dimen196
+\totwidth@=\dimen197
+\lineht@=\dimen198
+\@envbody=\toks31
+\multlinegap=\skip88
+\multlinetaggap=\skip89
+\mathdisplay@stack=\toks32
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count302
+\float@exts=\toks33
+\float@box=\box65
+\@float@everytoks=\toks34
+\@floatcapt=\box66
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+) (./g3_v1.aux
+
+LaTeX Warning: Label `Table3' multiply defined.
+
+
+LaTeX Warning: Label `Table3@cref' multiply defined.
+
+)
+\openout1 = `g3_v1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+ (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count303
+\scratchdimen=\dimen199
+\scratchbox=\box67
+\nofMPsegments=\count304
+\nofMParguments=\count305
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count306
+\MPscratchDim=\dimen256
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
+\everyMPtoPDFconversion=\toks36
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 41.
+\c@maskedRefs=\count309
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/apacite/english.apc
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+)
+Overfull \hbox (9.15459pt too wide) in paragraph at lines 50--51
+[]\OT1/cmr/m/n/10 The depth of antig-orite desta-bi-liza-tion, and con-se-quently me-chan-i-cal cou-pling, is 
+ []
+
+
+Overfull \hbox (15.90456pt too wide) in paragraph at lines 51--52
+[]\OT1/cmr/m/n/10 Coupling depths in nat-u-ral sub-duc-tion zones can be pre-dicted given slab age, con- 
+ []
+
+
+Overfull \hbox (2.57123pt too wide) in paragraph at lines 52--53
+[]\OT1/cmr/m/n/10 Consistently high backarc heat flow in nat-u-ral sub-duc-tion zones may in-di-cate a 
+ []
+
+[1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (24.0713pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 A key fea-ture of sub-duc-tion zone geo-dy-nam-ics and ther-mal struc-ture is the point at which 
+ []
+
+
+Overfull \hbox (3.73785pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 tion be-tween slab and man-tle be-gins to drive man-tle wedge cir-cu-la-tion and also cor-re- 
+ []
+
+
+Overfull \hbox (3.57117pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 sponds with a ma-jor in-crease in tem-per-a-ture along the slab-mantle in-ter-face. Here we 
+ []
+
+
+Overfull \hbox (15.29343pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 con-sider the ef-fects of the backarc ther-mal struc-ture and slab ther-mal pa-ram-e-ter on cou- 
+ []
+
+
+Overfull \hbox (12.8213pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 pling depth us-ing two-dimensional ther-mo-me-chan-i-cal mod-els of oceanic-continental con- 
+ []
+
+
+Overfull \hbox (8.04349pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 ver-gent mar-gins. Cou-pling depth is strongly cor-re-lated with backarc litho-spheric thick- 
+ []
+
+
+Overfull \hbox (13.82127pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 ness, and weakly cor-re-lated with slab ther-mal pa-ram-e-ter. Slab-mantle cou-pling be-comes 
+ []
+
+
+Overfull \hbox (8.65463pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 sig-nif-i-cant where weak, hy-drous antig-orite re-acts to form strong, an-hy-drous olivine and 
+ []
+
+
+Overfull \hbox (17.21022pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 py-rox-ene along the slab-mantle in-ter-face. Highly ef-fi-cient (pre-dom-i-nantly ad-vec-tive) heat 
+ []
+
+
+Overfull \hbox (8.46016pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 trans-fer in the as-theno-spheric man-tle wedge and in-ef-fi-cient (pre-dom-i-nantly con-duc-tive) 
+ []
+
+
+Overfull \hbox (6.12675pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 heat trans-fer in the litho-spheric man-tle wedge re-sults in com-pet-ing feed-backs that sta- 
+ []
+
+
+Overfull \hbox (19.21017pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 bi-lize the antigorite-out re-ac-tion at depths de-ter-mined pri-mar-ily by the me-chan-i-cal thick- 
+ []
+
+
+Overfull \hbox (18.04341pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 ness of the backarc litho-sphere. For sub-duc-tion zone seg-ments where backarc litho-spheric 
+ []
+
+
+Overfull \hbox (9.34895pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 thick-ness can be in-verted from sur-face heat flow, our re-sults pro-vide a re-gres-sion model 
+ []
+
+
+Overfull \hbox (15.9602pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 that can be ap-plied with slab ther-mal pa-ram-e-ter to pre-dict cou-pling depth. Con-sis-tently 
+ []
+
+
+Overfull \hbox (9.82124pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 high backarc heat flow in circum-Pacific sub-duc-tion zones sug-gests uni-formly thin over- 
+ []
+
+
+Overfull \hbox (0.48798pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 rid-ing plates likely reg-u-lated by litho-spheric ero-sion caused by hy-dra-tion and melt-ing 
+ []
+
+
+Overfull \hbox (20.32124pt too wide) in paragraph at lines 55--57
+\OT1/cmr/m/n/10 pro-cesses un-der vol-canic arcs. This may also ex-plain a com-mon depth of slab-mantle cou- 
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 59.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 59.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Overfull \hbox (6.93222pt too wide) in paragraph at lines 60--61
+[]\OT1/cmr/m/n/10 Subduction is a pro-cess where two semi-rigid slabs of earth's outer shell (tec-tonic 
+ []
+
+
+Overfull \hbox (19.2657pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 plates) con-verge, and one dives be-neath the other into the man-tle. Sub-duc-tion zones pro- 
+ []
+
+
+Overfull \hbox (19.82126pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 duce the world's largest earth-quakes and form new crust through vol-can-ism. Un-der-stand- 
+ []
+
+
+Overfull \hbox (9.21008pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 ing earth-quakes and vol-can-ism re-quires un-der-stand-ing how the two slabs move with re- 
+ []
+
+
+Overfull \hbox (16.23796pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 spect to each other. With in-creas-ing depth, the sink-ing slab tran-si-tions from slid-ing past 
+ []
+
+
+Overfull \hbox (9.40465pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 the over-rid-ing slab to grip-ping the base of the over-rid-ing slab. This grip-ping (cou-pling) 
+ []
+
+
+Overfull \hbox (19.26563pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 re-duces earth-quakes and causes warm rock to flow up-wards, en-abling vol-can-ism. We used 
+ []
+
+
+Overfull \hbox (8.29352pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 two-dimensional com-puter sim-u-la-tions of sub-duc-tion to test what con-trols the depth of 
+ []
+
+
+Overfull \hbox (13.98796pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 cou-pling be-tween the slabs. We found that cou-pling depth is pri-mar-ily con-trolled by the 
+ []
+
+
+Overfull \hbox (17.65463pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 thick-ness of the over-rid-ing slab and pro-vide an equa-tion to pre-dict cou-pling depth in real 
+ []
+
+
+Overfull \hbox (11.68237pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 sub-duc-tion zones. Over-rid-ing plates in sub-duc-tion zones world-wide ap-pear to have sim- 
+ []
+
+
+Overfull \hbox (13.40456pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 i-lar thick-nesses, so cou-pling depths are also pre-dicted to be sim-i-lar. Al-though we do not 
+ []
+
+
+Overfull \hbox (0.71017pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 yet fully un-der-stand why the over-rid-ing plates are uni-formly thin glob-ally, we can as- 
+ []
+
+
+Overfull \hbox (7.23795pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10 sume that this is likely re-lated to litho-spheric ero-sion caused by hy-dra-tion and melt-ing 
+ []
+
+
+LaTeX Warning: Citation `Furukawa1993' undefined on input line 63.
+
+
+LaTeX Warning: Citation `Peacock1994' undefined on input line 63.
+
+
+LaTeX Warning: Citation `Wada2009' undefined on input line 63.
+
+
+LaTeX Warning: Citation `Peacock1996' undefined on input line 63.
+
+
+LaTeX Warning: Citation `Wada2008' undefined on input line 63.
+
+
+Overfull \hbox (3.15451pt too wide) in paragraph at lines 63--64
+[]\OT1/cmr/m/n/10 The ther-mal struc-ture of sub-duc-tion zones strongly de-pends on the depth where 
+ []
+
+
+Overfull \hbox (12.0436pt too wide) in paragraph at lines 63--64
+\OT1/cmr/m/n/10 the sub-duct-ing slab and over-ly-ing man-tle tran-si-tion from me-chan-i-cally de-cou-pled (mov- 
+ []
+
+
+Overfull \hbox (6.93239pt too wide) in paragraph at lines 63--64
+\OT1/cmr/m/n/10 ing dif-fer-en-tially with re-spect to each other) to me-chan-i-cally cou-pled []moving with the 
+ []
+
+
+Overfull \hbox (36.6824pt too wide) in paragraph at lines 63--64
+\OT1/cmr/m/n/10 same lo-cal ve-loc-ity; ?, ?, ?, ?). Cou-pling drives man-tle wedge cir-cu-la-tion, and the decoupling- 
+ []
+
+
+Overfull \hbox (14.37685pt too wide) in paragraph at lines 63--64
+\OT1/cmr/m/n/10 coupling tran-si-tion de-fines a rapid in-crease in tem-per-a-ture along the top of the sub-duct- 
+ []
+
+
+Overfull \hbox (5.65462pt too wide) in paragraph at lines 63--64
+\OT1/cmr/m/n/10 ing slab []?, ?). Based on many ob-ser-va-tional con-straints the depth of slab-mantle cou- 
+ []
+
+
+Overfull \hbox (4.5111pt too wide) in paragraph at lines 63--64
+\OT1/cmr/m/n/10 pling has been in-ferred from nu-mer-i-cal mod-els to oc-cur at 70-80 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 depth, es-sen-tially 
+ []
+
+
+Overfull \hbox (4.84903pt too wide) in paragraph at lines 63--64
+\OT1/cmr/m/n/10 in-de-pen-dent of other pa-ram-e-ters in-clud-ing slab age, con-ver-gence ve-loc-ity, and sub-duc- 
+ []
+
+
+Overfull \hbox (24.32129pt too wide) in paragraph at lines 63--64
+\OT1/cmr/m/n/10 tion ge-om-e-try []?, ?, ?, ?). It is sig-nif-i-cant that mod-ern sub-duc-tion zones ap-pear to achieve 
+ []
+
+
+LaTeX Warning: Citation `Currie2004' undefined on input line 65.
+
+
+LaTeX Warning: Citation `Syracuse2010' undefined on input line 65.
+
+
+LaTeX Warning: Citation `VanKeken2011' undefined on input line 65.
+
+
+LaTeX Warning: Citation `VanKeken2018' undefined on input line 65.
+
+
+LaTeX Warning: Citation `Wada2012' undefined on input line 65.
+
+
+LaTeX Warning: Citation `Gao2014' undefined on input line 65.
+
+
+LaTeX Warning: Citation `Wilson2014' undefined on input line 65.
+
+
+LaTeX Warning: Citation `Abers2017' undefined on input line 65.
+
+
+LaTeX Warning: Citation `England2010' undefined on input line 65.
+
+
+LaTeX Warning: Citation `England2004' undefined on input line 65.
+
+
+LaTeX Warning: Citation `Syracuse2006' undefined on input line 65.
+
+
+LaTeX Warning: Citation `Agard2016' undefined on input line 65.
+
+
+LaTeX Warning: Citation `Agard2009' undefined on input line 65.
+
+
+Overfull \hbox (7.1499pt too wide) in paragraph at lines 65--66
+[]\OT1/cmr/m/n/10 A pre-scribed slab-mantle cou-pling depth of 70-80 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 has been used as a phys-i-cal 
+ []
+
+
+Overfull \hbox (8.26573pt too wide) in paragraph at lines 65--66
+\OT1/cmr/m/n/10 con-di-tion in many ther-mo-me-chan-i-cal mod-els []e.g., ?, ?, ?, ?, ?, ?, ?, ?, ?), al-though dif- 
+ []
+
+
+Overfull \hbox (4.64996pt too wide) in paragraph at lines 65--66
+\OT1/cmr/m/n/10 fer-ent cou-pling depths ap-ply in other stud-ies []e.g., 40-56 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 ; ?, ?, ?). A com-mon cou- 
+ []
+
+
+Overfull \hbox (6.57124pt too wide) in paragraph at lines 65--66
+\OT1/cmr/m/n/10 pling depth is at-trac-tive for at least two rea-sons: Firstly, it helps ex-plain the rel-a-tively 
+ []
+
+
+Overfull \hbox (3.2934pt too wide) in paragraph at lines 65--66
+\OT1/cmr/m/n/10 nar-row range of sub-arc slab depths []?, ?, ?) as me-chan-i-cal cou-pling is ex-pected to be 
+ []
+
+
+Overfull \hbox (9.90459pt too wide) in paragraph at lines 65--66
+\OT1/cmr/m/n/10 closely as-so-ci-ated with the on-set of flux melt-ing. Sec-ondly, since me-chan-i-cal cou-pling is 
+ []
+
+
+Overfull \hbox (6.79344pt too wide) in paragraph at lines 65--66
+\OT1/cmr/m/n/10 re-quired to de-tach and re-cover rocks from the down-going slab []?, ?), a com-mon depth 
+ []
+
+
+Overfull \hbox (3.2935pt too wide) in paragraph at lines 65--66
+\OT1/cmr/m/n/10 of cou-pling may also help ex-plain why the max-i-mum pres-sures recorded by sub-ducted 
+ []
+
+[2]
+
+LaTeX Warning: Citation `Peacock1990' undefined on input line 67.
+
+
+LaTeX Warning: Citation `Peacock1991' undefined on input line 67.
+
+
+LaTeX Warning: Citation `Peacock1993' undefined on input line 67.
+
+
+LaTeX Warning: Citation `Peacock1999a' undefined on input line 67.
+
+
+LaTeX Warning: Citation `Hacker2003' undefined on input line 67.
+
+
+LaTeX Warning: Citation `Grove2012' undefined on input line 67.
+
+
+LaTeX Warning: Citation `Cizkova2013' undefined on input line 67.
+
+
+LaTeX Warning: Citation `Gao2017' undefined on input line 67.
+
+
+LaTeX Warning: Citation `Agard2018' undefined on input line 67.
+
+
+Overfull \hbox (2.29347pt too wide) in paragraph at lines 67--68
+[]\OT1/cmr/m/n/10 Beyond play-ing a cru-cial role in sub-duc-tion zone ther-mal struc-ture, the lo-ca-tion 
+ []
+
+
+Overfull \hbox (16.96017pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 and ex-tent of me-chan-i-cal cou-pling along the slab-mantle in-ter-face is im-pli-cated in a myr- 
+ []
+
+
+Overfull \hbox (7.71024pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 iad of sub-duc-tion zone geo-dy-nam-ics []seismicity, meta-mor-phism, volatile fluxes into the 
+ []
+
+
+Overfull \hbox (7.54338pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 man-tle wedge, vol-can-ism, slab mo-tion and trench re-treat, etc., e.g., ?, ?, ?, ?, ?, ?, ?, ?, 
+ []
+
+
+Overfull \hbox (12.07121pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 ?, ?, ?). Con-se-quently, the me-chan-ics of cou-pling have been ex-ten-sively stud-ied and dis- 
+ []
+
+
+Overfull \hbox (10.29356pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 cussed. Cou-pling fun-da-men-tally de-pends on the strength (vis-cos-ity) of ma-te-ri-als above, 
+ []
+
+
+Overfull \hbox (3.37675pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 within, and be-low the slab-mantle in-ter-face. In gen-eral, high wa-ter fluxes due to com- 
+ []
+
+
+Overfull \hbox (16.07132pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 paction and de-hy-dra-tion of clays and other hy-drous min-er-als in the shal-low fore-arc man- 
+ []
+
+
+Overfull \hbox (1.21pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 tle wedge, cou-pled with in-creases in pres-sure and tem-per-a-ture, form lay-ers of low vis- 
+ []
+
+
+Overfull \hbox (9.09901pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 cos-ity sheet sil-i-cates|especially talc and ser-pen-tine|that in-hibit trans-mis-sion of shear 
+ []
+
+
+Overfull \hbox (9.62672pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 stress from the slab to the man-tle wedge []?, ?). The lack of trac-tion along the in-ter-face 
+ []
+
+
+Overfull \hbox (21.93236pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 com-bined with cool-ing from the sub-duct-ing slab sur-face en-sures the shal-low man-tle wedge 
+ []
+
+
+Overfull \hbox (0.62682pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 re-mains cold and rigid. Ex-per-i-men-tally de-ter-mined flow laws []e.g., see sum-mary of ?, 
+ []
+
+
+Overfull \hbox (17.57132pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 ?), petro-logic ob-ser-va-tions []e.g., see sum-mary of ?, ?), and geo-phys-i-cal ob-ser-va-tions []e.g., 
+ []
+
+
+Overfull \hbox (8.73798pt too wide) in paragraph at lines 67--68
+\OT1/cmr/m/n/10 ?, ?, ?) all sup-port the plau-si-bil-ity of this con-cep-tual model of sub-duc-tion in-ter-face be- 
+ []
+
+
+LaTeX Warning: Citation `Ruh2015' undefined on input line 69.
+
+
+Overfull \hbox (8.07117pt too wide) in paragraph at lines 69--70
+[]\OT1/cmr/m/n/10 Here we fo-cus on two fun-da-men-tal ques-tions: 1) What con-trols the depth of slab- 
+ []
+
+
+Overfull \hbox (10.76572pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 mantle me-chan-i-cal cou-pling? 2) How does cou-pling depth change through time? To ad- 
+ []
+
+
+Overfull \hbox (5.40453pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 dress these ques-tions, we use two-dimensional ther-mo-me-chan-i-cal mod-els of sub-duc-tion 
+ []
+
+
+Overfull \hbox (24.82129pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 to in-ves-ti-gate po-ten-tial cor-re-la-tions be-tween the slab-mantle cou-pling depth, backarc litho- 
+ []
+
+
+Overfull \hbox (7.48788pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 spheric thick-ness (in-verted from backarc heat flow), and slab ther-mal pa-ram-e-ter ($^^H$). []? 
+ []
+
+
+Overfull \hbox (14.37688pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 (?) pre-vi-ously in-ves-ti-gated steady-state slab-mantle cou-pling depths by mod-elling 17 ac- 
+ []
+
+
+Overfull \hbox (16.68234pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 tive sub-duc-tion zones. Among other pa-ram-e-ters, their mod-els spec-i-fied con-ver-gence rate, 
+ []
+
+
+Overfull \hbox (10.71022pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 sub-duc-tion ge-om-e-try, ther-mal struc-ture of in-com-ing and over-rid-ing plate, and de-gree of 
+ []
+
+
+Overfull \hbox (10.57137pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 cou-pling vs. de-cou-pling with depth along the sub-duc-tion in-ter-face. No-tably, their mod- 
+ []
+
+
+Overfull \hbox (7.04346pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 els pre-scribed the me-chan-i-cal cou-pling depth for each sub-duc-tion zone, did not in-clude 
+ []
+
+
+Overfull \hbox (4.07127pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 min-eral re-ac-tions that might in-flu-ence rhe-olo-gies, and dis-crim-i-nated the best-fit depth 
+ []
+
+
+Overfull \hbox (5.84894pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 based on ob-served fore-arc heat flow. In our mod-els, we also spec-ify hor-i-zon-tal con-ver- 
+ []
+
+
+Overfull \hbox (16.26572pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 gence ve-loc-ity and ther-mal struc-ture of the in-com-ing and over-rid-ing plates, as one would 
+ []
+
+
+Overfull \hbox (28.34912pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 for mod-el-ing a mod-ern sys-tem. How-ever, the ge-om-e-try of the sub-duc-tion sys-tem and (most 
+ []
+
+
+Overfull \hbox (5.46022pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 im-por-tantly) the point of me-chan-i-cal cou-pling are al-lowed to evolve in-de-pen-dently un- 
+ []
+
+
+Overfull \hbox (16.87675pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 til they reach steady state. That is, the cou-pling depth in each of our mod-els is an emer- 
+ []
+
+
+Overfull \hbox (10.37671pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 gent rather than pre-scribed fea-ture. As in other pre-vi-ous stud-ies []e.g., ?, ?), we also in- 
+ []
+
+
+Overfull \hbox (40.35289pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 clude the rhe-o-log-i-cal ef-fect of the de-hy-dra-tion re-ac-tion $\OML/cmm/m/it/10 antigorite \OMS/cmsy/m/n/10 , \OML/cmm/m/it/10 olivine \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 orthopyroxene \OT1/cmr/m/n/10 + 
+ []
+
+
+Overfull \hbox (5.88649pt too wide) in paragraph at lines 69--70
+\OML/cmm/m/it/10 H[]O$\OT1/cmr/m/n/10 , which drives me-chan-i-cal cou-pling by an abrupt vis-cos-ity in-crease with antig-orite 
+ []
+
+
+Overfull \hbox (17.76573pt too wide) in paragraph at lines 69--70
+\OT1/cmr/m/n/10 loss. The po-si-tion of this re-ac-tion along the sub-duc-tion in-ter-face de-ter-mines the cou-pling 
+ []
+
+
+Overfull \hbox (1.19615pt too wide) in paragraph at lines 71--72
+[]\OT1/cmr/m/n/10 We quan-tify the ef-fects of the $\OML/cmm/m/it/10 ^^^$ \OT1/cmr/m/n/10 and backarc litho-spheric thick-ness on the depth 
+ []
+
+
+Overfull \hbox (7.26566pt too wide) in paragraph at lines 71--72
+\OT1/cmr/m/n/10 of this re-ac-tion us-ing lin-ear re-gres-sion. We then vi-su-al-ize ther-mal feed-backs within the 
+ []
+
+
+Overfull \hbox (24.37682pt too wide) in paragraph at lines 71--72
+\OT1/cmr/m/n/10 sys-tem in terms of the dis-tri-bu-tions of tem-per-a-ture, vis-cos-ity, and an ef-fec-tive P^^Seclet num- 
+ []
+
+
+Overfull \hbox (1.71005pt too wide) in paragraph at lines 71--72
+\OT1/cmr/m/n/10 ber (the ra-tio of heat ad-vec-tion to heat con-duc-tion). Last, we dis-cuss how these feed- 
+ []
+
+
+LaTeX Warning: Citation `Gorczyk2007' undefined on input line 74.
+
+
+LaTeX Warning: Citation `Sizova2010' undefined on input line 74.
+
+
+Overfull \hbox (12.2101pt too wide) in paragraph at lines 74--75
+[]\OT1/cmr/m/n/10 Our mod-els sim-u-lated con-verg-ing oceanic-continental plates, where an ocean basin 
+ []
+
+
+Overfull \hbox (2.21013pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 is be-ing con-sumed by sub-duc-tion at a con-ti-nen-tal mar-gin (Fig. 1[]). The core code was 
+ []
+
+
+Overfull \hbox (9.09912pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 mod-i-fied from pre-vi-ous mod-el-ing stud-ies of ac-tive mar-gins []e.g., ?, ?, ?), al-though slab- 
+ []
+
+
+Overfull \hbox (1.37675pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 mantle cou-pling was not the fo-cus of their stud-ies. Our ap-proach was to use iden-ti-cal 
+ []
+
+
+Overfull \hbox (4.76578pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 ma-te-rial prop-er-ties (Ta-ble 1[] & Ta-ble 2[]), rhe-o-log-i-cal model, and hy-dra-tion/melt model 
+ []
+
+
+Overfull \hbox (9.98788pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 as []? (?, see Ap-pendix A). Our ver-sion dif-fered from []? (?) in its ini-tial setup, over-all di- 
+ []
+
+
+Overfull \hbox (12.0991pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 men-sion, res-o-lu-tion, the shape of the con-ti-nen-tal geotherm, the slab de-hy-dra-tion model, 
+ []
+
+
+Overfull \hbox (10.40472pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 and the left bound-ary con-di-tion (ori-gin of the sub-duct-ing slab). Sixty-four mod-els were 
+ []
+
+
+Overfull \hbox (7.37682pt too wide) in paragraph at lines 74--75
+\OT1/cmr/m/n/10 con-structed vary-ing con-ver-gence rate, sub-duct-ing plate age, and the litho-spheric thick- 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+Overfull \hbox (0.80243pt too wide) in paragraph at lines 120--120
+ []|$\OML/cmm/m/it/10 ^^Q[]$|
+ []
+
+
+Overfull \hbox (7.23976pt too wide) in paragraph at lines 120--120
+ []|$\OML/cmm/m/it/10 sin\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^^\OT1/cmr/m/n/10 )$|
+ []
+
+
+Overfull \hbox (1.6438pt too wide) in paragraph at lines 120--120
+ []|$[]$|
+ []
+
+
+Overfull \hbox (3.94751pt too wide) in paragraph at lines 120--120
+ []|$[]$|
+ []
+
+
+Overfull \hbox (2.14648pt too wide) in paragraph at lines 120--120
+ []|\OT1/cmr/m/n/10 0.022|
+ []
+
+
+Overfull \hbox (2.14648pt too wide) in paragraph at lines 120--120
+ []|\OT1/cmr/m/n/10 0.022|
+ []
+
+
+Overfull \hbox (2.14648pt too wide) in paragraph at lines 120--120
+ []|\OT1/cmr/m/n/10 0.022|
+ []
+
+
+Overfull \hbox (2.14648pt too wide) in paragraph at lines 120--120
+ []|\OT1/cmr/m/n/10 0.022|
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 120--120
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+[]$\OML/cmm/m/it/8 ^^Z[]$\OT1/cmr/m/n/8 =initial den-sity, $\OML/cmm/m/it/8 k$\OT1/cmr/m/n/8 =thermal con-duc-tiv-ity, $\OML/cmm/m/it/8 H[]$\OT1/cmr/m/n/8 =radiogenic heat pro-duc-tion, $\OML/cmm/m/it/8 H[]$\OT1/cmr/m/n/8 =latent heat, $\OML/cmm/m/it/8 ^^Q$\OT1/cmr/m/n/8 =viscosity $\OML/cmm/m/it/8 E$\OT1/cmr/m/n/8 =activation en-ergy, $\OML/cmm/m/it/8 n$\OT1/cmr/m/n/8 =power law ex-po-nent, $\OML/cmm/m/it/8 A[]$\OT1/cmr/m/n/8 =material con-
+ []
+
+
+LaTeX Warning: Citation `Turcotte2002' undefined on input line 126.
+
+
+LaTeX Warning: Citation `Bittner1995' undefined on input line 126.
+
+
+LaTeX Warning: Citation `Clauser1995' undefined on input line 126.
+
+
+LaTeX Warning: Citation `Ranalli1995' undefined on input line 126.
+
+
+Overfull \hbox (3.74355pt too wide) in paragraph at lines 169--169
+ []|\OT1/cmr/m/n/10 77800000|
+ []
+
+
+Overfull \hbox (3.74355pt too wide) in paragraph at lines 169--169
+ []|\OT1/cmr/m/n/10 77800000|
+ []
+
+
+Overfull \hbox (3.74355pt too wide) in paragraph at lines 169--169
+ []|\OT1/cmr/m/n/10 77800000|
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 169--169
+[][][][][][][][][][][] 
+ []
+
+
+LaTeX Warning: Citation `Schmidt1998' undefined on input line 175.
+
+
+LaTeX Warning: Citation `Gerya2003' undefined on input line 181.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+LaTeX Warning: Citation `Burg2005' undefined on input line 181.
+
+
+Overfull \hbox (3.83977pt too wide) in paragraph at lines 181--182
+[]\OT1/cmr/m/n/10 Our two-dimensional model was 2000 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 wide and 300 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 deep (Fig. 1[]). In the 
+ []
+
+
+Overfull \hbox (13.98802pt too wide) in paragraph at lines 181--182
+\OT1/cmr/m/n/10 model do-main, three gov-ern-ing equa-tions of heat trans-port, mo-tion, and con-ti-nu-ity were 
+ []
+
+
+Overfull \hbox (12.73787pt too wide) in paragraph at lines 181--182
+\OT1/cmr/m/n/10 dis-cretized and solved us-ing a con-ser-va-tive finite-difference with marker-in-cell ap-proach 
+ []
+
+
+Overfull \hbox (20.71016pt too wide) in paragraph at lines 181--182
+\OT1/cmr/m/n/10 on a fully stag-gered grid as out-lined in []? (?, code: I2VIS). The model res-o-lu-tion was non- 
+ []
+
+
+Overfull \hbox (2.47412pt too wide) in paragraph at lines 181--182
+\OT1/cmr/m/n/10 uniform with higher res-o-lu-tion (1 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 x 1 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 ) in a 600 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 wide area sur-round-ing the 
+ []
+
+
+Overfull \hbox (17.48796pt too wide) in paragraph at lines 181--182
+\OT1/cmr/m/n/10 con-tact be-tween the ocean basin and con-ti-nen-tal mar-gin and grad-u-ally chang-ing to lower 
+ []
+
+
+Overfull \hbox (11.61755pt too wide) in paragraph at lines 181--182
+\OT1/cmr/m/n/10 res-o-lu-tion (5 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 x 1 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 , x- and z-directions, re-spec-tively) out-side of this area. The left 
+ []
+
+
+Overfull \hbox (3.07127pt too wide) in paragraph at lines 181--182
+\OT1/cmr/m/n/10 and right bound-aries were free-slip and ther-mally in-su-la-tive (Fig. 1[]a). The im-ple-men- 
+ []
+
+
+Overfull \hbox (9.90459pt too wide) in paragraph at lines 181--182
+\OT1/cmr/m/n/10 ta-tion of sticky air and wa-ter al-lowed for a free to-po-graph-i-cal sur-face with a sim-ple lin- 
+ []
+
+
+Overfull \hbox (0.21013pt too wide) in paragraph at lines 181--182
+\OT1/cmr/m/n/10 ear sed-i-men-ta-tion and ero-sion model. The lower bound-ary was open to al-low for slab 
+ []
+
+<figs/Fig1.png, id=25, 3312.375pt x 2559.5625pt>
+File: figs/Fig1.png Graphic file (type png)
+<use figs/Fig1.png>
+Package pdftex.def Info: figs/Fig1.png  used on input line 185.
+(pdftex.def)             Requested size: 668.4975pt x 516.55107pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+[]\OT1/cmr/m/n/10 Figure  1: |Ini-tial model con-fig-u-ra-tion and bound-ary con-di-tions. (a) A free sed-i-men-ta-tion/erosion bound-ary at the sur-face is main-tained by im-ple-ment-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\OT1/cmr/m/n/10 ing a layer of sticky air and wa-ter, and an infinite-like open bound-ary at the bot-tom al-lows for slab pen-e-tra-tion. Oceanic litho-sphere is con-tin-u-ally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\OT1/cmr/m/n/10 cre-ated at the left bound-ary and con-ver-gence ve-loc-i-ties are im-posed at sta-tion-ary re-gions far from the trench. The left and right bound-aries are free
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\OT1/cmr/m/n/10 slip and in-su-la-tive. (b) The ini-tial ma-te-rial dis-tri-bu-tion in-cludes 7 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 of oceanic crust (2 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 basalt, 5 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 gab-bro), 1 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 of oceanic sed-i-ments, and 35
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 of con-ti-nen-tal crust, thin-ning ocean-ward. The oceanic crust is bent un-der load-ing from pas-sive mar-gin sed-i-ments, and a weak zone (high pore fluid
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\OT1/cmr/m/n/10 pres-sure) ex-tends from the de-flected oceanic crust, through the litho-sphere, to help in-duce sub-duc-tion. (c) The oceanic geotherm is cal-cu-lated us-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\OT1/cmr/m/n/10 a half-space cool-ing model and the con-ti-nen-tal geotherm is cal-cu-lated us-ing a one-dimensional steady-state con-duc-tive cool-ing model to 1300 $[]\OML/cmm/m/it/10 C$\OT1/cmr/m/n/10 . The
+ []
+
+
+LaTeX Warning: Citation `McKenzie1969' undefined on input line 190.
+
+
+Overfull \hbox (4.09894pt too wide) in paragraph at lines 190--191
+[]\OT1/cmr/m/n/10 A hor-i-zon-tal con-ver-gence ve-loc-ity was ap-plied to both plates in a rect-an-gu-lar re- 
+ []
+
+
+Overfull \hbox (19.87686pt too wide) in paragraph at lines 190--191
+\OT1/cmr/m/n/10 gion far from the con-ti-nen-tal mar-gin (Fig. 1[]a). A con-ver-gence force and ini-tial weak layer 
+ []
+
+
+Overfull \hbox (9.37686pt too wide) in paragraph at lines 190--191
+\OT1/cmr/m/n/10 (high pore fluid pres-sure) cut-ting the litho-sphere per-mit-ted sub-duc-tion to ini-ti-ate. The 
+ []
+
+
+Overfull \hbox (7.29341pt too wide) in paragraph at lines 190--191
+\OT1/cmr/m/n/10 rect-an-gu-lar con-ver-gence re-gions pre-scribed in-side the plates main-tained a con-stant vis- 
+ []
+
+
+Overfull \hbox (26.3768pt too wide) in paragraph at lines 190--191
+\OT1/cmr/m/n/10 litho-sphere. The sub-duc-tion an-gle was not pre-scribed and was gov-erned by the free-motion 
+ []
+
+
+Overfull \hbox (10.21022pt too wide) in paragraph at lines 190--191
+\OT1/cmr/m/n/10 of the sink-ing slab. Sim-i-larly, sub-duc-tion ve-loc-ity can vary with time in re-sponse to ex- 
+ []
+
+
+Overfull \hbox (8.54344pt too wide) in paragraph at lines 190--191
+\OT1/cmr/m/n/10 ten-sion or short-en-ing of the over-rid-ing plate. There-fore, we cal-cu-lated the slab ther-mal 
+ []
+
+
+Overfull \hbox (6.81082pt too wide) in paragraph at lines 190--191
+\OT1/cmr/m/n/10 pa-ram-e-ter ($^^H$) as the prod-uct of the hor-i-zon-tal con-ver-gence ve-loc-ity ($\OML/cmm/m/it/10 km=Ma$\OT1/cmr/m/n/10 ) and the 
+ []
+
+
+Overfull \hbox (7.1209pt too wide) in paragraph at lines 190--191
+\OT1/cmr/m/n/10 slab age []$\OML/cmm/m/it/10 Ma$\OT1/cmr/m/n/10 ; c.f. ?, ?). We use $^^H$/100 as it is com-monly pre-sented in the lit-er-a-ture to 
+ []
+
+<figs/Fig2.png, id=27, 3312.375pt x 2559.5625pt>
+File: figs/Fig2.png Graphic file (type png)
+<use figs/Fig2.png>
+Package pdftex.def Info: figs/Fig2.png  used on input line 194.
+(pdftex.def)             Requested size: 397.48499pt x 307.13425pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+[]\OT1/cmr/m/n/10 Figure  2: |The range of key pa-ram-e-ters in-ves-ti-gated in this study. (a) Mod-elled slab ages
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+\OT1/cmr/m/n/10 and con-ver-gence ve-loc-i-ties broadly re-flect the middle-range of the global dis-tri-bu-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+\OT1/cmr/m/n/10 of mod-ern sub-duc-tion zones with ther-mal pa-ram-e-ters rang-ing from 13 to 110 $\OML/cmm/m/it/10 km=\OT1/cmr/m/n/10 100$.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+\OT1/cmr/m/n/10 Model names in-clude the pre-fix "cd" for "cou-pling depth" with ar-bi-trar-ily in-creas-ing al-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+\OT1/cmr/m/n/10 pha-betic suf-fixes. (b) Geotherms were con-structed us-ing a one-dimensional steady-state
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+\OT1/cmr/m/n/10 con-duc-tive cool-ing model us-ing T(z=0) = 0 $[]$C and q(z=0) = 59, 63, 69, 79 $\OML/cmm/m/it/10 mW=m[]$\OT1/cmr/m/n/10 , and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+\OT1/cmr/m/n/10 con-stant ra-dio-genic heat-ing of 1.0 $\OML/cmm/m/it/10 ^^VW=m[]$ \OT1/cmr/m/n/10 for a 35 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 -thick crust and 0.022 $\OML/cmm/m/it/10 ^^VW=m[]$ \OT1/cmr/m/n/10 for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+\OT1/cmr/m/n/10 the man-tle. The con-ti-nen-tal geotherms are cal-cu-lated up to 1300 $[]$C, with a 0.5 $[]$C/km
+ []
+
+
+LaTeX Warning: Citation `Agrusta2013' undefined on input line 200.
+
+
+Overfull \hbox (14.2008pt too wide) in paragraph at lines 200--201
+[]\OT1/cmr/m/n/10 The oceanic crust was mod-eled as 1 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 of sed-i-ment cover over-ly-ing 2 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 of basalt 
+ []
+
+
+Overfull \hbox (2.84445pt too wide) in paragraph at lines 200--201
+\OT1/cmr/m/n/10 and 5 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 of gab-bro (Fig. 1[]b). Oceanic litho-sphere was con-tin-u-ally made at a pseudo- 
+ []
+
+
+Overfull \hbox (16.87689pt too wide) in paragraph at lines 200--201
+\OT1/cmr/m/n/10 mid-ocean ridge on the left bound-ary of the model and an en-hanced ver-ti-cal cool-ing con- 
+ []
+
+
+Overfull \hbox (10.78891pt too wide) in paragraph at lines 200--201
+\OT1/cmr/m/n/10 di-tion was ap-plied at 200 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 from the mid-ocean ridge to ad-just for the proper oceanic 
+ []
+
+
+Overfull \hbox (6.01558pt too wide) in paragraph at lines 200--201
+\OT1/cmr/m/n/10 plate age, and there-fore its litho-spheric thick-ness as it en-ters the trench []Fig. 1[]c; ?, ?). 
+ []
+
+
+Overfull \hbox (28.22168pt too wide) in paragraph at lines 200--201
+\OT1/cmr/m/n/10 We used plate ages from 32.6 to 110 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 and con-ver-gence ve-loc-i-ties from 40 to 100 $\OML/cmm/m/it/10 km=Ma$ 
+ []
+
+
+Overfull \hbox (4.54349pt too wide) in paragraph at lines 200--201
+\OT1/cmr/m/n/10 (Fig. 2[]a). This range of slab pa-ram-e-ters broadly re-flects the middle-range of the mod- 
+ []
+
+
+Overfull \hbox (6.2656pt too wide) in paragraph at lines 202--203
+[]\OT1/cmr/m/n/10 The ini-tial con-ti-nen-tal geotherms were de-ter-mined by solv-ing the heat flow equa- 
+ []
+
+
+Overfull \hbox (0.6851pt too wide) in paragraph at lines 202--203
+\OT1/cmr/m/n/10 tion in one-dimension to 1300 $[]\OML/cmm/m/it/10 C$ \OT1/cmr/m/n/10 (Fig. 2[]b). We as-sumed a fixed tem-per-a-ture of 0 $[]\OML/cmm/m/it/10 C$ 
+ []
+
+
+Overfull \hbox (6.38611pt too wide) in paragraph at lines 202--203
+\OT1/cmr/m/n/10 at the sur-face, con-stant ra-dio-genic heat-ing of 1 $\OML/cmm/m/it/10 ^^VW=m[]$ \OT1/cmr/m/n/10 in the 35 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 -thick con-ti-nen-tal 
+ []
+
+
+Overfull \hbox (15.35143pt too wide) in paragraph at lines 202--203
+\OT1/cmr/m/n/10 crust and 0.022 $\OML/cmm/m/it/10 ^^VW=m[]$ \OT1/cmr/m/n/10 in the man-tle, and ther-mal con-duc-tiv-i-ties of 2.3 $\OML/cmm/m/it/10 W=mK$ \OT1/cmr/m/n/10 and 3.0 
+ []
+
+
+Overfull \hbox (8.49155pt too wide) in paragraph at lines 202--203
+\OML/cmm/m/it/10 W=mK$ \OT1/cmr/m/n/10 for the con-ti-nen-tal crust and man-tle, re-spec-tively. Be-low the 1300 $[]\OML/cmm/m/it/10 C$ \OT1/cmr/m/n/10 isotherm 
+ []
+
+
+Overfull \hbox (21.08646pt too wide) in paragraph at lines 204--205
+[]\OT1/cmr/m/n/10 Many stud-ies de-fine the base of the con-ti-nen-tal litho-sphere at the 1300 $[]\OML/cmm/m/it/10 C$ \OT1/cmr/m/n/10 isotherm, 
+ []
+
+
+Overfull \hbox (0.51569pt too wide) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 but it can be de-ter-mined more ac-cu-rately from vis-cos-ity and strain rate as the model 
+ []
+
+
+Overfull \hbox (29.01569pt too wide) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 pro-gresses. The me-chan-i-cal base of the litho-sphere in our mod-els gen-er-ally oc-curred around 
+ []
+
+
+Overfull \hbox (25.61423pt too wide) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 the 1100 $[]\OML/cmm/m/it/10 C$ \OT1/cmr/m/n/10 isotherm|characterized by a rapid de-crease in vis-cos-ity and in-crease in strain 
+ []
+
+
+Overfull \hbox (6.71002pt too wide) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 rate. As such, we con-sider the oceanic and con-ti-nen-tal litho-sphere in this study as me- 
+ []
+
+
+Overfull \hbox (21.77722pt too wide) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 chan-i-cal lay-ers. For con-ve-nience, we re-fer to the con-ti-nen-tal litho-spheric thick-ness as $\OML/cmm/m/it/10 z[]$ 
+ []
+
+
+Overfull \hbox (28.41975pt too wide) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 be-cause its cor-re-spon-dence with the 1100 $[]\OML/cmm/m/it/10 C$ \OT1/cmr/m/n/10 isotherm makes it dis-cern-able in fig-ures where 
+ []
+
+
+Overfull \hbox (12.57123pt too wide) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 we draw isotherms, but do not ex-plic-itly vi-su-al-ize vis-cos-ity or strain rate. To match our 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4] [5] [6] [7 <./figs/Fig1.png>] [8 <./figs/Fig2.png>]
+
+LaTeX Warning: Citation `Connolly2005' undefined on input line 207.
+
+
+LaTeX Warning: Citation `Schmidt1998' undefined on input line 207.
+
+
+Overfull \hbox (4.84897pt too wide) in paragraph at lines 207--208
+[]\OT1/cmr/m/n/10 Our use of La-grangian mark-ers to store pres-sure, tem-per-a-ture, and rhe-ol-ogy cor- 
+ []
+
+
+Overfull \hbox (2.29341pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 re-spond-ing with rock-specific flow laws al-lows for changes to ma-te-rial prop-er-ties (e.g., 
+ []
+
+
+Overfull \hbox (5.599pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 vis-cos-ity, den-sity, etc.) that can re-sult from meta-mor-phic re-ac-tions. In our mod-els, we 
+ []
+
+
+Overfull \hbox (12.6269pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 fo-cused on de-hy-dra-tion re-ac-tions in the slab and the for-ma-tion and break-down of antig- 
+ []
+
+
+Overfull \hbox (19.96016pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 orite in the man-tle wedge. For com-pu-ta-tional ef-fi-ciency our mod-els did not solve for ther- 
+ []
+
+
+Overfull \hbox (5.82127pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 mo-dy-nam-i-cally sta-ble min-eral as-sem-blages to com-pute wa-ter con-tents for the slab and 
+ []
+
+
+Overfull \hbox (16.2101pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 man-tle wedge []e.g., ?, ?). In-stead, for the slab, we im-ple-mented a sim-ple model for grad- 
+ []
+
+
+Overfull \hbox (21.98804pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 ual de-hy-dra-tion (eclog-i-ti-za-tion) of the crust com-puted as a lin-ear func-tion of depth (litho- 
+ []
+
+
+Overfull \hbox (6.73326pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 static pres-sure) with a max-i-mum depth (150 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 ) where the slab was com-pletely de-hy- 
+ []
+
+
+Overfull \hbox (2.93236pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 drated. This ap-proach ef-fec-tively sim-u-lates a con-tin-u-ous in-flux of wa-ter to the man-tle 
+ []
+
+
+Overfull \hbox (5.62679pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 wedge, be-gin-ning with com-paction and re-lease of con-nate wa-ter at shal-low depths, fol- 
+ []
+
+
+Overfull \hbox (5.62674pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 lowed by a se-quence of re-ac-tions con-sum-ing ma-jor hy-drous phases (chlo-rite, law-sonite, 
+ []
+
+
+Overfull \hbox (25.96025pt too wide) in paragraph at lines 207--208
+\OT1/cmr/m/n/10 zoisite, chlo-ri-toid, talc, am-phi-bole, and phen-gite) in dif-fer-ent parts of the hy-drated basaltic 
+ []
+
+
+LaTeX Warning: Citation `Hyndman2003' undefined on input line 209.
+
+
+Overfull \hbox (14.57121pt too wide) in paragraph at lines 209--210
+[]\OT1/cmr/m/n/10 For the man-tle wedge, hy-dra-tion of strong peri-dotite to form weak brucite and ser- 
+ []
+
+
+Overfull \hbox (16.26573pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 pen-tine along the sub-duc-tion in-ter-face is likely re-spon-si-ble for me-chan-i-cal de-cou-pling be- 
+ []
+
+
+Overfull \hbox (16.21005pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 tween the slab and the man-tle wedge at shal-low lev-els []?, ?, ?). If so, not-ing that brucite 
+ []
+
+
+Overfull \hbox (3.1267pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 breaks down at much lower tem-per-a-tures than ser-pen-tine []?, ?), the loss of ser-pen-tine 
+ []
+
+
+Overfull \hbox (4.099pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 likely rep-re-sents the key tran-si-tion from a weak wedge (and sub-duc-tion in-ter-face) to a 
+ []
+
+
+Overfull \hbox (5.18233pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 strong wedge. De-hy-dra-tion of ser-pen-tine was mod-elled as an abrupt, dis-con-tin-u-ous re- 
+ []
+
+
+Overfull \hbox (11.29352pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 ac-tion, which is a good ap-prox-i-ma-tion for ex-tremely Mg-rich rocks like peri-dotites. The 
+ []
+
+
+Overfull \hbox (5.16801pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 P-T con-di-tions of the re-ac-tion $\OML/cmm/m/it/10 antigorite \OMS/cmsy/m/n/10 , \OML/cmm/m/it/10 olivine \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 orthopyroxene \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 H[]O$ \OT1/cmr/m/n/10 were based 
+ []
+
+
+Overfull \hbox (1.40465pt too wide) in paragraph at lines 209--210
+\OT1/cmr/m/n/10 on the ex-per-i-men-tally de-ter-mined sta-bil-ity field from []? (?) and im-ple-mented into our 
+ []
+
+
+LaTeX Warning: Citation `Shen2015' undefined on input line 219.
+
+
+Overfull \hbox (9.39404pt too wide) in paragraph at lines 219--220
+[]\OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 z$ \OT1/cmr/m/n/10 is the depth of a marker from the sur-face in me-ters and $\OML/cmm/m/it/10 T$ \OT1/cmr/m/n/10 is tem-per-a-ture 
+ []
+
+
+Overfull \hbox (1.30861pt too wide) in paragraph at lines 219--220
+\OT1/cmr/m/n/10 in Kelvins. This re-ac-tion place-ment is also con-sis-tent to within 25 $[]\OML/cmm/m/it/10 C$ \OT1/cmr/m/n/10 with re-cent ex- 
+ []
+
+
+Overfull \hbox (8.40463pt too wide) in paragraph at lines 219--220
+\OT1/cmr/m/n/10 per-i-ments []?, ?). Un-der as-sump-tions of ther-mo-dy-namic equi-lib-rium, mark-ers whose in- 
+ []
+
+
+Overfull \hbox (4.86365pt too wide) in paragraph at lines 219--220
+\OT1/cmr/m/n/10 ter-nal tem-per-a-ture ex-ceeds $\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 )$ spon-ta-neously formed $\OML/cmm/m/it/10 olivine \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 orthopyroxene \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 H[]O$\OT1/cmr/m/n/10 , 
+ []
+
+
+LaTeX Warning: Citation `Faccenda2009' undefined on input line 221.
+
+
+LaTeX Warning: Citation `Reynard2013' undefined on input line 221.
+
+
+LaTeX Warning: Citation `Carlson2003' undefined on input line 221.
+
+
+LaTeX Warning: Citation `Davies1999' undefined on input line 221.
+
+
+Overfull \hbox (4.01552pt too wide) in paragraph at lines 221--222
+[]\OT1/cmr/m/n/10 The ex-cess wa-ter re-leased by a rock marker was mod-elled as a fluid par-ti-cle that 
+ []
+
+
+Overfull \hbox (13.68234pt too wide) in paragraph at lines 221--222
+\OT1/cmr/m/n/10 mi-grates through rocks with a ve-loc-ity de-fined by pres-sure gra-di-ents []?, ?, see Ap-pendix 
+ []
+
+
+Overfull \hbox (10.4046pt too wide) in paragraph at lines 221--222
+\OT1/cmr/m/n/10 A). The fluid par-ti-cle mi-grates un-til it reaches ma-te-rial that can con-sume an ad-di-tional 
+ []
+
+
+Overfull \hbox (15.32133pt too wide) in paragraph at lines 221--222
+\OT1/cmr/m/n/10 amount of wa-ter by equi-lib-rium hy-dra-tion re-ac-tions (e.g., equa-tion 1[]). The-o-ret-i-cally, the 
+ []
+
+
+Overfull \hbox (4.73785pt too wide) in paragraph at lines 221--222
+\OT1/cmr/m/n/10 man-tle can store large amounts of wa-ter be-cause antig-orite is sta-ble at shal-low man-tle 
+ []
+
+
+Overfull \hbox (10.24954pt too wide) in paragraph at lines 221--222
+\OT1/cmr/m/n/10 con-di-tions and can con-tain up to 13 $\OML/cmm/m/it/10 wt:\OT1/cmr/m/n/10 %$ wa-ter []?, ?). Ther-mo-dy-namic mod-els pre-dict 
+ []
+
+
+Overfull \hbox (21.63824pt too wide) in paragraph at lines 221--222
+\OT1/cmr/m/n/10 8 $\OML/cmm/m/it/10 wt:\OT1/cmr/m/n/10 %$ wa-ter in the man-tle wedge []?, ?). How-ever, seis-mic stud-ies sug-gest that most fore- 
+ []
+
+
+Overfull \hbox (3.2101pt too wide) in paragraph at lines 221--222
+\OT1/cmr/m/n/10 arcs are only par-tially ser-pen-tinized ($\OML/cmm/m/it/10 <$ \OT1/cmr/m/n/10 20-40 $%$), equat-ing to wa-ter con-tents of ca. 3- 
+ []
+
+
+Overfull \hbox (6.93735pt too wide) in paragraph at lines 221--222
+\OT1/cmr/m/n/10 6 $\OML/cmm/m/it/10 wt:\OT1/cmr/m/n/10 %$ []?, ?, ?). There-fore we limit man-tle wedge hy-dra-tion to $\OMS/cmsy/m/n/10 ^^T$ \OT1/cmr/m/n/10 2 $\OML/cmm/m/it/10 wt:\OT1/cmr/m/n/10 % []\OML/cmm/m/it/10 H[]O$ \OT1/cmr/m/n/10 and as- 
+ []
+
+[9]
+Overfull \hbox (5.68224pt too wide) in paragraph at lines 224--225
+[]\OT1/cmr/m/n/10 We cal-cu-lated ver-ti-cal heat flux based on the tem-per-a-ture dif-fer-ence be-tween the 
+ []
+
+
+Overfull \hbox (19.95549pt too wide) in paragraph at lines 224--225
+\OT1/cmr/m/n/10 2 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 deep node and the next lower node, their sep-a-ra-tion dis-tance, and the av-er-age ther- 
+ []
+
+
+Overfull \hbox (6.70555pt too wide) in paragraph at lines 224--225
+\OT1/cmr/m/n/10 mal con-duc-tiv-ity be-tween them. We cal-cu-lated heat flux at 2 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 depth rather than at 
+ []
+
+
+Overfull \hbox (12.09314pt too wide) in paragraph at lines 227--228
+[]\OT1/cmr/m/n/10 For each run (e.g., Fig. 2.5[]) we made cal-cu-la-tions at $\OMS/cmsy/m/n/10 ^^X$\OT1/cmr/m/n/10 10 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 for sur-face heat flow 
+ []
+
+
+Overfull \hbox (47.0437pt too wide) in paragraph at lines 227--228
+\OT1/cmr/m/n/10 (Fig. 2.5[]a) and vi-su-al-ized rock type (Fig. 2.5[]b, c), tem-per-a-ture (Fig. 2.5[]d), vis-cos-ity (Fig. 2.5[]e), 
+ []
+
+
+Overfull \hbox (15.78763pt too wide) in paragraph at lines 227--228
+\OT1/cmr/m/n/10 strain rate (Fig. 2.5[]f), and an ef-fec-tive P^^Seclet num-ber (de-tailed be-low). We chose 10 $\OML/cmm/m/it/10 Ma$ 
+ []
+
+
+Overfull \hbox (13.31538pt too wide) in paragraph at lines 227--228
+\OT1/cmr/m/n/10 be-cause changes to the over-all dy-nam-ics and ther-mal struc-ture are small af-ter ca. 5 $\OML/cmm/m/it/10 Ma$ 
+ []
+
+
+Overfull \hbox (4.53772pt too wide) in paragraph at lines 227--228
+\OT1/cmr/m/n/10 and the ad-di-tional 5 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 pro-vides suf-fi-cient time for the geo-dy-nam-ics to fully sta-bi-lize 
+ []
+
+<figs/Fig3.png, id=57, 2559.5625pt x 3312.375pt>
+File: figs/Fig3.png Graphic file (type png)
+<use figs/Fig3.png>
+Package pdftex.def Info: figs/Fig3.png  used on input line 230.
+(pdftex.def)             Requested size: 397.48499pt x 514.37314pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+[]\OT1/cmr/m/n/10 Figure  3: |Vi-su-al-iza-tion of model cdf with a 78 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 -thick backarc litho-sphere at $\OMS/cmsy/m/n/10 ^^X$\OT1/cmr/m/n/10 10 $\OML/cmm/m/it/10 Ma$\OT1/cmr/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 Arc po-si-tions are marked by tri-an-gles. (a) Sur-face heat flow cal-cu-lated at a depth of 2
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 be-neath the sur-face(see text for ex-pla-na-tion). (b) Rock type for the en-tire model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 do-main. (c) Rock type in the re-gion from the trench to ap-prox-i-mately 220 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 into the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 backarc. By 10 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 a ser-pen-tine chan-nel has formed, en-train-ing ma-te-rial from the top
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 of the down-going slab and lu-bri-cat-ing the in-ter-face be-tween slab and man-tle. (d) Tem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 per-a-ture dis-tri-bu-tion. (e) Log vis-cos-ity. The vis-cos-ity con-trast be-tween the slab and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 ser-pen-tinized man-tle in the fore-arc ef-fec-tively de-cou-ples the slab and man-tle wedge me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 chan-i-cally, but abruptly di-min-ishes as the prin-ci-pally weak ma-te-rial (antig-orite) is re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 moved by re-ac-tion. (f) Log strain rate. In the shal-low fore-arc, strain is lo-cal-ized in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 weak ser-pen-tine chan-nel. At the antigorite-out re-ac-tion, strain lo-cal-iza-tion jumps to-wards
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 the warm core of the man-tle wedge. Cir-cu-la-tion in the man-tle wedge is re-stricted to be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 neath the stiff litho-sphere. (g) Ef-fec-tive P^^Seclet num-ber. An ef-fec-tive P^^Seclet num-ber is the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 ra-tio of ad-vec-tive:conductive heat trans-port, scaled to the lo-cal ther-mal gra-di-ents (see
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 text for for-mu-la-tion). Cooler col-ors (blues) vs. warmer col-ors (reds) in-di-cate ad-vec-tion up
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 vs. down the ther-mal gra-di-ent, i.e., high val-ues show ad-vec-tion in the same di-rec-tion as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 dif-fu-sion. An ab-so-lute value be-tween 0 and  10 (green) in-di-cates much greater ef-fi-ciency
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 of heat trans-fer via ther-mal dif-fu-sion than via ad-vec-tion, whereas ab-so-lute val-ues greater
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 than  40 (blues and reds) in-di-cate high ef-fi-ciency of heat trans-fer via ad-vec-tion \OT1/cmr/m/it/10 and/or \OT1/cmr/m/n/10 a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\OT1/cmr/m/n/10 small lo-cal ther-mal gra-di-ent. Note the nar-row re-gion of dark red stream-ing to-wards the
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./figs/Fig3.png>]
+Overfull \hbox (10.2677pt too wide) in paragraph at lines 235--236
+[]\OT1/cmr/m/n/10 We de-ter-mined the me-chan-i-cal cou-pling depth ($\OML/cmm/m/it/10 z[]$\OT1/cmr/m/n/10 ) by vi-su-al-iz-ing vis-cos-ity at $\OMS/cmsy/m/n/10 ^^X$\OT1/cmr/m/n/10 10 
+ []
+
+
+Overfull \hbox (3.53752pt too wide) in paragraph at lines 235--236
+\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 and se-lect-ing a node clos-est to the point where the vis-cos-ity con-trast be-tween the 
+ []
+
+
+Overfull \hbox (16.75641pt too wide) in paragraph at lines 235--236
+\OT1/cmr/m/n/10 serpentinized- and non-serpentinized basal man-tle wedge di-min-ishes to $\OML/cmm/m/it/10 <$ \OT1/cmr/m/n/10 10$[]$ $\OML/cmm/m/it/10 Pa \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 s$ \OT1/cmr/m/n/10 (Fig.  
+ []
+
+
+Overfull \hbox (21.09906pt too wide) in paragraph at lines 235--236
+\OT1/cmr/m/n/10 2.5[]e). In this study we as-sume that the me-chan-i-cal cou-pling depth oc-curs in-stan-ta-neously 
+ []
+
+
+Overfull \hbox (8.0712pt too wide) in paragraph at lines 235--236
+\OT1/cmr/m/n/10 and at a sin-gle node. How-ever, me-chan-i-cal cou-pling in re-al-ity must be dis-persed across 
+ []
+
+
+Overfull \hbox (17.96013pt too wide) in paragraph at lines 235--236
+\OT1/cmr/m/n/10 a fi-nite length along the slab-mantle in-ter-face. At the res-o-lu-tion of our mod-els, there was 
+ []
+
+
+Overfull \hbox (17.04091pt too wide) in paragraph at lines 235--236
+\OT1/cmr/m/n/10 a small area (ca. 5x5 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 or 5x5 nodes) where $\OML/cmm/m/it/10 z[]$ \OT1/cmr/m/n/10 could ap-pro-pri-ately be de-ter-mined, giv- 
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+LaTeX Warning: Citation `Patankar2018' undefined on input line 238.
+
+
+Overfull \hbox (3.23778pt too wide) in paragraph at lines 238--239
+[]\OT1/cmr/m/n/10 We cal-cu-lated what we call the ef-fec-tive P^^Seclet num-ber to vi-su-al-ize and eval-u-ate 
+ []
+
+
+Overfull \hbox (8.62685pt too wide) in paragraph at lines 238--239
+\OT1/cmr/m/n/10 po-ten-tial ther-mal feed-backs af-fect-ing the sta-bil-ity of antig-orite in the man-tle wedge. In 
+ []
+
+
+Overfull \hbox (4.09901pt too wide) in paragraph at lines 238--239
+\OT1/cmr/m/n/10 its nor-mal for-mu-la-tion, the P^^Seclet num-ber is a di-men-sion-less num-ber used to vi-su-al-ize 
+ []
+
+
+Overfull \hbox (5.93245pt too wide) in paragraph at lines 238--239
+\OT1/cmr/m/n/10 the rel-a-tive mag-ni-tude of (po-ten-tial) heat trans-fer via ad-vec-tion vs. dif-fu-sion in a con- 
+ []
+
+
+Overfull \hbox (20.96114pt too wide) in paragraph at lines 249--250
+[]\OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 L$ \OT1/cmr/m/n/10 is a char-ac-ter-is-tic length, $\OML/cmm/m/it/10 v$ \OT1/cmr/m/n/10 is the lo-cal ve-loc-ity of the con-tin-uum, $\OML/cmm/m/it/10 $ \OT1/cmr/m/n/10 is ther- 
+ []
+
+
+Overfull \hbox (10.25302pt too wide) in paragraph at lines 249--250
+\OT1/cmr/m/n/10 mal dif-fu-siv-ity (or ther-mal dif-fu-sion co-ef-fi-cient), $\OML/cmm/m/it/10 ^^T$ \OT1/cmr/m/n/10 is ther-mal con-duc-tiv-ity, $\OML/cmm/m/it/10 ^^Z$ \OT1/cmr/m/n/10 is the den- 
+ []
+
+
+Overfull \hbox (7.4045pt too wide) in paragraph at lines 251--252
+[]\OT1/cmr/m/n/10 It is im-por-tant to rec-og-nize that equa-tion 2[] makes no ex-plicit ref-er-ence to the di- 
+ []
+
+
+Overfull \hbox (19.87688pt too wide) in paragraph at lines 251--252
+\OT1/cmr/m/n/10 rec-tion of heat trans-port. In par-tic-u-lar, while heat al-ways con-ducts down the (max-i-mum) 
+ []
+
+
+Overfull \hbox (14.37688pt too wide) in paragraph at lines 251--252
+\OT1/cmr/m/n/10 tem-per-a-ture gra-di-ent, i.e., per-pen-dic-u-lar to isotherms and from high tem-per-a-ture to low 
+ []
+
+
+Overfull \hbox (10.90463pt too wide) in paragraph at lines 251--252
+\OT1/cmr/m/n/10 tem-per-a-ture, ad-vec-tion may oc-cur in any di-rec-tion. Thus, de-pend-ing on flow paths, ad- 
+ []
+
+
+Overfull \hbox (4.2102pt too wide) in paragraph at lines 251--252
+\OT1/cmr/m/n/10 vec-tion could (a) aug-ment lo-cal heat trans-port (a com-po-nent of flow is par-al-lel to and 
+ []
+
+
+Overfull \hbox (10.48798pt too wide) in paragraph at lines 251--252
+\OT1/cmr/m/n/10 in the same di-rec-tion as dif-fu-sion), (b) re-tard lo-cal heat trans-port (a com-po-nent of flow 
+ []
+
+
+Overfull \hbox (17.09904pt too wide) in paragraph at lines 251--252
+\OT1/cmr/m/n/10 is par-al-lel to but in the op-po-site di-rec-tion as dif-fu-sion) or (c) have no ef-fect on lo-cal heat 
+ []
+
+[12]
+Overfull \hbox (2.84901pt too wide) in paragraph at lines 253--254
+[]\OT1/cmr/m/n/10 In re-gions of com-plex flow dy-nam-ics and ther-mal struc-ture, the stan-dard for-mu- 
+ []
+
+
+Overfull \hbox (10.90462pt too wide) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 la-tion of the P^^Seclet num-ber can lead to im-plau-si-ble in-ter-pre-ta-tions. For ex-am-ple, be-low 
+ []
+
+
+Overfull \hbox (8.7379pt too wide) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 the cou-pling depth, the base of the man-tle wedge cools and new litho-sphere forms atop 
+ []
+
+
+Overfull \hbox (6.32123pt too wide) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 P^^Seclet num-ber, as cal-cu-lated by equa-tion 2[], be-cause the lo-cal ve-loc-ity is very high and 
+ []
+
+
+Overfull \hbox (15.5435pt too wide) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 the ther-mal dif-fu-sion co-ef-fi-cient is only mod-er-ate. This form of the P^^Seclet num-ber would 
+ []
+
+
+Overfull \hbox (43.09912pt too wide) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 im-ply that ther-mal ad-vec-tion dom-i-nates heat trans-port. How-ever, the closely spaced isotherms 
+ []
+
+
+Overfull \hbox (26.62694pt too wide) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 (large tem-per-a-ture gra-di-ents) within the same re-gion im-ply that ther-mal dif-fu-sion is highly 
+ []
+
+
+Overfull \hbox (22.87688pt too wide) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 ef-fec-tive at trans-port-ing heat (Fig. 2.5[]g), while flow paths are nearly par-al-lel to isotherms, 
+ []
+
+
+Overfull \hbox (16.32129pt too wide) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 im-ply-ing that ad-vec-tion is in-ef-fec-tive. In terms of the ef-fec-tive-ness of heat trans-port, dif- 
+ []
+
+
+Overfull \hbox (3.15462pt too wide) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 fu-sion strongly out-weighs ad-vec-tion, so in-tu-itively the P^^Seclet num-ber should be small, 
+ []
+
+
+Overfull \hbox (9.01547pt too wide) in paragraph at lines 255--256
+[]\OT1/cmr/m/n/10 To bet-ter char-ac-ter-ize heat trans-fer, we scale the P^^Seclet num-ber to the lo-cal ther- 
+ []
+
+
+Overfull \hbox (6.47556pt too wide) in paragraph at lines 262--263
+[]\OT1/cmr/m/n/10 where $\OMS/cmsy/m/n/10 r\OML/cmm/m/it/10 T[]$ \OT1/cmr/m/n/10 is the lo-cal ther-mal gra-di-ent \OT1/cmr/m/it/10 in the di-rec-tion of the lo-cal ve-loc-ity field\OT1/cmr/m/n/10 , 
+ []
+
+
+Overfull \hbox (12.43903pt too wide) in paragraph at lines 262--263
+\OT1/cmr/m/n/10 and $\OMS/cmsy/m/n/10 r\OML/cmm/m/it/10 T[]$ \OT1/cmr/m/n/10 is the max-i-mum lo-cal ther-mal gra-di-ent that de-fines the ef-fec-tive-ness of heat 
+ []
+
+
+Overfull \hbox (9.62675pt too wide) in paragraph at lines 262--263
+\OT1/cmr/m/n/10 dif-fu-sion. This for-mu-la-tion gives a bet-ter sense of heat trans-fer in a sys-tem where ther- 
+ []
+
+
+Overfull \hbox (0.90465pt too wide) in paragraph at lines 262--263
+\OT1/cmr/m/n/10 mal gra-di-ents and ve-loc-ity fields are highly non-uniform and have high con-trasts. For 
+ []
+
+
+Overfull \hbox (3.51552pt too wide) in paragraph at lines 262--263
+\OT1/cmr/m/n/10 the char-ac-ter-is-tic length scale, $\OML/cmm/m/it/10 L$\OT1/cmr/m/n/10 , we use the slab ther-mal pa-ram-e-ter, which scales the 
+ []
+
+
+Overfull \hbox (5.12675pt too wide) in paragraph at lines 262--263
+\OT1/cmr/m/n/10 ex-pres-sion to the con-ver-gence ve-loc-ity of the slab and the slab age, con-ve-niently yield- 
+ []
+
+
+Overfull \hbox (6.46007pt too wide) in paragraph at lines 269--270
+[]\OT1/cmr/m/n/10 Because the tem-per-a-ture gra-di-ent in the di-rec-tion of lo-cal flow can be pos-i-tive or 
+ []
+
+
+Overfull \hbox (6.01564pt too wide) in paragraph at lines 269--270
+\OT1/cmr/m/n/10 neg-a-tive, an ef-fec-tive P^^Seclet num-ber can be pos-i-tive or neg-a-tive, where neg-a-tive val-ues 
+ []
+
+
+Overfull \hbox (15.23788pt too wide) in paragraph at lines 273--274
+[]\OT1/cmr/m/n/10 Across all 64 nu-mer-i-cal mod-els (Fig. 4[]; Ta-ble 3[]) cou-pling depth cor-re-lates strongly, 
+ []
+
+
+Overfull \hbox (15.11067pt too wide) in paragraph at lines 273--274
+\OT1/cmr/m/n/10 but not lin-early, with in-creas-ing backarc litho-spheric thick-ness ($\OML/cmm/m/it/10 z[]$\OT1/cmr/m/n/10 ; Fig. 5[]a). This cor- 
+ []
+
+
+Overfull \hbox (6.96013pt too wide) in paragraph at lines 273--274
+\OT1/cmr/m/n/10 re-la-tion is a key re-sult of our ex-per-i-ments. Slab ther-mal pa-ram-e-ter alone does not cor- 
+ []
+
+
+Overfull \hbox (18.48798pt too wide) in paragraph at lines 273--274
+\OT1/cmr/m/n/10 re-late ob-vi-ously with cou-pling depth (Fig. 5[]b). We de-ter-mined the best fit model by con- 
+ []
+
+
+Overfull \hbox (8.68234pt too wide) in paragraph at lines 273--274
+\OT1/cmr/m/n/10 sid-er-ing stan-dard least squares re-gres-sions that in-clude all pos-si-ble per-mu-ta-tions of the 
+ []
+
+
+Overfull \hbox (18.54575pt too wide) in paragraph at lines 280--281
+[]\OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 z$ \OT1/cmr/m/n/10 and $^^H$ are in $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 . Equa-tion 5[] per-mits the pre-dic-tion of the me-chan-i-cal cou- 
+ []
+
+
+Overfull \hbox (11.15457pt too wide) in paragraph at lines 280--281
+\OT1/cmr/m/n/10 pling depths in mod-ern sub-duc-tion zones where backarc litho-spheric thick-ness (in-verted 
+ []
+
+
+Overfull \hbox (12.65456pt too wide) in paragraph at lines 280--281
+\OT1/cmr/m/n/10 from backarc heat flow) and slab ther-mal pa-ram-e-ter can be es-ti-mated. A web-based ap- 
+ []
+
+<figs/Fig4.png, id=69, 3312.375pt x 2409.0pt>
+File: figs/Fig4.png Graphic file (type png)
+<use figs/Fig4.png>
+Package pdftex.def Info: figs/Fig4.png  used on input line 284.
+(pdftex.def)             Requested size: 397.48499pt x 289.06754pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+[]\OT1/cmr/m/n/10 Figure  4: |Vi-su-al-ized ta-ble of cou-pling depth as de-ter-mined across a range of litho-spheric
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+\OT1/cmr/m/n/10 thick-nesses and ther-mal pa-ram-e-ters. Note that the ther-mal pa-ram-e-ter axis is not lin-ear.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+\OT1/cmr/m/n/10 Cor-re-spond-ing ex-per-i-ment is listed along the top of the ar-ray. Cou-pling depth in-creases
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+\OT1/cmr/m/n/10 sys-tem-at-i-cally with in-creas-ing backarc litho-spheric thick-ness (change in grayscale down
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+\OT1/cmr/m/n/10 columns) for all mod-els. Any trend in cou-pling depth with re-spect to slab ther-mal pa-ram-
+ []
+
+[13] [14 <./figs/Fig4.png>] [15]
+<figs/Fig5.png, id=81, 3312.375pt x 2559.5625pt>
+File: figs/Fig5.png Graphic file (type png)
+<use figs/Fig5.png>
+Package pdftex.def Info: figs/Fig5.png  used on input line 388.
+(pdftex.def)             Requested size: 397.48499pt x 307.13425pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
+[]\OT1/cmr/m/n/10 Figure  5: |Sin-gle pa-ram-e-ter re-gres-sions. (a) Cou-pling depth vs. ther-mal pa-ram-e-ter. No
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
+\OT1/cmr/m/n/10 sig-nif-i-cant cor-re-la-tion oc-curs be-tween cou-pling depth and the slab ther-mal pa-ram-e-ter (the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
+\OT1/cmr/m/n/10 slope is not sig-nif-i-cantly dif-fer-ent than zero). The ther-mal state of the slab has lit-tle ef-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
+\OT1/cmr/m/n/10 fect on cou-pling depth and can-not be used as a stan-dalone pre-dic-tor. (b) Cou-pling depth
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
+\OT1/cmr/m/n/10 vs. litho-spheric thick-ness. Cou-pling depth in-creases non-lin-early with in-creas-ing backarc
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
+\OT1/cmr/m/n/10 litho-spheric thick-ness and is best fit by a cu-bic curve. The cor-re-la-tion is highly sig-nif-i-cant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
+\OT1/cmr/m/n/10 (see Ta-bles S1 and S2) and ex-plains more than 80% of the vari-ance in cou-pling depth.
+ []
+
+
+Overfull \hbox (3.62679pt too wide) in paragraph at lines 393--394
+[]\OT1/cmr/m/n/10 In a plot of litho-spheric thick-ness vs. slab ther-mal pa-ram-e-ter (Fig. 6[]a), con-tours 
+ []
+
+
+Overfull \hbox (14.71019pt too wide) in paragraph at lines 393--394
+\OT1/cmr/m/n/10 of cou-pling depth are shal-lowly sloped, in-di-cat-ing that litho-spheric thick-ness is more im- 
+ []
+
+
+Overfull \hbox (6.48796pt too wide) in paragraph at lines 393--394
+\OT1/cmr/m/n/10 por-tant than slab ther-mal pa-ram-e-ter in pre-dict-ing cou-pling depth. The mis-fit be-tween 
+ []
+
+
+Overfull \hbox (17.40468pt too wide) in paragraph at lines 393--394
+\OT1/cmr/m/n/10 equa-tion 5[] and model es-ti-mates is nor-mally dis-tributed, in-di-cat-ing an un-cer-tainty in pre- 
+ []
+
+
+Overfull \hbox (13.33406pt too wide) in paragraph at lines 393--394
+\OT1/cmr/m/n/10 dicted cou-pling depth of 0 $\OMS/cmsy/m/n/10 ^^F$ \OT1/cmr/m/n/10 11 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 (2$\OML/cmm/m/it/10 ^^[$\OT1/cmr/m/n/10 ; Fig. 6[]c). Pre-dicted cou-pling depth for 17 mod- 
+ []
+
+
+Overfull \hbox (23.82124pt too wide) in paragraph at lines 393--394
+\OT1/cmr/m/n/10 ern sub-duc-tion seg-ments where backarc heat flow data are ad-e-quate for in-vert-ing for litho- 
+ []
+
+
+Overfull \hbox (10.59895pt too wide) in paragraph at lines 393--394
+\OT1/cmr/m/n/10 spheric thick-ness []Fig. 6[]b; Ta-ble 4[]; data from ?, ?) show a wide range of pre-dicted cou- 
+ []
+
+
+Overfull \hbox (1.51578pt too wide) in paragraph at lines 393--394
+\OT1/cmr/m/n/10 pling depths, sim-i-lar to our model sim-u-la-tions. Pre-dicted cou-pling depths for mod-ern 
+ []
+
+
+Overfull \hbox (4.98341pt too wide) in paragraph at lines 393--394
+\OT1/cmr/m/n/10 sub-duc-tion zones are dis-tributed nor-mally, with a mean of $\OMS/cmsy/m/n/10 ^^X$\OT1/cmr/m/n/10 82 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 and vari-a-tion of $\OMS/cmsy/m/n/10 ^^F$ 
+ []
+
+
+Overfull \hbox (14.88477pt too wide) in paragraph at lines 441--441
+ []|\OT1/cmr/m/n/10 References$[]$|
+ []
+
+
+Overfull \hbox (1.11168pt too wide) in paragraph at lines 441--441
+ []|$\OML/cmm/m/it/10 mW=m[]$|
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 441--441
+[][][][][][] 
+ []
+
+
+LaTeX Warning: Citation `Currie2006' undefined on input line 446.
+
+
+Overfull \hbox (24.0pt too wide) in paragraph at lines 396--449
+[]  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16] [17 <./figs/Fig5.png>]
+<figs/Fig6.png, id=88, 3312.375pt x 2559.5625pt>
+File: figs/Fig6.png Graphic file (type png)
+<use figs/Fig6.png>
+Package pdftex.def Info: figs/Fig6.png  used on input line 452.
+(pdftex.def)             Requested size: 397.48499pt x 307.13425pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+[]\OT1/cmr/m/n/10 Figure  6: |Mul-ti-vari-ate re-gres-sion and eval-u-a-tion of pre-dicted cou-pling depths for mod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 els and for present-day arc seg-ments. (a) Con-tour plot shows pre-dicted cou-pling depths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 (con-tours) as a func-tion of slab ther-mal pa-ram-e-ter and litho-spheric thick-ness us-ing our
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 equa-tion 5[]. Each data point rep-re-sents one nu-mer-i-cal model. The size and shades of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 the data points cor-re-spond to their mea-sured cou-pling depth. In-clud-ing ther-mal pa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 ram-e-ter im-proves qual-ity of fit (see Ta-ble A2[]) al-though cou-pling depth de-pends much
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 more strongly on litho-spheric thick-ness than ther-mal pa-ram-e-ter. (b) Plot-ting po-si-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 of 17 mod-ern sub-duc-tion zone seg-ments based on data from []?, ?). Sub-duc-tion sys-tems
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 with sim-i-lar ther-mal pa-ram-e-ters can have quite dif-fer-ent pre-dicted cou-pling depths (e.g.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 Alaska vs. N. Suma-tra), while sub-duc-tion sys-tems with quite dif-fer-ent ther-mal pa-ram-e-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 ters can have quite sim-i-lar pre-dicted cou-pling depths (e.g., Kam-chatka vs. N. Cas-ca-dia)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 (c) The dif-fer-ence be-tween mea-sured vs. pre-dicted cou-pling depths for all 64 nu-mer-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 mod-els, in-di-cat-ing a pre-ci-sion of 0 $\OMS/cmsy/m/n/10 ^^F$ \OT1/cmr/m/n/10 11 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 . (d) Dis-tri-bu-tion of pre-dicted cou-pling depths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 for the 17 mod-ern sub-duc-tion zones shown in (b). The light dashed line is the prob-a-bil-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 den-sity of the data if Nankai and Mex-ico are con-sid-ered out-liers and ex-cluded. Con-sid-er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 ing out-liers does not sig-nif-i-cantly change the mean or me-dian. These 17 seg-ments span a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\OT1/cmr/m/n/10 large range of ther-mal pa-ram-e-ters but are pre-dicted to have cou-pling depths of 82 $\OMS/cmsy/m/n/10 ^^F$ \OT1/cmr/m/n/10 14
+ []
+
+
+Overfull \hbox (11.09895pt too wide) in paragraph at lines 458--459
+[]\OT1/cmr/m/n/10 Calculated sur-face heat flow for nu-mer-i-cal mod-els with low to mod-er-ate slab ther- 
+ []
+
+
+Overfull \hbox (11.93239pt too wide) in paragraph at lines 458--459
+\OT1/cmr/m/n/10 mal pa-ram-e-ters (solid and short-dashed lines; Fig. 7[]) con-verge on uni-form val-ues of sur- 
+ []
+
+
+Overfull \hbox (41.23793pt too wide) in paragraph at lines 458--459
+\OT1/cmr/m/n/10 face heat flow in the backarc re-gion. How-ever, all nu-mer-i-cal mod-els show some high-amplitude 
+ []
+
+
+Overfull \hbox (4.01572pt too wide) in paragraph at lines 458--459
+\OT1/cmr/m/n/10 and high-frequency pos-i-tive de-vi-a-tions in heat flow within the arc and backarc re-gions 
+ []
+
+
+Overfull \hbox (3.51563pt too wide) in paragraph at lines 458--459
+\OT1/cmr/m/n/10 (Fig. 7[]), es-pe-cially for the old-est slabs with the high-est con-ver-gence rates (high-est $^^H$). 
+ []
+
+
+Overfull \hbox (3.68245pt too wide) in paragraph at lines 458--459
+\OT1/cmr/m/n/10 These de-vi-a-tions cor-re-spond to strong ex-ten-sional de-for-ma-tion and heat trans-port via 
+ []
+
+
+Overfull \hbox (14.43242pt too wide) in paragraph at lines 458--459
+\OT1/cmr/m/n/10 litho-spheric thin-ning and melt mi-gra-tion (long-dashed lines, Fig. 7[]). These heat flow ex- 
+ []
+
+
+Overfull \hbox (8.04352pt too wide) in paragraph at lines 458--459
+\OT1/cmr/m/n/10 cur-sions un-der-score the im-por-tance of char-ac-ter-iz-ing ex-ten-sional de-for-ma-tion and lo-cal 
+ []
+
+
+Overfull \hbox (15.18242pt too wide) in paragraph at lines 458--459
+\OT1/cmr/m/n/10 ad-vec-tive heat trans-port by flu-ids be-fore at-tempt-ing to in-vert backarc litho-spheric thick- 
+ []
+
+<figs/Fig7.png, id=89, 3312.375pt x 2559.5625pt>
+File: figs/Fig7.png Graphic file (type png)
+<use figs/Fig7.png>
+Package pdftex.def Info: figs/Fig7.png  used on input line 462.
+(pdftex.def)             Requested size: 397.48499pt x 307.13425pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+[]\OT1/cmr/m/n/10 Figure  7: |Sur-face heat flow cal-cu-la-tions vs. nor-mal-ized dis-tance for mod-els with backarc
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+\OT1/cmr/m/n/10 litho-spheric thick-nesses of (a) 46, (b) 62, (c) 78, and (d) 94 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 . Nor-mal-ized dis-tance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+\OT1/cmr/m/n/10 is the true dis-tance rel-a-tive to the trench di-vided by the dis-tance be-tween the arc and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+\OT1/cmr/m/n/10 trench. Light grey lines show the en-tire range of heat flow val-ues and bold lines em-pha-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+\OT1/cmr/m/n/10 size mod-els with low (cda), in-ter-me-di-ate (cdf), and high (cdp) slab ther-mal pa-ram-e-ters.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+\OT1/cmr/m/n/10 High am-pli-tude fluc-tu-a-tions in heat flow in the arc re-gion (nor-mal-ized dis-tance $\OMS/cmsy/m/n/10 ^^Y$\OT1/cmr/m/n/10 1.0)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+\OT1/cmr/m/n/10 cor-re-spond to ver-ti-cal mi-gra-tion of flu-ids and melts. In the backarc re-gion, these fluc-tu-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+\OT1/cmr/m/n/10 tions cor-re-spond to backarc ex-ten-sion as-so-ci-ated with the old-est and fastest-moving slabs.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+\OT1/cmr/m/n/10 Mod-els with no ex-ten-sion fall within a nar-row range of sur-face heat flow val-ues in the
+ []
+
+
+Overfull \hbox (16.84897pt too wide) in paragraph at lines 467--468
+[]\OT1/cmr/m/n/10 A com-par-i-son of sur-face heat flow across nu-mer-i-cal mod-els with iden-ti-cal slabs, but 
+ []
+
+
+Overfull \hbox (14.95561pt too wide) in paragraph at lines 467--468
+\OT1/cmr/m/n/10 vary-ing backarc litho-spheric thick-ness (model cdf with 46, 62, 78, and 94 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 -thick litho- 
+ []
+
+
+Overfull \hbox (20.96011pt too wide) in paragraph at lines 467--468
+\OT1/cmr/m/n/10 spheres) shows very sim-i-lar val-ues of heat flow in the fore-arc (nor-mal-ized dis-tance $\OMS/cmsy/m/n/10 ^^T$ \OT1/cmr/m/n/10 0.75; 
+ []
+
+
+Overfull \hbox (0.59897pt too wide) in paragraph at lines 467--468
+\OT1/cmr/m/n/10 Fig. 8[]). In con-trast, sur-face heat flow in the near-arc to backarc (nor-mal-ized dis-tance 
+ []
+
+
+Overfull \hbox (35.84909pt too wide) in paragraph at lines 467--468
+\OML/cmm/m/it/10 >$ \OT1/cmr/m/n/10 0.75; Fig. 8[]) dis-perses sys-tem-at-i-cally and re-flects ini-tial steady-state con-ti-nen-tal geotherms 
+ []
+
+<figs/Fig8.png, id=90, 1656.1875pt x 1279.78125pt>
+File: figs/Fig8.png Graphic file (type png)
+<use figs/Fig8.png>
+Package pdftex.def Info: figs/Fig8.png  used on input line 471.
+(pdftex.def)             Requested size: 198.7425pt x 153.56712pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--472
+[]\OT1/cmr/m/n/10 Figure  8: |Sur-face heat flow vs. nor-mal-ized dis-tance for model cdf with backarc litho-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--472
+\OT1/cmr/m/n/10 spheric thick-nesses rang-ing from 46 to 94 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 . The range of sur-face heat flow val-ues in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--472
+\OT1/cmr/m/n/10 fore-arc (nor-mal-ized dis-tance be-tween 0.0 and 1.0) is nar-row and shows lit-tle dis-per-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--472
+\OT1/cmr/m/n/10 un-til near the arc (nor-mal-ized dis-tance be-tween 0.75 and 1.0). Sur-face heat flow broadly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--472
+\OT1/cmr/m/n/10 dis-perses in the backarc (nor-mal-ized dis-tance $\OML/cmm/m/it/10 >$ \OT1/cmr/m/n/10 1.0) and re-flects the ini-tial con-ti-nen-tal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--472
+\OT1/cmr/m/n/10 geotherm (litho-spheric thick-ness). A sim-ple re-la-tion-ship be-tween sur-face heat flow and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--472
+\OT1/cmr/m/n/10 litho-spheric thick-ness may be ob-scured in any re-gion ex-pe-ri-enc-ing an ad-di-tion of heat
+ []
+
+
+Overfull \hbox (20.94626pt too wide) in paragraph at lines 477--477
+[]\OT1/cmr/bx/n/10 Reaction Mech-a-nism and Ther-mal Con-trols on Slab-Mantle Me-chan- 
+ []
+
+
+Overfull \hbox (2.04343pt too wide) in paragraph at lines 478--479
+[]\OT1/cmr/m/n/10 In our nu-mer-i-cal ex-per-i-ments, slab-mantle me-chan-i-cal cou-pling is spa-tially as-so- 
+ []
+
+
+Overfull \hbox (22.57129pt too wide) in paragraph at lines 478--479
+\OT1/cmr/m/n/10 ci-ated with the re-ac-tion of (weak) antig-orite to form (stronger) wet olivine. An antigorite- 
+ []
+
+
+Overfull \hbox (2.79353pt too wide) in paragraph at lines 478--479
+\OT1/cmr/m/n/10 rich ser-pen-tinized sub-duc-tion chan-nel spon-ta-neously forms atop the de-hy-drat-ing slab, 
+ []
+
+
+Overfull \hbox (9.48799pt too wide) in paragraph at lines 478--479
+\OT1/cmr/m/n/10 lo-cal-iz-ing strain, lu-bri-cat-ing the slab-mantle in-ter-face, and me-chan-i-cally de-cou-pling the 
+ []
+
+
+Overfull \hbox (4.7378pt too wide) in paragraph at lines 478--479
+\OT1/cmr/m/n/10 slab and man-tle wedge []e.g., ?, ?, ?). As an-tic-i-pated, it is the vis-cos-ity in-crease re-sult- 
+ []
+
+
+Overfull \hbox (8.54344pt too wide) in paragraph at lines 478--479
+\OT1/cmr/m/n/10 causes slab-mantle me-chan-i-cal cou-pling in our mod-els, where the depth of this re-ac-tion 
+ []
+
+
+Overfull \hbox (0.34906pt too wide) in paragraph at lines 478--479
+\OT1/cmr/m/n/10 is pri-mar-ily con-trolled by a bal-ance of com-pet-ing ther-mal feed-backs act-ing in the up- 
+ []
+
+
+Overfull \hbox (14.26576pt too wide) in paragraph at lines 478--479
+\OT1/cmr/m/n/10 per plate. Cool-ing and hy-dra-tion of the up-per litho-spheric man-tle wedge (antig-orite sta- 
+ []
+
+
+Overfull \hbox (5.07126pt too wide) in paragraph at lines 478--479
+\OT1/cmr/m/n/10 bi-liza-tion) and heat-ing from the lower cir-cu-lat-ing as-theno-spheric man-tle wedge (antig- 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18] [19 <./figs/Fig6.png>] [20 <./figs/Fig7.png>]
+<figs/Fig9.png, id=101, 3312.375pt x 2559.5625pt>
+File: figs/Fig9.png Graphic file (type png)
+<use figs/Fig9.png>
+Package pdftex.def Info: figs/Fig9.png  used on input line 482.
+(pdftex.def)             Requested size: 397.48499pt x 307.13425pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--483
+[]\OT1/cmr/m/n/10 Figure  9: |Vi-su-al-iza-tion of an ef-fec-tive P^^Seclet num-ber and vis-cos-ity near the cou-pling re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--483
+\OT1/cmr/m/n/10 gion at $\OMS/cmsy/m/n/10 ^^X$\OT1/cmr/m/n/10 10 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 for model cdf with litho-spheric thick-ness of 78 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 . (a) Ef-fec-tive P^^Seclet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--483
+\OT1/cmr/m/n/10 num-ber. Ad-vec-tion dom-i-nates trans-port of heat to-wards the cou-pling point (thin dark red
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--483
+\OT1/cmr/m/n/10 re-gion in the as-theno-spheric man-tle wedge), whereas dif-fu-sion con-tributes sig-nif-i-cantly to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--483
+\OT1/cmr/m/n/10 trans-port of heat away from the cou-pling point by the slab (yellow-green re-gion within
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--483
+\OT1/cmr/m/n/10 the slab). (b) Vis-cos-ity. Cou-pling oc-curs at the point where the vis-cos-ity con-trast be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--483
+\OT1/cmr/m/n/10 tween the slab and man-tle ap-proaches zero. The layer of small cyan-green dots of lower
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--483
+\OT1/cmr/m/n/10 vis-cos-ity in the slab re-flect ser-pen-tine al-ter-ation that oc-curred along bend-ing faults near
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--483
+\OT1/cmr/m/n/10 the trench. Ref-er-ence points a-e are used for dis-cussing re-ac-tion mech-a-nisms and ther-mal
+ []
+
+
+Overfull \hbox (2.59885pt too wide) in paragraph at lines 487--488
+[]\OT1/cmr/m/n/10 The en-tire pro-cess can be con-cep-tu-al-ized in terms of an ef-fec-tive P^^Seclet num-ber. 
+ []
+
+
+Overfull \hbox (6.26572pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 Cool-ing of the man-tle wedge oc-curs mainly via dif-fu-sive heat loss to the slab along the 
+ []
+
+
+Overfull \hbox (4.65454pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 en-tire length of the sub-ducted slab-top, as in-di-cated by the bowed isotherms and rel-a- 
+ []
+
+
+Overfull \hbox (24.01569pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 tively low (-20 $\OML/cmm/m/it/10 <$ \OT1/cmr/m/n/10 Pe $\OML/cmm/m/it/10 <$ \OT1/cmr/m/n/10 20) ef-fec-tive P^^Seclet val-ues along the slab-mantle in-ter-face (Fig. 9[]a). 
+ []
+
+
+Overfull \hbox (21.5156pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 At shal-low lev-els, wa-ter re-leased from the slab sta-bi-lizes ser-pen-tine in the over-rid-ing man- 
+ []
+
+
+Overfull \hbox (14.29355pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 tle, ef-fec-tively de-cou-pling the slab me-chan-i-cally from the man-tle (Fig. 9[]b, point a). This 
+ []
+
+
+Overfull \hbox (2.68237pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 me-chan-i-cal de-cou-pling pro-motes antig-orite sta-bi-liza-tion to greater depths be-cause the 
+ []
+
+
+Overfull \hbox (2.62675pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 man-tle wedge stag-nates and con-tin-ues to cool and re-ceive wa-ter from the de-hy-drat-ing 
+ []
+
+
+Overfull \hbox (19.90468pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 slab|a pos-i-tive feed-back for the for-ma-tion of ser-pen-ti-nite. Stag-na-tion is ev-i-dent by near- 
+ []
+
+
+Overfull \hbox (14.46008pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 zero ef-fec-tive P^^Seclet val-ues within the litho-spheric man-tle wedge (Fig. 9[]a). We note that 
+ []
+
+
+Overfull \hbox (12.87685pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 the warm-colored band that tracks the min-i-mum ther-mal gra-di-ent does not in-di-cate un- 
+ []
+
+
+Overfull \hbox (7.96017pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 usu-ally ef-fi-cient ad-vec-tive heat trans-port (the nu-mer-a-tor of equa-tion 4[] is not es-pe-cially 
+ []
+
+
+Overfull \hbox (1.2935pt too wide) in paragraph at lines 487--488
+\OT1/cmr/m/n/10 large), but rather in-ef-fi-cient dif-fu-sive heat trans-port in the con-text of a small ther-mal 
+ []
+
+
+Overfull \hbox (20.32124pt too wide) in paragraph at lines 489--490
+[]\OT1/cmr/m/n/10 At deeper lev-els, be-yond the sta-bil-ity of antig-orite, dif-fu-sive heat loss from the man- 
+ []
+
+
+Overfull \hbox (6.68237pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/n/10 tle to the slab forms a thick-en-ing layer of new litho-sphere atop the slab (Fig. 9[]b, point 
+ []
+
+
+Overfull \hbox (6.7657pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/n/10 b). Down-ward mo-tion of this new litho-sphere (Fig. 9[]b, point b) rel-a-tive to the deep-est 
+ []
+
+
+Overfull \hbox (4.26564pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/n/10 ex-tent of the stiff fore-arc man-tle (Fig. 9[]b, point c) cre-ates a pres-sure gra-di-ent that at- 
+ []
+
+
+Overfull \hbox (18.4046pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/n/10 tracts flow of the weak-est ma-te-ri-als|serpentinite from the up-dip di-rec-tion (Fig. 9[], point 
+ []
+
+
+Overfull \hbox (2.37688pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/n/10 d)|and hot man-tle from be-low (Fig. 9[], point e). Flow of hot man-tle into the neck-ing 
+ []
+
+
+Overfull \hbox (5.59897pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/n/10 re-gion be-tween points b and c is anal-o-gous to pas-sive as-theno-spheric up-welling to-ward 
+ []
+
+
+Overfull \hbox (7.65456pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/n/10 a mid-ocean ridge where two strong cool-ing litho-spheric plates di-verge. Highly ef-fi-cient 
+ []
+
+
+Overfull \hbox (33.2254pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/n/10 heat ad-vec-tion from the warm man-tle wedge core (dark red stream at T $\OML/cmm/m/it/10 >$ \OT1/cmr/m/n/10 1100 $[]\OML/cmm/m/it/10 C$\OT1/cmr/m/n/10 ; Fig. 9[]a) 
+ []
+
+
+Overfull \hbox (13.4324pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/n/10 drives re-ac-tion of ser-pen-ti-nite to form wet olivine|a neg-a-tive feed-back to the for-ma-tion 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./figs/Fig8.png>] [22 <./figs/Fig9.png>]
+Overfull \hbox (5.73788pt too wide) in paragraph at lines 491--492
+[]\OT1/cmr/m/n/10 It is the finely-tuned bal-ance of ser-pen-tine sta-bil-ity|the ad-di-tion of wa-ter into a 
+ []
+
+
+Overfull \hbox (9.87688pt too wide) in paragraph at lines 491--492
+\OT1/cmr/m/n/10 dif-fu-sively cool-ing, shal-low man-tle to pro-duce ser-pen-tine vs. the ad-vec-tion of heat from 
+ []
+
+
+Overfull \hbox (20.77728pt too wide) in paragraph at lines 494--495
+[]\OT1/cmr/m/n/10 How does backarc litho-spheric thick-ness ($\OML/cmm/m/it/10 z[]$\OT1/cmr/m/n/10 ) in-flu-ence cou-pling depth? The litho- 
+ []
+
+
+Overfull \hbox (2.26567pt too wide) in paragraph at lines 494--495
+\OT1/cmr/m/n/10 sphere-asthenosphere bound-ary of the up-per plate de-fines the per-mis-si-ble flow field of 
+ []
+
+
+Overfull \hbox (0.23796pt too wide) in paragraph at lines 494--495
+\OT1/cmr/m/n/10 cir-cu-lat-ing up-per man-tle, lim-it-ing highly ef-fi-cient heat ad-vec-tion to be-low the base of 
+ []
+
+
+Overfull \hbox (11.2102pt too wide) in paragraph at lines 494--495
+\OT1/cmr/m/n/10 the me-chan-i-cal litho-sphere (c.f. Fig. 10[]a-d). Thin up-per plate litho-spheres (Fig. 10[]a, b) 
+ []
+
+
+Overfull \hbox (11.7657pt too wide) in paragraph at lines 494--495
+\OT1/cmr/m/n/10 per-mit shal-lower man-tle wedge cir-cu-la-tion and ad-vec-tion of heat far-ther up the sub-duc- 
+ []
+
+
+Overfull \hbox (10.84895pt too wide) in paragraph at lines 494--495
+\OT1/cmr/m/n/10 tion in-ter-face. This shal-low cir-cu-la-tion raises the depth of the ser-pen-tine break-down re- 
+ []
+
+
+Overfull \hbox (22.76575pt too wide) in paragraph at lines 494--495
+\OT1/cmr/m/n/10 ac-tion and me-chan-i-cal cou-pling. Thick up-per plate litho-spheres (Fig. 10[]c, d) re-strict man- 
+ []
+
+
+Overfull \hbox (20.40456pt too wide) in paragraph at lines 494--495
+\OT1/cmr/m/n/10 tle wedge cir-cu-la-tion and ad-vec-tion of heat to deeper lev-els, shift-ing the ser-pen-tine break- 
+ []
+
+<figs/Fig10.png, id=109, 2559.5625pt x 3312.375pt>
+File: figs/Fig10.png Graphic file (type png)
+<use figs/Fig10.png>
+Package pdftex.def Info: figs/Fig10.png  used on input line 498.
+(pdftex.def)             Requested size: 397.48499pt x 514.37314pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+[]\OT1/cmr/m/n/10 Figure  10: |Vari-a-tion in ef-fec-tive P^^Seclet num-ber for the stan-dard model, cdf, with backarc
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+\OT1/cmr/m/n/10 litho-spheric thick-ness of (a) 46, (b) 62, (c) 78, and (d) 94 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 . All mod-els are vi-su-al-ized at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+\OMS/cmsy/m/n/10 ^^X$\OT1/cmr/m/n/10 10 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 and plot-ted on the same scale and lo-ca-tion within the model do-main. All mod-els
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+\OT1/cmr/m/n/10 dis-play broadly sim-i-lar dis-tri-bu-tions of an ef-fec-tive P^^Seclet num-ber, but the thin dark red
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+\OT1/cmr/m/n/10 streams fo-cus on the sub-duc-tion in-ter-face at dif-fer-ent depths. In each model, the thin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--499
+\OT1/cmr/m/n/10 red stream flow-ing to-wards the cou-pling point is lim-ited to the base of the upper-plate
+ []
+
+
+Overfull \hbox (13.18228pt too wide) in paragraph at lines 503--504
+[]\OT1/cmr/m/n/10 In our mod-els, the ther-mal state of the slab, as rep-re-sented by the ther-mal pa-ram- 
+ []
+
+
+Overfull \hbox (21.1546pt too wide) in paragraph at lines 503--504
+\OT1/cmr/m/n/10 e-ter ($^^H$), has al-most no ef-fect on the me-chan-i-cal cou-pling depth. Pre-vi-ous stud-ies of mod- 
+ []
+
+
+Overfull \hbox (8.90459pt too wide) in paragraph at lines 503--504
+\OT1/cmr/m/n/10 ern sub-duc-tion zones also con-cluded that cou-pling ap-pears to be in-sen-si-tive to slab age 
+ []
+
+
+Overfull \hbox (7.65448pt too wide) in paragraph at lines 503--504
+\OT1/cmr/m/n/10 and con-ver-gence ve-loc-ity []?, ?, ?). The likely rea-son that $^^H$ makes so lit-tle dif-fer-ence is 
+ []
+
+
+Overfull \hbox (7.57123pt too wide) in paragraph at lines 503--504
+\OT1/cmr/m/n/10 be-cause slab dy-nam-ics drive man-tle wedge cir-cu-la-tion and man-tle wedge cool-ing in op- 
+ []
+
+
+Overfull \hbox (15.87675pt too wide) in paragraph at lines 503--504
+\OT1/cmr/m/n/10 po-site di-rec-tions. High-$^^H$ slabs (older slabs with higher ve-loc-i-ties) cool the man-tle wedge 
+ []
+
+
+Overfull \hbox (2.98787pt too wide) in paragraph at lines 503--504
+\OT1/cmr/m/n/10 more ef-fec-tively, but also re-sult in stronger man-tle cir-cu-la-tion and greater heat ad-vec- 
+ []
+
+
+Overfull \hbox (2.34888pt too wide) in paragraph at lines 503--504
+\OT1/cmr/m/n/10 tion. In con-trast, low-$^^H$ slabs (younger slabs with lower ve-loc-i-ties) are less ef-fec-tive in 
+ []
+
+
+Overfull \hbox (10.98785pt too wide) in paragraph at lines 503--504
+\OT1/cmr/m/n/10 cool-ing the man-tle wedge, but also re-sult in weaker man-tle cir-cu-la-tion and less heat ad- 
+ []
+
+
+Overfull \hbox (5.37672pt too wide) in paragraph at lines 503--504
+\OT1/cmr/m/n/10 vec-tion. That is, the shal-low vs. deep im-pacts of $^^H$ tend to can-cel each other, ex-plain- 
+ []
+
+
+LaTeX Warning: Citation `Currie2006' undefined on input line 506.
+
+
+LaTeX Warning: Citation `ReesJones2018' undefined on input line 506.
+
+
+Overfull \hbox (6.57118pt too wide) in paragraph at lines 506--507
+[]\OT1/cmr/m/n/10 Theoretically, cou-pling depth can be pre-dicted di-rectly from fore-arc heat flow us- 
+ []
+
+
+Overfull \hbox (5.34895pt too wide) in paragraph at lines 506--507
+\OT1/cmr/m/n/10 ing for-ward mod-elling tech-niques to fit sur-face heat flow data []e.g., ?, ?). How-ever, we 
+ []
+
+
+Overfull \hbox (8.29347pt too wide) in paragraph at lines 506--507
+\OT1/cmr/m/n/10 cau-tion against us-ing fore-arc heat flow data be-cause a) for-ward mod-els ad-just the me- 
+ []
+
+
+Overfull \hbox (8.43237pt too wide) in paragraph at lines 506--507
+\OT1/cmr/m/n/10 chan-i-cal cou-pling depth in-de-pen-dently from the backarc ther-mal struc-ture, which is in- 
+ []
+
+
+Overfull \hbox (19.849pt too wide) in paragraph at lines 506--507
+\OT1/cmr/m/n/10 con-sis-tent with the in-her-ent link be-tween me-chan-i-cal cou-pling and backarc ther-mal struc- 
+ []
+
+
+Overfull \hbox (0.7934pt too wide) in paragraph at lines 506--507
+\OT1/cmr/m/n/10 ture dis-cussed above (e.g., Figs. 8[], 10[]), b) data are typ-i-cally sparser in the fore-arc re- 
+ []
+
+
+Overfull \hbox (7.37683pt too wide) in paragraph at lines 506--507
+\OT1/cmr/m/n/10 gion com-pared to the backarc re-gion []?, ?), and c) shear heat-ing and crustal plu-ton-ism 
+ []
+
+
+Overfull \hbox (9.8212pt too wide) in paragraph at lines 506--507
+\OT1/cmr/m/n/10 can con-tribute to sur-face heat flow in the fore-arc []?, ?, ?), com-pli-cat-ing any sim-ple cor- 
+ []
+
+
+LaTeX Warning: Citation `Rudnick1998' undefined on input line 508.
+
+
+Overfull \hbox (5.98788pt too wide) in paragraph at lines 508--509
+[]\OT1/cmr/m/n/10 Instead, we rec-om-mend pre-dict-ing me-chan-i-cal cou-pling depth in mod-ern sub-duc- 
+ []
+
+
+Overfull \hbox (0.4045pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 tion zones based on equa-tion 5[] and es-ti-mates of backarc litho-spheric thick-ness (as es- 
+ []
+
+
+Overfull \hbox (9.04352pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 ti-mated from backarc heat flow) and slab ther-mal pa-ram-e-ter. The slab ther-mal pa-ram- 
+ []
+
+
+Overfull \hbox (17.04346pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 e-ter is in-ven-to-ried for most sub-duc-tion zone seg-ments []?, ?), but a cor-re-spond-ing dataset 
+ []
+
+
+Overfull \hbox (1.21014pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 of litho-spheric thick-nesses does not ex-ist. Sev-eral geo-phys-i-cal and petro-logic meth-ods 
+ []
+
+
+Overfull \hbox (13.71008pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 might be con-sid-ered for in-de-pen-dent es-ti-mates of litho-spheric thick-ness (e.g., seis-mic ve- 
+ []
+
+
+Overfull \hbox (14.37675pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 loc-i-ties, flex-ure, heat flow, man-tle xeno-liths, etc.), but we pre-fer to fo-cus on backarc sur- 
+ []
+
+
+Overfull \hbox (3.07114pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 face heat flow be-cause of its di-rect cor-re-spon-dence with ther-mal struc-ture. In this ap- 
+ []
+
+
+Overfull \hbox (0.34908pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 trans-port mod-els as-sum-ing val-ues for ra-dio-genic heat pro-duc-tion in the crust []e.g., ?, 
+ []
+
+
+Overfull \hbox (21.26567pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 ?). That is, one can use com-piled backarc heat flow data to in-vert for backarc litho-spheric 
+ []
+
+
+Overfull \hbox (2.71013pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 thick-ness, cal-cu-late the slab ther-mal pa-ram-e-ter from the prod-uct of slab age and con- 
+ []
+
+
+Overfull \hbox (22.23798pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 ver-gence ve-loc-ity, and ap-ply equa-tion 5[] to es-ti-mate me-chan-i-cal cou-pling depth. Of course, 
+ []
+
+
+Overfull \hbox (0.54346pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 care must be taken to avoid backarcs with strong ex-ten-sional de-for-ma-tion or con-spic- 
+ []
+
+
+Overfull \hbox (31.12685pt too wide) in paragraph at lines 508--509
+\OT1/cmr/m/n/10 u-ous heat-ing from mag-ma-tism be-cause heat flow in these re-gions will un-der-es-ti-mate backarc 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23] [24 <./figs/Fig10.png>]
+Overfull \hbox (26.65463pt too wide) in paragraph at lines 511--512
+[]\OT1/cmr/m/n/10 Mechanical cou-pling depths in sub-duc-tion zones are com-monly as-sumed to fall within 
+ []
+
+
+Overfull \hbox (4.92764pt too wide) in paragraph at lines 511--512
+\OT1/cmr/m/n/10 a nar-row range of 70-80 $\OML/cmm/m/it/10 km$ []\OT1/cmr/m/n/10 ?, ?, ?). We tested the cor-re-la-tion be-tween backarc litho- 
+ []
+
+
+Overfull \hbox (24.48799pt too wide) in paragraph at lines 511--512
+\OT1/cmr/m/n/10 spheric thick-ness and cou-pling depth us-ing the nat-u-ral dataset com-piled by []? (?) (Fig. 6[]b, 
+ []
+
+
+Overfull \hbox (3.12672pt too wide) in paragraph at lines 511--512
+\OT1/cmr/m/n/10 d). Much of their dataset is based on []? (?), who in-fer backarc litho-spheric thick-nesses 
+ []
+
+
+Overfull \hbox (19.27635pt too wide) in paragraph at lines 511--512
+\OT1/cmr/m/n/10 for 10 circum-Pacific sub-duc-tion zones of 50-60 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 (as de-fined by the 1200 $[]\OML/cmm/m/it/10 C$ \OT1/cmr/m/n/10 isotherm). 
+ []
+
+
+Overfull \hbox (9.76576pt too wide) in paragraph at lines 511--512
+\OT1/cmr/m/n/10 Backarc litho-spheres are in-ferred to be rel-a-tively thin from uni-formly high heat flow ($\OML/cmm/m/it/10 >$ 
+ []
+
+
+Overfull \hbox (5.42316pt too wide) in paragraph at lines 511--512
+\OT1/cmr/m/n/10 70 $\OML/cmm/m/it/10 mW=m[]$\OT1/cmr/m/n/10 ), ther-mo-baro-met-ric con-straints on man-tle xeno-liths, and P-wave ve-loc-i-ties 
+ []
+
+
+Overfull \hbox (9.2229pt too wide) in paragraph at lines 511--512
+[]\OT1/cmr/m/n/10 ?, ?). The mean value of 82 $\OMS/cmsy/m/n/10 ^^F$ \OT1/cmr/m/n/10 14 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 (2$\OML/cmm/m/it/10 ^^[$\OT1/cmr/m/n/10 ) for me-chan-i-cal cou-pling depths in our anal- 
+ []
+
+
+Overfull \hbox (7.34904pt too wide) in paragraph at lines 511--512
+\OT1/cmr/m/n/10 y-sis (Fig. 6[]d) roughly matches the pre-ferred depth in-ferred from fore-arc heat flow data 
+ []
+
+
+Overfull \hbox (29.20563pt too wide) in paragraph at lines 511--512
+\OT1/cmr/m/n/10 for Cas-ca-dia and NE Japan []75-80 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 ; ?, ?, ?), but our pre-dicted cou-pling depths (Fig. 6[]d) 
+ []
+
+
+Overfull \hbox (4.71022pt too wide) in paragraph at lines 511--512
+\OT1/cmr/m/n/10 are dis-tributed more broadly. For ex-am-ple, omit-ting Mex-ico and Nankai be-cause their 
+ []
+
+
+Overfull \hbox (7.34914pt too wide) in paragraph at lines 511--512
+\OT1/cmr/m/n/10 ^^H$ val-ues fall out-side our mod-el-ing do-main, pre-dicted cou-pling depths range from $\OMS/cmsy/m/n/10 ^^X$\OT1/cmr/m/n/10 100 
+ []
+
+
+LaTeX Warning: Citation `Penniston2015' undefined on input line 513.
+
+
+Overfull \hbox (4.18228pt too wide) in paragraph at lines 513--514
+[]\OT1/cmr/m/n/10 The petro-logic record may also pro-vide in-sight into the con-sis-tency of a me-chan- 
+ []
+
+
+Overfull \hbox (21.73792pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 i-cal cou-pling depth. As it ap-proaches the me-chan-i-cal cou-pling depth, the ser-pen-tine chan- 
+ []
+
+
+Overfull \hbox (30.37672pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 nel nar-rows and fo-cuses re-turn flow. The demise of the ser-pen-tine chan-nel at greater depths 
+ []
+
+
+Overfull \hbox (1.09898pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 may pro-vide a nat-u-ral bar-rier such that rocks within the ser-pen-tine chan-nel are more 
+ []
+
+
+Overfull \hbox (6.26567pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 likely to be ex-humed than rocks be-low the chan-nel. If so, the abun-dance of blueschists 
+ []
+
+
+Overfull \hbox (0.54343pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 and eclog-ites whose max-i-mum burial depths are less than the pin-chout of the ser-pen- 
+ []
+
+
+Overfull \hbox (4.48792pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 tine chan-nel, i.e., at the me-chan-i-cal cou-pling depth, should be greater than rocks with 
+ []
+
+
+Overfull \hbox (12.5992pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 greater max-i-mum burial depths. A cu-mu-la-tive prob-a-bil-ity dis-tri-bu-tion of data com-piled 
+ []
+
+
+Overfull \hbox (6.9833pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 by []? (?) shows a dis-tinct kink at an in-ferred depth of $\OMS/cmsy/m/n/10 ^^X$\OT1/cmr/m/n/10 80 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 (Fig. A2[]). Rocks whose 
+ []
+
+
+Overfull \hbox (5.73328pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 peak meta-mor-phic pres-sures cor-re-spond with depths $\OMS/cmsy/m/n/10 ^^T$ \OT1/cmr/m/n/10 80 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 are much more likely to 
+ []
+
+
+Overfull \hbox (13.34448pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 be ex-humed than rocks meta-mor-phosed at depths $\OML/cmm/m/it/10 >$ \OT1/cmr/m/n/10 80 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 . In fact, nearly all ex-am-ples 
+ []
+
+
+Overfull \hbox (7.59901pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 of rocks ex-humed from greater depths in the com-pi-la-tion of []? (?) were ex-humed in the 
+ []
+
+
+Overfull \hbox (1.15462pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/10 con-text of col-li-sions. Log-i-cally, the meta-mor-phic record sup-ports a com-mon me-chan-i- 
+ []
+
+
+LaTeX Warning: Citation `Sobolev2005' undefined on input line 515.
+
+
+LaTeX Warning: Citation `Arcay2006' undefined on input line 515.
+
+
+LaTeX Warning: Citation `Gerya2011' undefined on input line 515.
+
+
+LaTeX Warning: Citation `Jull2001' undefined on input line 515.
+
+
+Overfull \hbox (3.23785pt too wide) in paragraph at lines 515--516
+[]\OT1/cmr/m/n/10 Relatively high backarc heat flow (es-pe-cially in circum-Pacific sub-duc-tion zones) 
+ []
+
+
+Overfull \hbox (9.82133pt too wide) in paragraph at lines 515--516
+\OT1/cmr/m/n/10 sug-gests rel-a-tively sta-ble and uni-formly thin backarc litho-spheres in ma-ture sub-duc-tion 
+ []
+
+
+Overfull \hbox (21.15472pt too wide) in paragraph at lines 515--516
+\OT1/cmr/m/n/10 zones glob-ally that may in turn cause a com-mon depth of slab-mantle cou-pling. Al-though 
+ []
+
+
+Overfull \hbox (7.2379pt too wide) in paragraph at lines 515--516
+\OT1/cmr/m/n/10 we do not yet fully un-der-stand why the over-rid-ing plates may have sim-i-lar thick-nesses, 
+ []
+
+
+Overfull \hbox (2.76556pt too wide) in paragraph at lines 515--516
+\OT1/cmr/m/n/10 we can as-sume that this is likely re-lated to some pro-cesses of litho-spheric ero-sion pro- 
+ []
+
+
+Overfull \hbox (6.40456pt too wide) in paragraph at lines 515--516
+\OT1/cmr/m/n/10 posed for sub-arc litho-sphere []e.g., ?, ?, ?, ?). The fol-low-ing mech-a-nisms of litho-spheric 
+ []
+
+
+Overfull \hbox (4.37679pt too wide) in paragraph at lines 515--516
+\OT1/cmr/m/n/10 ero-sion have been pro-posed: litho-spheric de-lam-i-na-tion in-duced by lower crust eclog-i-ti- 
+ []
+
+
+Overfull \hbox (23.099pt too wide) in paragraph at lines 515--516
+\OT1/cmr/m/n/10 za-tion []e.g., ?, ?), small-scale con-vec-tion caused by hydration-induced man-tle wedge weak- 
+ []
+
+
+Overfull \hbox (2.18233pt too wide) in paragraph at lines 515--516
+\OT1/cmr/m/n/10 en-ing []e.g., ?, ?), ther-mal ero-sion []e.g., ?, ?) and me-chan-i-cal weak-en-ing []e.g., ?, ?) by 
+ []
+
+
+Overfull \hbox (21.32132pt too wide) in paragraph at lines 515--516
+\OT1/cmr/m/n/10 per-co-lat-ing melts and sub-arc founder-ing of mag-matic cu-mu-lates []e.g., ?, ?). Most of these 
+ []
+
+
+Overfull \hbox (22.76573pt too wide) in paragraph at lines 515--516
+\OT1/cmr/m/n/10 mech-a-nisms are thus strongly re-lated to man-tle wedge hy-dra-tion, melt-ing, and melt trans- 
+ []
+
+
+Overfull \hbox (13.40451pt too wide) in paragraph at lines 521--522
+[]\OT1/cmr/m/n/10 The antig-orite to olivine de-hy-dra-tion re-ac-tion sta-bi-lizes where bal-ance is achieved 
+ []
+
+
+Overfull \hbox (23.62677pt too wide) in paragraph at lines 521--522
+\OT1/cmr/m/n/10 be-tween com-pet-ing ther-mal feed-backs within the stag-nant man-tle wedge litho-sphere 
+ []
+
+
+Overfull \hbox (3.04343pt too wide) in paragraph at lines 521--522
+\OT1/cmr/m/n/10 (dif-fu-sive heat loss and in-ef-fi-cient heat ad-vec-tion) and cir-cu-lat-ing man-tle wedge 
+ []
+
+
+Overfull \hbox (11.73787pt too wide) in paragraph at lines 521--522
+\OT1/cmr/m/n/10 as-theno-sphere (highly ef-fi-cient and fo-cused heat ad-vec-tion). The depth of this re- 
+ []
+
+
+Overfull \hbox (4.1268pt too wide) in paragraph at lines 521--522
+\OT1/cmr/m/n/10 ac-tion, and thus me-chan-i-cal cou-pling, is pri-mar-ily de-pen-dent on the me-chan-i-cal 
+ []
+
+[25]
+Overfull \hbox (4.46pt too wide) in paragraph at lines 523--524
+[]\OT1/cmr/m/n/10 A sim-ple ex-pres-sion fit-ted to the re-sults of our nu-mer-i-cal mod-els al-lows the me- 
+ []
+
+
+Overfull \hbox (3.3212pt too wide) in paragraph at lines 523--524
+\OT1/cmr/m/n/10 chan-i-cal cou-pling depth to be cal-cu-lated for sub-duc-tion zone seg-ments with ad- 
+ []
+
+
+Overfull \hbox (5.46004pt too wide) in paragraph at lines 523--524
+\OT1/cmr/m/n/10 e-quate sur-face heat flow data in the backarc re-gion. Back-arc litho-spheric thick- 
+ []
+
+
+Overfull \hbox (5.57115pt too wide) in paragraph at lines 523--524
+\OT1/cmr/m/n/10 ness can be in-ferred from sur-face heat flow us-ing a one-dimensional steady-state 
+ []
+
+
+Overfull \hbox (5.29341pt too wide) in paragraph at lines 523--524
+\OT1/cmr/m/n/10 con-duc-tive cool-ing model. To-gether with slab ther-mal pa-ram-e-ter , which is tab- 
+ []
+
+
+Overfull \hbox (9.76567pt too wide) in paragraph at lines 523--524
+\OT1/cmr/m/n/10 u-lated for nearly all sub-duc-tion seg-ments world-wide []?, ?, ?), cou-pling depth can 
+ []
+
+
+Overfull \hbox (2.15448pt too wide) in paragraph at lines 525--526
+[]\OT1/cmr/m/n/10 Consistently high backarc heat flow in circum-Pacific sub-duc-tion zones []?, ?, ?) 
+ []
+
+
+Overfull \hbox (9.01575pt too wide) in paragraph at lines 525--526
+\OT1/cmr/m/n/10 may in-di-cate a com-mon depth of slab-mantle me-chan-i-cal cou-pling glob-ally at ca. 
+ []
+
+
+Overfull \hbox (17.7287pt too wide) in paragraph at lines 525--526
+\OT1/cmr/m/n/10 80 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 . Prior as-sump-tions of slab-mantle me-chan-i-cal cou-pling at 70-80 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 in ther- 
+ []
+
+
+Overfull \hbox (1.07115pt too wide) in paragraph at lines 527--528
+[]\OT1/cmr/m/n/10 As oth-ers have pro-posed []?, ?, ?) sub-duc-tion zones ap-pear to self-organize into 
+ []
+
+
+Overfull \hbox (13.51573pt too wide) in paragraph at lines 527--528
+\OT1/cmr/m/n/10 sta-ble con-fig-u-ra-tions glob-ally with warm (thin) up-per plate litho-spheres and slab- 
+ []
+
+
+Overfull \hbox (6.53882pt too wide) in paragraph at lines 527--528
+\OT1/cmr/m/n/10 mantle me-chan-i-cal cou-pling at depths of ca. 80 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 . Ques-tions re-main, how-ever, 
+ []
+
+
+Overfull \hbox (23.01569pt too wide) in paragraph at lines 527--528
+\OT1/cmr/m/n/10 in-clud-ing: 1) How do warm (thin) backarcs per-sist over 100's of kilo-me-ters through- 
+ []
+
+
+Overfull \hbox (0.65451pt too wide) in paragraph at lines 527--528
+\OT1/cmr/m/n/10 out the lifes-pan of sub-duc-tion zones? 2) How abrupt is the antigorite-out re-ac- 
+ []
+
+
+Overfull \hbox (13.01566pt too wide) in paragraph at lines 527--528
+\OT1/cmr/m/n/10 tion along the sub-duc-tion in-ter-face?, and 3) How can pre-dic-tive mod-els like equa- 
+ []
+
+
+Overfull \hbox (0.32115pt too wide) in paragraph at lines 527--528
+\OT1/cmr/m/n/10 tion 5[] be im-proved us-ing nat-u-ral datasets? We pro-pose these ques-tions as top- 
+ []
+
+
+Overfull \hbox (8.26569pt too wide) in paragraph at lines 534--535
+[]\OT1/cmr/m/n/10 In our mod-els, the sta-bil-ity depth of antig-orite along the slab-mantle in-ter-face in- 
+ []
+
+
+Overfull \hbox (6.96004pt too wide) in paragraph at lines 534--535
+\OT1/cmr/m/n/10 creases with time as the sub-duct-ing slab cools and hy-drates the man-tle wedge. We ob- 
+ []
+
+
+Overfull \hbox (7.0376pt too wide) in paragraph at lines 534--535
+\OT1/cmr/m/n/10 served this pro-cess pro-ceed-ing for the first 5 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 of sub-duc-tion with the antig-orite sta- 
+ []
+
+
+Overfull \hbox (8.78767pt too wide) in paragraph at lines 534--535
+\OT1/cmr/m/n/10 bil-ity depth re-main-ing con-stant for ca. 10 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 af-ter-wards (Fig. A1[]). The change in the 
+ []
+
+
+Overfull \hbox (31.1825pt too wide) in paragraph at lines 534--535
+\OT1/cmr/m/n/10 antig-orite sta-bil-ity depth, and there-fore the slab-mantle me-chan-i-cal cou-pling depth, through 
+ []
+
+
+Overfull \hbox (15.23206pt too wide) in paragraph at lines 534--535
+\OT1/cmr/m/n/10 ca. 10 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 emerges self-consistently in our mod-els and can help ex-plain how sim-i-lar con- 
+ []
+
+
+Overfull \hbox (11.84904pt too wide) in paragraph at lines 534--535
+\OT1/cmr/m/n/10 fig-u-ra-tions, in terms of the depth to the slab be-neath arcs []?, ?) and thin backarc litho- 
+ []
+
+
+Overfull \hbox (10.65445pt too wide) in paragraph at lines 534--535
+\OT1/cmr/m/n/10 spheres []?, ?), oc-cur in sub-duc-tion zones with dif-fer-ent slab ages, con-ver-gence rates, ge- 
+ []
+
+
+Overfull \hbox (21.18248pt too wide) in paragraph at lines 534--535
+\OT1/cmr/m/n/10 ome-tries, and sub-duc-tion du-ra-tions. Our mod-elling re-sults in-di-cate that sub-duc-tion zones 
+ []
+
+
+Overfull \hbox (16.45438pt too wide) in paragraph at lines 534--535
+\OT1/cmr/m/n/10 quickly ($\OML/cmm/m/it/10 <$ \OT1/cmr/m/n/10 5 $\OML/cmm/m/it/10 Ma$\OT1/cmr/m/n/10 ) de-velop and sta-bi-lize quasi-permanent, gen-er-al-ized con-fig-u-ra-tions with 
+ []
+
+
+Overfull \hbox (18.6546pt too wide) in paragraph at lines 534--535
+\OT1/cmr/m/n/10 a slab-mantle me-chan-i-cal cou-pling depth de-pen-dent on the thick-ness of the backarc litho- 
+ []
+
+
+Overfull \hbox (11.30507pt too wide) in paragraph at lines 536--537
+[]\OT1/cmr/m/n/10 Exceptions oc-cur in our mod-els with the thinnest backarc litho-spheres ($\OML/cmm/m/it/10 z[]$ \OT1/cmr/m/n/10 = 46 
+ []
+
+
+Overfull \hbox (12.00536pt too wide) in paragraph at lines 536--537
+\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 ), which ex-hib-ited tran-sient be-hav-ior af-ter ca. 5 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 (Fig. A1[]a). Our mod-els rapidly 
+ []
+
+
+Overfull \hbox (13.00978pt too wide) in paragraph at lines 536--537
+\OT1/cmr/m/n/10 ($\OML/cmm/m/it/10 <$ \OT1/cmr/m/n/10 5 $\OML/cmm/m/it/10 Ma$\OT1/cmr/m/n/10 ) de-velop spread-ing cen-ters in the backarc for these mod-els be-cause of their ex- 
+ []
+
+
+Overfull \hbox (34.37683pt too wide) in paragraph at lines 536--537
+\OT1/cmr/m/n/10 tremely thin (weak) backarc litho-spheres. The prox-im-ity of a spread-ing cen-ter in the backarc 
+ []
+
+
+Overfull \hbox (15.0435pt too wide) in paragraph at lines 536--537
+\OT1/cmr/m/n/10 re-gion could di-vert enough heat from the cir-cu-lat-ing man-tle wedge to sta-bi-lize antig-orite 
+ []
+
+
+Overfull \hbox (8.04343pt too wide) in paragraph at lines 536--537
+\OT1/cmr/m/n/10 to deeper lev-els in the fore-arc than in a sim-i-lar sys-tem that does not de-velop a backarc 
+ []
+
+
+Overfull \hbox (19.18234pt too wide) in paragraph at lines 536--537
+\OT1/cmr/m/n/10 spread-ing cen-ter. This may be tested by ar-ti-fi-cially in-creas-ing the strength of the backarc 
+ []
+
+
+LaTeX Warning: Citation `Gerya2008' undefined on input line 539.
+
+
+Overfull \hbox (12.68233pt too wide) in paragraph at lines 539--540
+[]\OT1/cmr/m/n/10 The form of our pre-ferred quadratic re-gres-sion model shows shal-low-ing of cou-pling 
+ []
+
+
+Overfull \hbox (11.15457pt too wide) in paragraph at lines 539--540
+\OT1/cmr/m/n/10 depths de-cel-er-at-ing with pro-gres-sively thin-ner up-per plate litho-spheres, reach-ing a min- 
+ []
+
+
+Overfull \hbox (10.26112pt too wide) in paragraph at lines 539--540
+\OT1/cmr/m/n/10 i-mum of ca. 60 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 . This im-plies that the antigorite-out re-ac-tion should even-tu-ally sta- 
+ []
+
+
+Overfull \hbox (13.37221pt too wide) in paragraph at lines 539--540
+\OT1/cmr/m/n/10 bi-lize at $\OMS/cmsy/m/n/10 ^^U$ \OT1/cmr/m/n/10 60 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 depth even dur-ing nascent sub-duc-tion and in warm sys-tems with thin 
+ []
+
+
+Overfull \hbox (17.54353pt too wide) in paragraph at lines 539--540
+\OT1/cmr/m/n/10 up-per plate litho-spheres. From a the-o-ret-i-cal point of view, a thin up-per plate litho-sphere 
+ []
+
+
+Overfull \hbox (10.65463pt too wide) in paragraph at lines 539--540
+\OT1/cmr/m/n/10 could al-low high heat trans-port to the shal-low man-tle wedge and hin-der sta-bi-liza-tion of 
+ []
+
+
+Overfull \hbox (5.40462pt too wide) in paragraph at lines 539--540
+\OT1/cmr/m/n/10 antig-orite all to-gether. Olivine plus py-rox-ene would be the sta-ble man-tle min-er-als and 
+ []
+
+
+Overfull \hbox (1.21007pt too wide) in paragraph at lines 539--540
+\OT1/cmr/m/n/10 strong, shal-low cou-pling be-tween plates would be ex-pected []?, ?). How-ever, our mod- 
+ []
+
+
+Overfull \hbox (13.40454pt too wide) in paragraph at lines 539--540
+\OT1/cmr/m/n/10 els show that even the warmest sub-duc-tion sys-tems even-tu-ally sta-bi-lize antig-orite in the 
+ []
+
+
+Overfull \hbox (2.04343pt too wide) in paragraph at lines 539--540
+\OT1/cmr/m/n/10 shal-low man-tle wedge. This is ev-i-dent by the in-creas-ing depth of me-chan-i-cal cou-pling 
+ []
+
+
+Underfull \vbox (badness 2073) has occurred while \output is active []
+
+ [26]
+<figs/FigS1.png, id=126, 3312.375pt x 2559.5625pt>
+File: figs/FigS1.png Graphic file (type png)
+<use figs/FigS1.png>
+Package pdftex.def Info: figs/FigS1.png  used on input line 543.
+(pdftex.def)             Requested size: 397.48499pt x 307.13425pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+[]\OT1/cmr/m/n/10 Figure  A1: |The depth of antig-orite sta-bil-ity at the slab-mantle in-ter-face vs. time for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+\OT1/cmr/m/n/10 mod-els with 46 (a), 62 (b), 78 (c), and 94 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 -thick (d) backarc litho-spheres. Antig-orite
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+\OT1/cmr/m/n/10 sta-bi-liza-tion deep-ens for the first ca. 5 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 of sub-duc-tion and then re-mains roughly con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+\OT1/cmr/m/n/10 stant for ca. 10 $\OML/cmm/m/it/10 Ma$\OT1/cmr/m/n/10 . The ex-cep-tions are mod-els with very thin backarc litho-spheres (a),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+\OT1/cmr/m/n/10 which ex-hibit tran-sient be-hav-ior for at least 15 $\OML/cmm/m/it/10 Ma$\OT1/cmr/m/n/10 . The fi-nal achieved sta-bil-ity depth of
+ []
+
+
+Overfull \hbox (3.12666pt too wide) in paragraph at lines 549--550
+[]\OT1/cmr/m/n/10 The ma-te-rial prop-er-ties used in our ex-per-i-ments are listed in Ta-ble 1[] & Ta-ble 2[]. 
+ []
+
+
+Overfull \hbox (2.76578pt too wide) in paragraph at lines 549--550
+\OT1/cmr/m/n/10 For de-tails about the sed-i-men-ta-tion and ero-sion, melt-ing and ex-trac-tion, and rhe-o-log- 
+ []
+
+
+Overfull \hbox (17.79343pt too wide) in paragraph at lines 549--550
+\OT1/cmr/m/n/10 i-cal mod-els, please re-fer to []? (?). Here we only dis-cuss the hy-dro-dy-namic model, be-cause 
+ []
+
+
+Overfull \hbox (2.90453pt too wide) in paragraph at lines 551--552
+[]\OT1/cmr/m/n/10 The hy-dro-dy-nam-ics in our mod-els are es-pe-cially rel-e-vant to our re-sults and con- 
+ []
+
+
+Overfull \hbox (19.5713pt too wide) in paragraph at lines 551--552
+\OT1/cmr/m/n/10 clu-sions since it con-trols the tim-ing and mag-ni-tude of man-tle wedge hy-dra-tion. The main 
+ []
+
+
+Overfull \hbox (17.93227pt too wide) in paragraph at lines 551--552
+\OT1/cmr/m/n/10 sources of wa-ter de-liv-ered to the man-tle are al-tered basaltic crust and seafloor sed-i-ments, 
+ []
+
+
+Overfull \hbox (3.00912pt too wide) in paragraph at lines 551--552
+\OT1/cmr/m/n/10 which we as-sumed con-tain up to 5 $\OML/cmm/m/it/10 wt:\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 H[]O$\OT1/cmr/m/n/10 . We as-sumed a grad-ual ex-pul-sion of wa- 
+ []
+
+
+Overfull \hbox (18.07132pt too wide) in paragraph at lines 551--552
+\OT1/cmr/m/n/10 ter from pore space and through quasi-continuous de-hy-dra-tion re-ac-tions oc-cur-ring within 
+ []
+
+
+Underfull \vbox (badness 3323) has occurred while \output is active []
+
+ [27 <./figs/FigS1.png>]
+Overfull \hbox (7.78838pt too wide) in paragraph at lines 558--559
+[]\OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 ^^_[]$\OT1/cmr/m/n/10 =5 $\OML/cmm/m/it/10 wt:\OT1/cmr/m/n/10 %$ and $^^A\OML/cmm/m/it/10 z$ \OT1/cmr/m/n/10 is a marker's depth be-low the to-po-graph-i-cal sur- 
+ []
+
+
+Overfull \hbox (12.01564pt too wide) in paragraph at lines 560--561
+[]\OT1/cmr/m/n/10 If a rock marker de-hy-drates, an in-de-pen-dent wa-ter par-ti-cle is in-stan-ta-neously gen- 
+ []
+
+
+Overfull \hbox (1.05302pt too wide) in paragraph at lines 560--561
+\OT1/cmr/m/n/10 er-ated at the same lo-ca-tion with the re-spec-tive $\OML/cmm/m/it/10 H[]O$ \OT1/cmr/m/n/10 con-tent. The new wa-ter par-ti-cle 
+ []
+
+
+Overfull \hbox (3.07124pt too wide) in paragraph at lines 560--561
+\OT1/cmr/m/n/10 is moved in ac-cor-dance to the lo-cal ve-loc-ity field, de-scribed by the fol-low-ing equa-tion:  
+ []
+
+
+Overfull \hbox (14.22601pt too wide) in paragraph at lines 570--571
+[]\OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 v[]$ \OT1/cmr/m/n/10 is the ve-loc-ity vec-tor of the wa-ter par-ti-cle, $\OML/cmm/m/it/10 v[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 v[]$ \OT1/cmr/m/n/10 are the lo-cal ve- 
+ []
+
+
+Overfull \hbox (11.59506pt too wide) in paragraph at lines 570--571
+\OT1/cmr/m/n/10 loc-ity vec-tors in the man-tle, and $\OML/cmm/m/it/10 v[]$ \OT1/cmr/m/n/10 is a pre-scribed up-ward per-co-la-tion ve-loc- 
+ []
+
+
+Overfull \hbox (3.5609pt too wide) in paragraph at lines 570--571
+\OT1/cmr/m/n/10 ity (10 $\OML/cmm/m/it/10 cm=year$\OT1/cmr/m/n/10 ). We im-plic-itly ne-glect ki-net-ics of re-ac-tions, as ma-te-rial prop-er-ties of 
+ []
+
+
+LaTeX Warning: Citation `Peacock1999b' undefined on input line 573.
+
+
+Overfull \hbox (28.2657pt too wide) in paragraph at lines 573--574
+[]\OT1/cmr/m/n/10 Numerical mod-els em-ploy dif-fer-ent ap-proaches to sim-u-late the me-chan-i-cal decoupling- 
+ []
+
+
+Overfull \hbox (23.15468pt too wide) in paragraph at lines 573--574
+\OT1/cmr/m/n/10 coupling tran-si-tion along the slab-mantle in-ter-face. A sim-ple but highly ef-fec-tive ap-proach 
+ []
+
+
+Overfull \hbox (9.76564pt too wide) in paragraph at lines 573--574
+\OT1/cmr/m/n/10 is to pre-scribe a weak layer ex-tend-ing from the sur-face to some ar-bi-trary depth or tem- 
+ []
+
+
+Overfull \hbox (8.4045pt too wide) in paragraph at lines 573--574
+\OT1/cmr/m/n/10 per-a-ture that in-hibits trans-fer of shear stress across the slab-mantle in-ter-face. This ap- 
+ []
+
+
+Overfull \hbox (20.15465pt too wide) in paragraph at lines 573--574
+\OT1/cmr/m/n/10 proach is anal-o-gous to im-ple-ment-ing a no-slip con-di-tion and ef-fec-tively de-cou-ples the slab 
+ []
+
+
+Overfull \hbox (14.87677pt too wide) in paragraph at lines 573--574
+\OT1/cmr/m/n/10 from the man-tle. Nu-mer-ous mod-els use this method []e.g., ?, ?, ?, ?, ?, , etc.) in part be- 
+ []
+
+
+Overfull \hbox (38.84906pt too wide) in paragraph at lines 573--574
+\OT1/cmr/m/n/10 cause it al-lows mod-els to be fine-tuned to spe-cific sub-duc-tion zone con-fig-u-ra-tions. Serpentine- 
+ []
+
+
+Overfull \hbox (20.40465pt too wide) in paragraph at lines 573--574
+\OT1/cmr/m/n/10 or talc-rich hori-zons are typ-i-cally in-voked to jus-tify me-chan-i-cal de-cou-pling along the shal- 
+ []
+
+
+Overfull \hbox (1.29347pt too wide) in paragraph at lines 575--576
+[]\OT1/cmr/m/n/10 Our ap-proach does not ex-plic-itly de-fine slab-mantle me-chan-i-cal cou-pling, rather 
+ []
+
+
+Overfull \hbox (15.6546pt too wide) in paragraph at lines 575--576
+\OT1/cmr/m/n/10 we use a rhe-o-logic model that ex-plic-itly fol-lows ex-per-i-men-tally de-ter-mined flow laws and 
+ []
+
+
+Overfull \hbox (2.96019pt too wide) in paragraph at lines 575--576
+\OT1/cmr/m/n/10 min-eral sta-bil-ity fields. Con-cep-tu-ally, our ap-proach fol-lows and ex-tends petro-logic ex- 
+ []
+
+
+Overfull \hbox (6.65454pt too wide) in paragraph at lines 575--576
+\OT1/cmr/m/n/10 pla-na-tions for a shal-low weak in-ter-face: at lower tem-per-a-tures, a hy-drated, serpentine- 
+ []
+
+
+Overfull \hbox (11.87674pt too wide) in paragraph at lines 575--576
+\OT1/cmr/m/n/10 rich (or pos-si-bly talc-rich) layer me-chan-i-cally de-cou-ples the man-tle wedge from the sub- 
+ []
+
+
+Overfull \hbox (3.09904pt too wide) in paragraph at lines 575--576
+\OT1/cmr/m/n/10 duct-ing slab []?, ?, ?). If so, as a corol-lary, de-hy-dra-tion of ser-pen-tine (or pos-si-bly talc) 
+ []
+
+
+Overfull \hbox (18.73798pt too wide) in paragraph at lines 575--576
+\OT1/cmr/m/n/10 at high tem-per-a-tures must strengthen the in-ter-face. In that con-text, and not-ing that talc 
+ []
+
+
+Overfull \hbox (3.00075pt too wide) in paragraph at lines 575--576
+\OT1/cmr/m/n/10 is un-sta-ble at P $\OML/cmm/m/it/10 >$ \OT1/cmr/m/n/10 2.0 $\OML/cmm/m/it/10 GPa$ \OT1/cmr/m/n/10 in an ul-tra-mafic rock []?, ?), we as-signed a ser-pen-tine rhe- 
+ []
+
+
+Overfull \hbox (6.349pt too wide) in paragraph at lines 575--576
+\OT1/cmr/m/n/10 ol-ogy for P-T con-di-tions be-low the serpentine-out re-ac-tion, and a wet peri-dotite rhe-ol- 
+ []
+
+
+Overfull \hbox (0.59892pt too wide) in paragraph at lines 577--578
+[]\OT1/cmr/m/n/10 To test the sen-si-tiv-ity of cou-pling on our rhe-o-logic model, we ran di-verse ex-per- 
+ []
+
+
+Overfull \hbox (14.32135pt too wide) in paragraph at lines 577--578
+\OT1/cmr/m/n/10 i-ments that ad-justed the rhe-ol-ogy of antig-orite, the shape and po-si-tion of the antigorite- 
+ []
+
+
+Overfull \hbox (2.12682pt too wide) in paragraph at lines 577--578
+\OT1/cmr/m/n/10 out re-ac-tion, and cer-tain hy-dro-dy-namic pa-ram-e-ters. For brevity, these re-sults are not 
+ []
+
+
+Overfull \hbox (18.12674pt too wide) in paragraph at lines 577--578
+\OT1/cmr/m/n/10 pre-sented here. The ex-per-i-ments in-cluded: 1) Antig-orite = wet olivine flow law, 2) antig- 
+ []
+
+
+Overfull \hbox (3.40459pt too wide) in paragraph at lines 577--578
+\OT1/cmr/m/n/10 orite and wet olivine = dry olivine flow law, 3) isother-mal antig-orite equi-lib-rium re-ac- 
+ []
+
+
+Overfull \hbox (5.03099pt too wide) in paragraph at lines 577--578
+\OT1/cmr/m/n/10 tion (straight, ver-ti-cal re-ac-tion line) at 690 $[]\OML/cmm/m/it/10 C$\OT1/cmr/m/n/10 , 4) equi-lib-rium antig-orite re-ac-tion with 
+ []
+
+
+Overfull \hbox (11.25322pt too wide) in paragraph at lines 577--578
+\OT1/cmr/m/n/10 pos-i-tive non-lin-ear Clapey-ron slope un-til 715 $[]\OML/cmm/m/it/10 C$\OT1/cmr/m/n/10 , where it changes to isother-mal (kinked 
+ []
+
+
+Overfull \hbox (41.04361pt too wide) in paragraph at lines 577--578
+\OT1/cmr/m/n/10 re-ac-tion line), 5) lin-ear equi-lib-rium antig-orite re-ac-tion with pos-i-tive Clapey-ron slope (straight, 
+ []
+
+
+Overfull \hbox (2.7754pt too wide) in paragraph at lines 577--578
+\OT1/cmr/m/n/10 sloped re-ac-tion line), 6) lin-ear re-lease of antigorite-bound $\OML/cmm/m/it/10 H[]O$ \OT1/cmr/m/n/10 with depth (in-stead of 
+ []
+
+
+Overfull \hbox (7.82132pt too wide) in paragraph at lines 577--578
+\OT1/cmr/m/n/10 abrupt re-lease at equi-lib-rium de-hy-dra-tion re-ac-tion), and 7) no fluid-induced weak-en-ing 
+ []
+
+
+Overfull \hbox (13.51556pt too wide) in paragraph at lines 579--580
+[]\OT1/cmr/m/n/10 Only ex-per-i-ments 5 and 7 listed above were in-con-sis-tent with the re-sults pre-sented 
+ []
+
+
+Overfull \hbox (9.04349pt too wide) in paragraph at lines 579--580
+\OT1/cmr/m/n/10 in the present study. Ex-per-i-ment 5 re-sulted in tran-sient cou-pling depths and dis-jointed 
+ []
+
+
+Overfull \hbox (15.7934pt too wide) in paragraph at lines 579--580
+\OT1/cmr/m/n/10 antig-orite sta-bil-ity in the man-tle wedge, whereas ex-per-i-ment 7 re-sulted in two-sided sub- 
+ []
+
+
+Overfull \hbox (16.57126pt too wide) in paragraph at lines 579--580
+\OT1/cmr/m/n/10 duc-tion []e.g., ?, ?). These ex-per-i-ments sug-gest that the cou-pling mech-a-nism in our mod- 
+ []
+
+
+Overfull \hbox (2.23795pt too wide) in paragraph at lines 579--580
+\OT1/cmr/m/n/10 els is mostly con-tin-gent on the avail-abil-ity of fluid flux into the man-tle wedge and the 
+ []
+
+
+Overfull \hbox (7.62683pt too wide) in paragraph at lines 579--580
+\OT1/cmr/m/n/10 shape of the equi-lib-rium antig-orite re-ac-tion, and rel-a-tively in-sen-si-tive to the ex-act flow 
+ []
+
+[28]
+Overfull \hbox (7.23782pt too wide) in paragraph at lines 582--583
+[]\OT1/cmr/m/n/10 Instructions on how to run and use the web-based ap-pli-ca-tion and a com-plete set 
+ []
+
+
+Overfull \hbox (11.29347pt too wide) in paragraph at lines 582--583
+\OT1/cmr/m/n/10 of tools for re-pro-duc-ing all of the re-sults, ta-bles, and fig-ures pre-sented in this study can 
+ []
+
+
+Overfull \hbox (10.74136pt too wide) in paragraph at lines 582--583
+\OT1/cmr/m/n/10 be found at $\OT1/cmtt/m/n/10 https :// github [] .com / buchanankerswell / kerswell [] []et [] []al [] []coupling$\OT1/cmr/m/n/10 . One 
+ []
+
+
+Overfull \hbox (35.06996pt too wide) in paragraph at lines 582--583
+\OT1/cmr/m/n/10 can also use the of-fi-cial data repos-i-tory for this study found at $\OT1/cmtt/m/n/10 https :// doi [] .org / 10 [] .17605 / 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--610
+[]\OT1/cmr/m/n/8 Tukey's post-hoc test for com-par-ing the means of cou-pling depth be-tween groups of mod-els with
+ []
+
+
+Overfull \hbox (24.0pt too wide) in paragraph at lines 584--612
+[]  
+ []
+
+
+Overfull \hbox (1.78665pt too wide) in paragraph at lines 640--640
+[]|\OT1/cmr/m/n/10 Intercept 
+ []
+
+
+Overfull \hbox (3.7034pt too wide) in paragraph at lines 640--640
+\OT1/cmr/m/n/10 (km/100)|  
+ []
+
+
+Overfull \hbox (7.87007pt too wide) in paragraph at lines 640--640
+ []|\OT1/cmr/m/n/10 (0.000302)|
+ []
+
+
+Overfull \hbox (7.87007pt too wide) in paragraph at lines 640--640
+ []|\OT1/cmr/m/n/10 (0.000277)|
+ []
+
+
+Overfull \hbox (24.0pt too wide) in paragraph at lines 613--655
+[]  
+ []
+
+<figs/FigS2.png, id=135, 1656.1875pt x 1279.78125pt>
+File: figs/FigS2.png Graphic file (type png)
+<use figs/FigS2.png>
+Package pdftex.def Info: figs/FigS2.png  used on input line 658.
+(pdftex.def)             Requested size: 198.7425pt x 153.56712pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+[]\OT1/cmr/m/n/10 Figure  A2: |Cu-mu-la-tive prob-a-bil-ity ver-sus peak meta-mor-phic pres-sures for meta-mor-phic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+\OT1/cmr/m/n/10 rocks ex-humed from sub-duc-tion zones. The break in slope at ca. 2.5 $\OML/cmm/m/it/10 GPa$ \OT1/cmr/m/n/10 (ca. 80 $\OML/cmm/m/it/10 km$\OT1/cmr/m/n/10 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+\OT1/cmr/m/n/10 sug-gests that the rel-a-tive prob-a-bil-ity that a rock will ex-hume from pres-sures less than ca.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+\OT1/cmr/m/n/10 2.5 $\OML/cmm/m/it/10 GPa$ \OT1/cmr/m/n/10 is sub-stan-tially greater (steeper slope) than for higher pres-sure rocks (shal-lower
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+\OT1/cmr/m/n/10 slope). Nearly all rocks ex-humed from pres-sures greater than ca. 2.5 $\OML/cmm/m/it/10 GPa$ \OT1/cmr/m/n/10 de-rive from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+\OT1/cmr/m/n/10 con-ti-nen-tal crust and were ex-humed dur-ing col-li-sion. Paucity of data be-low 0.5 $\OML/cmm/m/it/10 GPa$ \OT1/cmr/m/n/10 re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+\OT1/cmr/m/n/10 flects sam-pling bias be-cause these rocks are at best in-cip-i-ently meta-mor-phosed and not
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+<figs/FigS3.png, id=140, 2559.5625pt x 3312.375pt>
+File: figs/FigS3.png Graphic file (type png)
+<use figs/FigS3.png>
+Package pdftex.def Info: figs/FigS3.png  used on input line 665.
+(pdftex.def)             Requested size: 397.48499pt x 514.37314pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--666
+[]\OT1/cmr/m/n/10 Figure  A3: |Vi-su-al-iza-tion of rock type (a), log vis-cos-ity (b), log shear heat-ing (c), ef-fec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--666
+\OT1/cmr/m/n/10 tive P^^Seclet num-ber (d), log stress (e), den-sity (f), and log strain rate (g) for the stan-dard
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--666
+\OT1/cmr/m/n/10 model cdf78 at 1.64 $\OML/cmm/m/it/10 Ma$\OT1/cmr/m/n/10 . Early sub-duc-tion is fa-cil-i-tated by the pre-scribed ini-tial weak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--666
+\OT1/cmr/m/n/10 layer (high pore fluid pres-sure) cut-ting the litho-sphere. The P^^Seclet num-ber in the man-tle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--666
+\OT1/cmr/m/n/10 wedge is less than the P^^Seclet num-ber of the slab. Heat sinks from the up-per man-tle wedge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--666
+\OT1/cmr/m/n/10 to lower in the man-tle through ther-mal dif-fu-sion into the slab and ad-vec-tion of that heat
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <./figs/FigS2.png>]
+<figs/FigS4.png, id=144, 2559.5625pt x 3312.375pt>
+File: figs/FigS4.png Graphic file (type png)
+<use figs/FigS4.png>
+Package pdftex.def Info: figs/FigS4.png  used on input line 672.
+(pdftex.def)             Requested size: 397.48499pt x 514.37314pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--673
+[]\OT1/cmr/m/n/10 Figure  A4: |Vi-su-al-iza-tion of rock type (a), log vis-cos-ity (b), log shear heat-ing (c), ef-fec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--673
+\OT1/cmr/m/n/10 tive P^^Seclet num-ber (d), log stress (e), den-sity (f), and log strain rate (g) for the stan-dard
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--673
+\OT1/cmr/m/n/10 model cdf78 at 5.05 $\OML/cmm/m/it/10 Ma$\OT1/cmr/m/n/10 . By 5 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 bal-anced is achieved be-tween heat sink-ing from the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--673
+\OT1/cmr/m/n/10 up-per man-tle wedge to lower parts of the man-tle by strong ad-vec-tion of heat in the cir-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--673
+\OT1/cmr/m/n/10 cu-lat-ing part of the man-tle wedge. The ra-tio of mantle-slab P^^Seclet num-ber in-creases
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--673
+\OT1/cmr/m/n/10 abruptly at ap-prox. 80-90 $\OML/cmm/m/it/10 km$ \OT1/cmr/m/n/10 depth from the sur-face. A feed-back has al-ready de-vel-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--673
+\OT1/cmr/m/n/10 oped|heat ad-vec-tion desta-bi-liz-ing antig-orite, re-sult-ing in slab-mantle cou-pling, driv-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--673
+\OT1/cmr/m/n/10 man-tle wedge cir-cu-la-tion, ad-vect-ing heat to-wards the cou-pling re-gion quicker than can be
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31 <./figs/FigS3.png>]
+<figs/FigS5.png, id=150, 2559.5625pt x 3312.375pt>
+File: figs/FigS5.png Graphic file (type png)
+<use figs/FigS5.png>
+Package pdftex.def Info: figs/FigS5.png  used on input line 679.
+(pdftex.def)             Requested size: 397.48499pt x 514.37314pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
+[]\OT1/cmr/m/n/10 Figure  A5: |Vi-su-al-iza-tion of rock type (a), log vis-cos-ity (b), log shear heat-ing (c), ef-fec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
+\OT1/cmr/m/n/10 tive P^^Seclet num-ber (d), log stress (e), den-sity (f), and log strain rate (g) for the stan-dard
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
+\OT1/cmr/m/n/10 model cdf78 at 9.93 $\OML/cmm/m/it/10 Ma$\OT1/cmr/m/n/10 . The geo-dy-nam-ics and ther-mal struc-ture re-main ap-prox-i-mately
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
+\OT1/cmr/m/n/10 con-stant from 5 $\OML/cmm/m/it/10 Ma$ \OT1/cmr/m/n/10 (cf. Fig A4[]). The sys-tem re-mains in steady state for as long as
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32 <./figs/FigS4.png>] [33 <./figs/FigS5.png>]
+Missing character: There is no √ in font cmr10!
+Missing character: There is no º in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no º in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no © in font cmr10!
+
+Overfull \hbox (24.3213pt too wide) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 We thank the Geo-phys-i-cal Fluid Dy-nam-ics group at the In-sti-tut fr Geo-physik, ETH Zrich, 
+ []
+
+
+Overfull \hbox (12.07132pt too wide) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 for their com-put-ing re-sources and in-valu-able in-struc-tion, dis-cus-sion, and sup-port on the 
+ []
+
+
+Overfull \hbox (3.73795pt too wide) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 nu-mer-i-cal mod-elling meth-ods. We also thank P. Agard, L. Le Pourhiet, and their stu- 
+ []
+
+
+Overfull \hbox (3.43236pt too wide) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 dents at IS-TeP, Sor-bonne Uni-ver-sit, for sug-ges-tions on the nu-mer-i-cal mod-elling meth- 
+ []
+
+
+Overfull \hbox (12.57127pt too wide) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 ods and dis-cus-sions that greatly en-hanced this study. We thank two anony-mous re-view- 
+ []
+
+
+Overfull \hbox (3.90463pt too wide) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 ers for their help-ful com-ments and sug-ges-tions, which prompted our for-mu-la-tion of an 
+ []
+
+
+Overfull \hbox (9.23787pt too wide) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 ef-fec-tive P^^Seclet num-ber and im-proved the manuscript. This work was sup-ported by the 
+ []
+
+
+Overfull \hbox (12.32141pt too wide) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 Na-tional Sci-ence Foun-da-tion grant OIA1545903 to M. Kohn, S. Penniston-Dorland, and 
+ []
+
+
+Overfull \hbox (0.90456pt too wide) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 M. Feine-man. Datasets and tools for re-pro-duc-ing the re-search in this study are avail- 
+ []
+
+
+Overfull \hbox (8.68034pt too wide) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 able at the of-fi-cial data repos-i-tory ($\OT1/cmtt/m/n/10 https :// doi [] .org / 10 [] .17605 / OSF [] .IO / ZJAC3$ \OT1/cmr/m/n/10 ) or at 
+ []
+
+No file g3_v1.bbl.
+[34] (./g3_v1.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.45pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 9744 strings out of 480608
+ 193920 string characters out of 5903631
+ 506426 words of memory out of 5000000
+ 25503 multiletter control sequences out of 15000+600000
+ 542850 words of font info for 62 fonts, out of 8000000 for 9000
+ 1147 hyphenation exceptions out of 8191
+ 38i,18n,46p,2058b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt9.pfb>
+Output written on g3_v1.pdf (34 pages, 37245718 bytes).
+PDF statistics:
+ 244 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+
