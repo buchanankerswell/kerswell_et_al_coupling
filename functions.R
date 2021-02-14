@@ -385,7 +385,7 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         unique() %>% order()], na.value = 'white') + theme_minimal(base_size = base.size) + theme(legend.position = leg.pos,
         axis.text = element_text(color = "black"))
       if(arrows == TRUE){
-        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = -vz), skip = 5, alpha = 0.3, show.legend = F) +
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = (-vz)), skip = 5, alpha = 0.3, show.legend = F) +
           geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
                        size = 0.15,
                        color = "white",
@@ -406,7 +406,7 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         direction = v.direction, na.value = "transparent") + theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
       if(arrows == TRUE){
-        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = -vz), skip = 5, alpha = 0.3, show.legend = F) +
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = (-vz)), skip = 5, alpha = 0.3, show.legend = F) +
           geom_text_contour(aes(x = x/1000, y = z/1000, z = tk - 273), stroke = 0.2, size = 3, breaks = c(0, seq(100, 1900,200)))
       }
     }
@@ -423,7 +423,7 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         direction = v.direction, na.value = "transparent") + theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
       if(arrows == TRUE){
-        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = -vz), skip = 5, alpha = 0.3, show.legend = F) +
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = (-vz)), skip = 5, alpha = 0.3, show.legend = F) +
           geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
                        size = 0.15,
                        color = "white",
@@ -445,7 +445,7 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         direction = v.direction, na.value = "transparent") + theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
       if(arrows == TRUE){
-        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = -vz), skip = 5, alpha = 0.3, show.legend = F) +
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = (-vz)), skip = 5, alpha = 0.3, show.legend = F) +
           geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
                        size = 0.15,
                        color = "white",
@@ -467,7 +467,7 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         direction = v.direction, na.value = "transparent") + theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
       if(arrows == TRUE){
-        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = -vz), skip = 5, alpha = 0.3, show.legend = F) +
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = (-vz)), skip = 5, alpha = 0.3, show.legend = F) +
           geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
                        size = 0.15,
                        color = "white",
@@ -489,7 +489,7 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         direction = v.direction, na.value = "transparent") + theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
       if(arrows == TRUE){
-        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = -vz), skip = 5, alpha = 0.3, show.legend = F) +
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = (-vz)), skip = 5, alpha = 0.3, show.legend = F) +
           geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
                        size = 0.15,
                        color = "white",
@@ -541,7 +541,7 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         theme(legend.position = leg.pos,
               axis.text = element_text(color = "black"))
       if(arrows == TRUE){
-        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = -vz), skip = 5, alpha = 0.3, show.legend = F) +
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = (-vz)), skip = 5, alpha = 0.3, show.legend = F) +
           geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
                        size = 0.15,
                        color = "white",
@@ -571,7 +571,7 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
             x = x / 1000,
             y = z / 1000,
             dx = vx,
-            dy = -vz,
+            dy = (-vz),
             color = sqrt(..dx.. ^ 2 +
                            ..dy.. ^ 2) * 31540000 * 100,
             alpha = ..step..
@@ -641,7 +641,7 @@ draw_grid <- function(nodes = NULL, rocks = NULL, hf = NULL, time, box = c(up = 
         theme_minimal(base_size = base.size) +
         theme(legend.position = leg.pos, axis.text = element_text(color = "black"))
       if(arrows == TRUE){
-        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = -vz), skip = 5, alpha = 0.3, show.legend = F) +
+        p <- p + geom_arrow(aes(x = x/1000, y = z/1000, dx = vx, dy = (-vz)), skip = 5, alpha = 0.3, show.legend = F) +
           geom_contour(aes(x = x/1000, y = z/1000, z = tk - 273),
                        size = 0.15,
                        color = "white",
