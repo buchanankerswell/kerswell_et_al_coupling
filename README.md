@@ -1,4 +1,4 @@
-# Supplementary material for Kerswell et al. (2020, G3)
+# Supplementary material for Kerswell et al. (2021, G3)
 
 This repository stores supplementary material for the manuscript *Backarc lithospheric thickness and serpentine stability control slab-mantle coupling depths in subduction zones* and includes:
 
@@ -77,22 +77,3 @@ Replacing `\R-x.y.z\` with your version of R.
 ### Tables
 
 Pretty tables can be made if you have a [TeX Live](https://tug.org/texlive/) distribution installed on your machine. Uncomment the lines in the `process.R` script and run `Rscript process.R`. Otherwise, you can just view the tables in the `tables` directory, which are already there if you cloned this repository.
-
-## Web App
-
-There are a two options for running the application for predicting coupling depths:
-
-1. From your command line run:
-
-```
-cd path/to/kerswell_et_al_coupling/coupling_app/
-Rscript app.R
-
-Listening on http://127.0.0.1:6247
-```
-
-Open a web browser and navigate to `http://127.0.0.1:6247`
-
-2. [Run](https://kerswell.shinyapps.io/app/) the version hosted online
-
-*There is a cap of 25hr of app runtime per month for the online version. If you are blocked this may be the case and you can run the app locally. This app is not intended for research purposes, but as a tool for exploring the concepts presented in the paper.*
