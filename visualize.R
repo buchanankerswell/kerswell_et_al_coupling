@@ -137,7 +137,8 @@ p2 <- p2.a + p2.b +
   plot_layout(widths = 1) &
   theme(plot.background = element_rect(fill = 'transparent', color = NA),
         panel.background = element_rect(fill = 'transparent', color = NA),
-        legend.background = element_rect(fill = 'transparent', color = NA))
+        legend.background = element_rect(fill = 'transparent', color = NA),
+        plot.margin = margin())
 # Plot figure 2
 cat('Saving figure 2 to figs/fig2.png\n')
 suppressWarnings(ggsave(filename = 'figs/fig2.png',
@@ -253,7 +254,8 @@ p4 <- mods %>%
     plot.title = element_text(hjust = 0.5),
     plot.background = element_rect(fill = 'transparent', color = NA),
     panel.background = element_rect(fill = 'transparent', color = NA),
-    legend.background = element_rect(fill = 'transparent', color = NA)
+    legend.background = element_rect(fill = 'transparent', color = NA),
+    plot.margin = margin()
   ) 
 cat('Saving figure 4 to figs/fig4.png\n')
 ggsave('figs/fig4.png',
@@ -261,16 +263,16 @@ ggsave('figs/fig4.png',
        device = 'png',
        type = 'cairo',
        width = 11,
-       height = 5,
+       height = 3.5,
        bg = 'transparent')
 
 # Figure 5
 cat('Drawing figure 5\n')
 # Draw Plot
-p5.a <- mods %>% 
+p5.b <- mods %>% 
   ggplot() +
   geom_point(aes(x = phi, y = zc)) +
-  geom_smooth(aes(x = phi, y = zc), method = 'lm', formula = y ~ x, color = 'black', size = 0.5, se = F) +
+  geom_smooth(aes(x = phi, y = zc), method = 'lm', formula = y ~ x, color = 'black', size = 0.5, se = T) +
   annotate('text', x = Inf, y = -Inf, vjust = -0.2, hjust = 1.1,
            label = bquote(z[c] == .(scientific(bvm.phi.lin$model$estimate[2], digits = 3)) ~ Phi +
                             .(round(bvm.phi.lin$model$estimate[1], 1)) ~~~~
@@ -280,10 +282,10 @@ p5.a <- mods %>%
   theme(axis.text = element_text(color = 'black'),
         plot.background = element_rect(fill = 'transparent', color = NA),
         panel.background = element_rect(fill = 'transparent', color = NA))
-p5.b <- mods %>% 
+p5.a <- mods %>% 
   ggplot() +
   geom_boxplot(aes(x = z1100, y = zc, group = as.factor(z1100))) +
-  geom_smooth(aes(x = z1100, y = zc), method = 'lm', formula = y ~ poly(x, 2), color = 'black', size = 0.5, se = F) +
+  geom_smooth(aes(x = z1100, y = zc), method = 'lm', formula = y ~ poly(x, 2), color = 'black', size = 0.5, se = T) +
   annotate('text', x = Inf, y = -Inf, vjust = -0.2, hjust = 1.1,
            label = bquote(z[c] == .(scientific(bvm.z1100.quad1$model$estimate[2], digits = 3)) ~ z[1100]^2 +
                             .(round(bvm.z1100.quad1$model$estimate[1], 1)) ~~~~
@@ -314,7 +316,7 @@ grid <- expand.grid(z1100 = seq(0, 120, length.out = 100),
 p6.a <- grid %>% 
   mutate(zc = predict(lm(zc ~ z1100 + phi, mods), newdata = grid)) %>% 
   ggplot() +
-  geom_contour_fill(aes(x = phi, y = z1100, z = zc), show.legend = F) +
+  geom_contour_fill(aes(x = phi, y = z1100, z = zc), show.legend = F, alpha = 0.7) +
   geom_text_contour(aes(x = phi, y = z1100, z = zc),
                     stroke = 0.2,
                     label.placement = label_placement_fraction(frac = 0.05)) +
@@ -329,7 +331,7 @@ p6.a <- grid %>%
 p6.b <- grid %>% 
   mutate(zc = predict(lm(zc ~ I(z1100^2) + phi, mods), newdata = grid)) %>% 
   ggplot() +
-  geom_contour_fill(aes(x = phi, y = z1100, z = zc), show.legend = F) +
+  geom_contour_fill(aes(x = phi, y = z1100, z = zc), show.legend = F, alpha = 0.7) +
   geom_text_contour(aes(x = phi, y = z1100, z = zc),
                     stroke = 0.2,
                     label.placement = label_placement_fraction(frac = 0.05)) +
@@ -344,7 +346,7 @@ p6.b <- grid %>%
 p6.c <- grid %>% 
   mutate(zc = predict(lm(zc ~ poly(z1100, 2) + phi, mods), newdata = grid)) %>% 
   ggplot() +
-  geom_contour_fill(aes(x = phi, y = z1100, z = zc), show.legend = F) +
+  geom_contour_fill(aes(x = phi, y = z1100, z = zc), show.legend = F, alpha = 0.7) +
   geom_text_contour(aes(x = phi, y = z1100, z = zc),
                     stroke = 0.2,
                     label.placement = label_placement_fraction(frac = 0.05)) +
@@ -521,7 +523,12 @@ p10.grids <- list(
                      v.pal = 'viridis',
                      box = c(-18, 180, 900, 1600))
 )
-p10 <- plot_grid(nodes = p10.grids, leg.collect = F) & theme(legend.position = 'none')
+v.color.pal <- scale_color_viridis_c(option = 'viridis', limits = c(0, 10))
+p10 <- plot_grid(nodes = p10.grids, leg.collect = F) &
+  v.color.pal &
+  theme(legend.position = 'bottom',
+        legend.direction = 'horizontal')
+
 cat('Saving figure 10 to figs/fig10.png\n')
 suppressWarnings(ggsave(filename = 'figs/fig10.png',
                         plot = p10,
@@ -535,7 +542,7 @@ cat('Drawing figure A1\n')
 pA1 <- antstab %>% 
   group_by(model) %>% 
   ggplot() +
-  geom_point(aes(x = time, y = depth, group = model), size = 0.5) +
+  geom_point(aes(x = time, y = depth, group = model), size = 0.25) +
   geom_path(aes(x = time, y = depth, group = model)) +
   labs(x = 'Time (Ma)', y = 'Depth (km)') +
   scale_y_reverse() +
@@ -556,45 +563,46 @@ suppressWarnings(ggsave(filename = 'figs/figA1.png',
                         bg = 'transparent'))
 # Figure A2
 cat('Drawing figure A2\n')
-pA2.a <- PD15 %>% 
-  bind_rows(PD15 %>% mutate(data.group = 'all')) %>% 
-  group_by(data.group) %>% 
-  ggplot() +
-  geom_point(data = PD15 %>% select(-data.group), aes(x = temperature, y = pressure), size = 0.5, color = 'grey50', alpha = 0.5) +
-  geom_point(aes(x = temperature, y = pressure, color = data.group), size = 0.5, show.legend = F) +
-  scale_color_manual(values = c('#111111', RColorBrewer::brewer.pal(5, 'Set1')),
-                     breaks=c("all", "Alps", "CircumAtlantic", "CircumPacific", "Cont_Asia", "T-I-G"),
-                     labels=c("All", "Alps", "Circum Atlantic", "Circum Pacific", "Continental Asia", "Turkey-Greece-Iran")) +
-  labs(x = 'Temperature ˚C', y = 'Pressure (GPa)', color = NULL) +
-  theme_classic() +
-  theme(plot.background = element_rect(fill = 'transparent', color = NA),
-        panel.background = element_rect(fill = 'transparent', color = NA),
-        strip.background = element_rect(fill = 'transparent', color = NA),
-        strip.text = element_text(size = 12),
-        axis.text = element_text(color = 'black')) +
-  facet_wrap(~data.group, nrow = 2, labeller = labeller(data.group = c("all" = "All", "Alps" = "Alps", "CircumAtlantic" = "Circum Atlantic", "CircumPacific" = "Circum Pacific", "Cont_Asia" = "Continental Asia", "T-I-G" = "Turkey-Greece-Iran")))
+# pA2.a <- PD15 %>% 
+#   bind_rows(PD15 %>% mutate(data.group = 'all')) %>% 
+#   group_by(data.group) %>% 
+#   ggplot() +
+#   geom_point(data = PD15 %>% select(-data.group), aes(x = temperature, y = pressure), size = 0.5, color = 'grey50', alpha = 0.5) +
+#   geom_point(aes(x = temperature, y = pressure, color = data.group), size = 0.5, show.legend = F) +
+#   scale_color_manual(values = c('#111111', RColorBrewer::brewer.pal(5, 'Set1')),
+#                      breaks=c("all", "Alps", "CircumAtlantic", "CircumPacific", "Cont_Asia", "T-I-G"),
+#                      labels=c("All", "Alps", "Circum Atlantic", "Circum Pacific", "Continental Asia", "Turkey-Greece-Iran")) +
+#   labs(x = 'Temperature ˚C', y = 'Pressure (GPa)', color = NULL) +
+#   theme_classic() +
+#   theme(plot.background = element_rect(fill = 'transparent', color = NA),
+#         panel.background = element_rect(fill = 'transparent', color = NA),
+#         strip.background = element_rect(fill = 'transparent', color = NA),
+#         strip.text = element_text(size = 12),
+#         axis.text = element_text(color = 'black')) +
+#   facet_wrap(~data.group, nrow = 2, labeller = labeller(data.group = c("all" = "All", "Alps" = "Alps", "CircumAtlantic" = "Circum Atlantic", "CircumPacific" = "Circum Pacific", "Cont_Asia" = "Continental Asia", "T-I-G" = "Turkey-Greece-Iran")))
 pA2.b <- PD15 %>% 
   ggplot() +
   geom_path(aes(x = pressure, y = cumulative)) +
-  geom_point(aes(x = pressure, y = cumulative)) +
+  geom_point(aes(x = pressure, y = cumulative), size = 0.3) +
   labs(x = 'Pressure (GPa)', y = 'Cumulative Probability') +
   scale_x_continuous(limits = c(0, 4.5)) +
   theme_classic() +
   theme(plot.background = element_rect(fill = 'transparent', color = NA),
         panel.background = element_rect(fill = 'transparent', color = NA),
         axis.text = element_text(color = 'black'))
-pA2 <- pA2.a / pA2.b + plot_layout(heights = c(2,1)) + plot_annotation(tag_levels = 'a') & theme(plot.background = element_rect(fill = 'transparent', color = NA),
-                                                                 panel.background = element_rect(fill = 'transparent', color = NA),
-                                                                 strip.background = element_rect(fill = 'transparent', color = NA),
-                                                                 strip.text = element_text(size = 10),
-                                                                 axis.text = element_text(color = 'black'))
+pA2 <- pA2.b
+  # pA2.a / pA2.b + plot_layout(heights = c(2,1)) + plot_annotation(tag_levels = 'a') & theme(plot.background = element_rect(fill = 'transparent', color = NA),
+  #                                                                                           panel.background = element_rect(fill = 'transparent', color = NA),
+  #                                                                                           strip.background = element_rect(fill = 'transparent', color = NA),
+  #                                                                                           strip.text = element_text(size = 10),
+  #                                                                                           axis.text = element_text(color = 'black'))
 cat('Saving figure A2 to figs/figA2.png\n')
 suppressWarnings(ggsave(filename = 'figs/figA2.png',
                         plot = pA2,
                         device = 'png',
                         type = 'cairo',
-                        width = 6,
-                        height = 6,
+                        width = 3,
+                        height = 3,
                         bg = 'transparent'))
 
 # Figure A3

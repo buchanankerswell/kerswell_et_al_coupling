@@ -1,4 +1,4 @@
-PWD /Users/Buchanan/working/projects/coupling/kerswell_et_al_coupling/draft/versions/g3_v1
+PWD /Users/Buchanan/working/projects/kerswell_et_al_coupling/draft/versions/g3_v1
 INPUT /usr/local/texlive/2020/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -194,6 +194,8 @@ INPUT ./figs/FigS4.png
 INPUT figs/FigS5.png
 INPUT ./figs/FigS5.png
 INPUT ./figs/FigS5.png
+INPUT g3_v1.bbl
+INPUT g3_v1.bbl
 INPUT g3_v1.aux
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb

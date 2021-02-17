@@ -1,0 +1,6 @@
+latexdiff -c assets/diff.config --type=CFONT --disable-citation-markup --math-markup=0 --graphics-markup=1 --allow-spaces ../g3_v1/g3_v1.tex ../g3_v2/coupling_v2.tex > diff.tex
+
+# Some cleanup required
+# remove {-} from plain language summary
+# change citeA to citet
+# delete \bibliography from bottom of doc
