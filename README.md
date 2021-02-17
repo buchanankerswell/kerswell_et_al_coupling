@@ -8,8 +8,6 @@ This repository stores supplementary material for the manuscript *Backarc lithos
 
 - R scripts to reproduce all figures
 
-- A [shiny](https://shiny.rstudio.com) application for calculating lithospheric thickness and predicting coupling depth
-
 I recommend cloning this repository. This will ensure that the scripts run without issue.
 
 *Raw binary numerical model output is not required to reproduce results, but can be found [here](https://osf.io/zjac3/)*
@@ -22,7 +20,7 @@ Head to the [R-Project](https://www.r-project.org) to download and install R
 
 > R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS.
 
-### Quick way
+### Quick start
 
 Clone (or download) this repository:
 
