@@ -1,0 +1,166 @@
+---
+title: "Reviewer Response"
+subtitle: "Backarc lithospheric thickness and serpentine stability control slab-mantle coupling depths in subduction zones"
+author:
+  - Buchanan Kerswell^[Department of Geosicences, Boise State University, Boise, ID 83725]
+  - Matthew Kohn$^*$
+  - Taras Gerya^[Department of Earth Sciences, ETH-Zurich, Sonneggstrasse 5, Zurich 8092, Switzerland]
+date: "2/16/2021"
+output:
+  pdf_document:
+    pandoc_args: ['-Fpandoc-crossref', '--csl=assets/g3.csl']
+    citation_package: default
+bibliography: assets/ref.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Reviewer One
+
+## Major Revisions
+
+> 1. The inclusion of the Peclet number analysis was a bit detracting and as it didn’t lead to any large conclusions or add to the manuscript. I tried to find similar examples to its use in the geodynamics literature so that I could compare your work, but fell flat in finding those comparisons. From a fluid mechanics stand point, I understand, but how it fits in the broader literature and analysis of subduction zones should be included in the manuscript, as G3 is intended for a broad audience.
+
+Yes, we’ve gone back and forth on this issue. Based on this comment, we opted to remove discussion of the Peclet number from the text and figures.
+
+***
+
+> 2. A deeper understanding of the numerical method/assumptions are required. Sizova et al. (2010) employs an array of parameters that ultimately affect plate coupling, yet none of these are discussed that would have considerable impact on your models. The major one in this case is the inclusion of the plastic failure Drucker-Prager criterion. The effect of hydration and pore-fluid pressure is accommodated through the $\lambda$f luid parameter, or at least was in early versions of I2VIS (cf. Equation 10 Sizova et al. 2010; $\lambda$f luid vaires between 0 and 1). Gerya and Meilick (2011) also show that this parameter has significant consequences for subduction zone modelling. I can’t imagine a case where this wouldn’t also affect the coupling depth in these models, as well, and a comparison should be noted. They may simply fall within your calculated standard deviations. However, the reader can’t and doesn’t know. One suggestion is to just have a look at some visual comparisons of apparent coupling depths of other I2VIS articles and their stated $\lambda$f luid values (Vogt, Gonzalez, Gorczyk, Gerya and Meilick, Faccenda) to yours. 64 models are already a lot and adding another parameter variation on top of it can quickly become confusing, I suggest least stating which value you are using for the reader.
+
+Thank you. Indeed the inclusion of pore fluid pressure has a significant effect on material strength in the Drucker-Prager model. However, our models implement plastic yielding through a strain-weakening effect that simulates progressive weakening of faults (shear zones). We have added a section under Numerical Modelling Methods explaining our rheologic model. We have also corrected and reorganized the material properties in Table 1 to correspond directly with all equations. This should make it more clear to the reader how the strengths of materials are being modelled, especially with respect to plastic yielding.
+
+***
+
+> 3. Melting: Parameterizations are included for melt in Table 1, but I can’t see these applied in any of the compositional models. You state in Figure 7: “High amplitude fluctuations in heat flow in the arc region (normalized distance ' 1.0) correspond to vertical migration of fluids and melts. In the backarc region, these fluctuations correspond to backarc extension associated with the oldest and fastest-moving slabs.”; however no apparent melt composition was visualized.
+
+Thank you. Melting occurs only in small degrees and is not easily visualized in figures that illustrate rock composition. The effects of fluid and melt transport are more apparent in the viscosity and strain rate panels as sub-vertical columns of low viscosity and high strain rate (e.g. Figure 3e & 3f). To a lesser degree you can see the effect of heat transport by fluids and melts in the slightly bowed shape of the isotherms coincident with the sub-vertical columns of low viscosity and high strain rate. 
+We have added text to the figure captions to clarify the apparent absence of fluid and melt in the composition panels. We have also added a statement under Results > Surface heat flow referencing the viscosity and strain rate panels in Figure 3 to help the reader understand what we mean by fluid and melt migration.
+
+***
+
+> 4. The petrologic implementation, especially at ~line 208. This implies that there is a new methodology added into I2VIS, beyond the stable mineral approach, whereby reaction 1 accounts for that dehydration and mass loss?
+
+Thank you. Line 208 reads, “Under assumptions of thermodynamic equilibrium, markers whose internal temperature exceeds T(z) spontaneously formed olivine+orthopyroxene+H2O, releasing their crystal-bound water.” 
+
+The statement is referring to serpentine markers that move beyond the stability field defined in reaction 1, which is reproduced from @Schmidt1998. We have added a statement acknowledging the use of reaction 1 in previous versions of I2VIS. In fact, this is how mineral stability fields are normally defined in the model. Since the curve represented by reaction 1 is an approximation of the stability field from @Schmidt1998, we elected to present the equation rather than the curve from @Schmidt1998.
+
+***
+
+> 5. Discussions on shear heating is left largely unexamined except for some images in the appendix. Looking at the appendix, the area where shear heating seems to be most visible (Log scale) is right in the area of interest in terms of coupling (Figure A4, b). In fact, did you find that this affected your time dependent heat flow calculations at all where you appear to have conjugate faulting in the upper crust (Figure A3 c; ~ 1480km width 0-20 km depth) for heating in crust as that is where you said head flow was calculated (lines 223-226).
+
+Thank you. Yes, this is an important point that we would like the reader to understand. That is, surface heat flow measured at the surface represents a combination of multiple heat-transferring processes, including shear heating during motion along faults. We acknowledge previous approaches that invert heat flow to predict coupling depth at line 387. We proceed to lay out an argument against this approach in the following lines. Our argument in summary is as follows:
+
+Surface heat flow is a convolution of heat generated by fault motion, radiogenic heating, heat transport by fluids, and thermal structure. We found a strong association between backarc lithospheric thickness (thermal structure) and coupling depth. Controlling for heat-transferring processes that would obfuscate lithospheric thermal structure is possible in (non-extending) backarc regions but nearly impossible in forearc-arc regions. We therefore suggest using heat flow in the backarc region, rather than the forearc region, to invert for coupling depth. This is ultimately the main point of our study. 
+
+The reviewer points out one reason it is nearly impossible to invert coupling depth from surface heat flow in the forearc-arc region (shear heating generated from crustal deformation). We do not go into great detail evaluating the effects of crustal deformation and fluid flow on heat flow, primarily because we focus on the backarc region. We make this point explicitly in lines 387-413. 
+
+In fact, application of our equation 6 to predict coupling depth would require heat flow measurements taken far from volcanic vents and faults for reliable results. We view inversion methods applied in the forearc, like those from @Wada2009, to be unreliable because there are many variables and too few controls.
+
+***
+
+## Minor Revisions
+
+> 1. How is the rheology of antigorite/serpentinite defined? What are the rheological parameter values? Please see my comment on Table 1 below. This is important as it controls slab-mantle decoupling. 
+>
+> Table 1: What does the upward arrow mean? Does it mean that it takes the same value as the above? If so, what is the difference between serpentinized mantle and hydrated mantle in terms of their rheology? What are the rheological parameter values for serpentinite? 
+
+Thank you. We agree that Table 1 was confusing so we split it into two tables (now Tables 1 & 3) that are reorganized and edited for clarity. These show explicitly the parameterization for each rock type. We have also added a section under Numerical Modelling Methods detailing the rheologic model. This should make it easier for the reader to understand how material strength changes with respect to T and P, how plastic/brittle yielding works, and the differences between antigorite rheology and (hydrated) mantle rheology.
+
+***
+
+> 2. In the model, it is assumed that the subducting material undergoes dehydration uniformly from the surface to 150-km depth. Please discuss how this could impact the results. For older slabs, for example, the subducting crust does not undergo significant dehydration until it reaches the coupling depth, and this can affect the formation of serpentinites and thus the slab-mantle coupling updip.
+
+Thank you. Indeed the release of water from the slab and serpentinization of the mantle wedge is important for slab-mantle mechanical coupling. In fact, we tested scenarios where no fluid was released and/or no fluid-induced weakening ($\lambda$ = 0), which result in strong coupling and two-sided subduction in both cases [e.g., @Gerya2008]. 
+
+We have added a brief discussion under Numerical Modelling Methods of the effects of hydration on the rheologic model and coupling. We also point the reader to previous studies that explicitly explore the parameter [e.g., @Gerya2011].
+
+***
+
+> 3. Please clarify how the fluid velocity is calculated. Please see my comment on Line 221 below. 
+211: “a fluids particle . . . with a velocity defined by pressure gradients.” In the appendix (line 537), it appears (there is some correction required in Equation A2) that fluid particles are given a prescribed upward velocity of 10 cm/yr (relative to the moving matrix?). Please clarify this discrepancy.
+
+Thank you. You are correct in pointing out that the velocity of water is defined by pressure gradients plus a constant vertical velocity of 10 cm/yr. We have clarified this in line 211 and in the appendix. 
+
+***
+
+> 4. Based on Figures 9, A3 and A4, the mantle wedge corner above the serpentinized layer is flowing. This contradicts with the description that the slab and the mantle are decoupled. Please address.
+
+Thank you. The velocity field is referenced with respect to the model boundaries. There is a left-ward horizontal velocity in the mantle wedge (e.g. Figure 9) because the upper plate is moving to the left with respect to the left boundary. The mantle wedge is stagnant with respect to itself.
+
+We have clarified this point in the relevant figure captions.
+
+***
+
+> 5. Why is the serpentinized part of the mantle wedge corner a thin layer? Why doesn’t serpentinization extend into the interior of the mantle wedge? Not enough water?
+
+The magnitude of mantle wedge serpentinization depends on the H2O flux rate from the slab and temperature of the mantle wedge. As our models are parameterized, only a thin layer of serpentine forms, except near the coupling depth where it thickens with time. 
+
+The magnitude of water flux and serpentinization in the mantle wedge is an active area of research [e.g., @Abers2017]. We make no attempt to evaluate the “right amount” of serpentine in the mantle wedge for two reasons: 1) magnitudes and modes (channelized vs. pervasive) of mantle-wedge serpentinization is not well-constrained, and 2) our modelling results are unaffected by more serpentine. Only a thin layer of serpentine is required for mechanical decoupling. A more-serpentinized mantle wedge is likely to remain cold and stagnant, albeit slightly weaker and more buoyant.
+
+Our models are not limited by water flux to the mantle wedge, as the incoming slab is assumed to have homogenous water content. In theory, with time, the mantle wedge will become fully hydrated. The thin layer of serpentine is the combined result of our implementation of a linear release of water from the slab and starting water contents (sediments being the major carrier at 5 wt%). Our models do not subduct much sediment, which may explain the slow progression of the mantle hydration front.
+
+***
+
+> 6. The meaning of (the value of) the effective Pe number is not clear. Please see my comment on Line 246 below.
+> 
+> 246: “the relative magnitude of (potential) heat transfer via advection vs. diffusion.” As indicated in the first expression in Equation (2) by the author, the Pe number is indicating the ratio of the advective to diffusive transfer rates and not the relative magnitudes of the heat transport (the amount of heat transferred). If the advective heat transfer rate is much faster than the diffusion rate (i.e., high Pe number), then the isotherms should be sub-parallel to the flow direction as the material is carrying the heat, as indicated by the model for the mantle wedge and the slab, and this is opposite of what is stated by the authors on Line 266: “while flow paths are nearly parallel to isotherms, implying that advection is ineffective.” There seems to be some issue with the causal relation in the assumption (the energy equation has been solved), and with this, I am not clear on the purpose and the meaning of Equations 3 and 4. Also, the use of the term “local heat transport” as defined on Line 254 needs to be clarified. It reads “advection could augment . . . a component of flow . . . parallel to and in the same direction as diffusion.” What is this “flow” referring to? It appears that this is to understand the “thermal feedbacks affecting the stability of antigorite” (Line 244), but it’s unclear how Equation (3) helps to quantify this. Could you explain why the thermal parameter is used for the characteristic length? 
+
+See above. We removed calculations, visualizations, and discussions of the Peclet number.
+
+***
+
+## Minor Revisions
+
+Thank you for your detailed comments. We have addressed the minor line-by-line comments of Reviewer Two in the manuscript. To address a few explicitly:
+
+> Figure 3. Based on the temperature distribution and the shape of the isotherms in the mantle wedge corner, it appears that heat is still being advected towards the wedge tip. Is the mantle wedge corner above the serpentinized layer stagnant?
+
+The mantle wedge corner is effectively stagnant. This is apparent in Figure 3f, which shows a deep blue mantle wedge corner (very low strain rate). Strain is localized in the thin serpentinized layer. 
+
+***
+
+> 329: “transformation of antigorite (eta = 1e17) to wet olivine (eta = 1e23)” Could you clarify how the viscosity of sepentinite/antigorite is calculated?
+
+The viscosity values on this line were estimated from the visualizations in Figures 3 and 9. We have removed these for clarity and added a section under Numerical Modelling Methods detailing the viscosity and material strength models.
+
+***
+
+> Figures 9, A4 and A5. Are the thin black arrows in the background indicating solid flow velocities? If so, why is the mantle flowing in the region that is supposedly stagnant, and why the velocity vectors in the slab obliquity to the subducting slab surface? It appears as if the mantle material is moving into the slab domain
+> 
+> 344: “Stagnation is evident by near zero effective Peclet values.” The velocity field should make this evident, but the velocity vectors plotted in Figure 9 indicate that the mantle is flowing. 
+
+See our response to major comment 4 above.
+
+***
+
+> 351, 352: “new lithosphere” I would like to suggest replacing this with high-viscosity material or something similar. The lithosphere is the rheologically defined outermost layer of Earth. 
+>
+> 357: The analogy to MOR. The mantle is flowing in to replace the downgoing mantle and not the subducting plate, and so I am not sure if this analogy works based on the comment I made above. 
+
+Thank you. We agree and took out the term ‘lithosphere’ for this context. However, we kept the MOR analogy to help readers understand the model results and physical processes occurring near the coupling depth.
+
+***
+
+> 358: “. . . heat advection . . . drives reaction of serpentinite to form wet olivine” This narrative indicates that the serpentinized mantle is moving down with the slab although it is supposed to be causing decoupling between the slab and the mantle. Instead of driving dehydration of serpentinites, would it be rather preventing serpentinites from forming? 
+>
+> 362: “advection of heat . . . remove it” Same comment as above. Isn’t it just not allowing the formation of serpentinites rather than removing it? 
+
+Thank you. We like this perspective better and have made changes to clarify. 
+
+***
+
+> Equation A2. “vx and vz are the local velocity vectors in the mantle.” Please clarify. Are they the components of the velocity vector of the mantle? The second relation needs correction. In the current form, vz (percolation) = 0.
+
+Thank you. We have made this clarification. The form of equation A2 does not imply a zero percolation velocity as we read it.
+
+***
+
+> The font size for the labels in Figure 3 needs to be increased.
+
+Thank you. We have adjusted the figures to be more readable.
+
+\newpage
+
+# References
