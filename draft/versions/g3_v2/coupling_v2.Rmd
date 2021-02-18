@@ -263,7 +263,7 @@ Across all 64 numerical models ([@fig:results], Table \ref{tab:zc.results}) coup
 
 $$\begin{aligned}z_{c} = 4.95 \times 10^{- 3}z_{1100}^{2} - 9.27 \times 10^{- 2}\Phi + 63.6\end{aligned}$$ {#eq:zc}
 
-where $z$ is in $km$ and $\Phi$ is in $km/100$. Regression results are provided in Tables \\ref{tab:anova} and \\ref{tab:reg.summary} and show that alternative linear and quadratic models of $z_c$ vs. $z_{1100}$ and $\Phi$ fit the experiments well. [@eq:zc] permits the prediction of the mechanical coupling depths in modern subduction zones where $z_{c}$ can be inverted from heat flow and $\Phi$ is estimated.
+where $z$ is in $km$ and $\Phi$ is in $km/100$. Regression results are provided in Tables \ref{tab:anova} and \ref{tab:reg.summary} and show that alternative linear and quadratic models of $z_c$ vs. $z_{1100}$ and $\Phi$ fit the experiments well. [@eq:zc] permits the prediction of the mechanical coupling depths in modern subduction zones where $z_{c}$ can be inverted from heat flow and $\Phi$ is estimated.
 
 ```{r results, out.width='100%', fig.cap='Visual table of coupling depth as determined across a range of lithospheric thicknesses and thermal parameters. Note that the thermal parameter axis is not linear. Corresponding experiments are listed along the top of the array. Coupling depth increases systematically with increasing backarc lithospheric thickness (change in grayscale down columns) for all models. Any trend in coupling depth with respect to slab thermal parameter (change in grayscale across rows) is less apparent.'}
 knitr::include_graphics('figs/fig4.png')
@@ -391,6 +391,10 @@ Four important results are highlighted in this study:
 
 4. As others have proposed [@Currie2006; @Wada2009] subduction zones may self-organize into stable configurations globally with warm (thin) upper plate lithospheres and slab-mantle mechanical coupling at depths of ca. 80 $km$. Questions remain, however, including: 1) How do warm (thin) backarcs persist over 100's of kilometers throughout the lifespan of subduction zones? 2) How abrupt is the antigorite-out reaction along the subduction interface?, and 3) How can predictive models like [@eq:zc] be improved using natural datasets? We propose these questions as topics for future research.
 
+# Open Research
+
+All data, scripts, and instructions for compiling, processing, and visualizing the data in this study can be found at `https://doi.org/10.17605/OSF.IO/ZJAC3`, the official Open Science Framework data repository. All code is MIT Licensed and freely for use and distribution (see license details).
+
 \clearpage
 
 \appendix
@@ -464,7 +468,7 @@ map_df(list(bvm.phi.lin,
       escape = F) %>%
   kable_styling(latex_options = c("striped"), font_size = 8) %>% 
   kable_classic() %>%
-  footnote(general = c('1=$z_c$=$\\\\phi$, 2=$z_c$=$z_{1100}$, 3=$z_c$=$z_{1100}^2$, 4=$z_c$=$z_{1100}+z_{1100}^2$, 5=$z_c$=$z_{1100}+\\\\phi$, 6=$z_c$=$z_{1100}^2+\\\\phi$, 7=$z_c$=$z_{1100}+z_{1100}^2+\\\\phi$'),
+  footnote(number = c('$z_c=\\\\phi$,', '$z_c=z_{1100}$', '$z_c=z_{1100}^2$', '$z_c=z_{1100}+z_{1100}^2$', '$z_c=z_{1100}+\\\\phi$', '$z_c=z_{1100}^2+\\\\phi$', '$z_c=z_{1100}+z_{1100}^2+\\\\phi$'),
            threeparttable = T,
            escape = F, general_title = '')
   # as_image(file = '../tables/reg.summary.png', width = 9)
@@ -501,15 +505,15 @@ To test the sensitivity of coupling on our rheologic model, we ran diverse exper
 
 Only experiments 5 and 7 listed above were inconsistent with the results presented in the present study. Experiment 5 resulted in transient coupling depths and disjointed antigorite stability in the mantle wedge, whereas experiment 7 resulted in two-sided subduction [e.g., @Gerya2008]. These experiments suggest that the coupling mechanism in our models is mostly contingent on the availability of fluids to the mantle wedge and the shape of the equilibrium antigorite reaction, and relatively insensitive to the exact flow law parameters.
 
-```{r cdfstep1, out.width='80%', fig.cap='Visualizations of standard model cdf78 at 1.64 Ma. (a) Rock type. (b) Temperature. (c) Log$_{10}$ of viscosity. (d) Streamlines. Early subduction is facilitated by the prescribed initial weak layer cutting the lithosphere. Strain is localized in the weak serpentine layer at the slab-mantle interface. The mantle wedge is stagnant and loses heat to the slab, which promotes antigorite stabiliization to greater depths. Rock type colors are given in Table \\ref{tab:rock.type}.'}
+```{r cdfstep1, out.width='100%', fig.cap='Visualizations of standard model cdf78 at 1.64 Ma. (a) Rock type. (b) Temperature. (c) Log$_{10}$ of viscosity. (d) Streamlines. Early subduction is facilitated by the prescribed initial weak layer cutting the lithosphere. Strain is localized in the weak serpentine layer at the slab-mantle interface. The mantle wedge is stagnant and loses heat to the slab, which promotes antigorite stabiliization to greater depths. Rock type colors are given in Table \\ref{tab:rock.type}.'}
 knitr::include_graphics('figs/figA3.png')
 ```
 
-```{r cdfstep2, out.width='80%', fig.cap='Visualization s of standard model cdf78 at 5.05 $Ma$. (a) Rock type. (b) Temperature. (c) Log$_{10}$ of viscosity. (d) Streamlines. By 5 $Ma,$ balance is achieved between heat sinking from the upper mantle wedge to lower parts of the mantle and strong advection of heat in the circulating part of the mantle wedge. A feedback has already developed---heat advection inhibits antigorite stabilization to greater depths. Rock type colors are given in Table \\ref{tab:rock.type}.'}
+```{r cdfstep2, out.width='100%', fig.cap='Visualization s of standard model cdf78 at 5.05 $Ma$. (a) Rock type. (b) Temperature. (c) Log$_{10}$ of viscosity. (d) Streamlines. By 5 $Ma,$ balance is achieved between heat sinking from the upper mantle wedge to lower parts of the mantle and strong advection of heat in the circulating part of the mantle wedge. A feedback has already developed---heat advection inhibits antigorite stabilization to greater depths. Rock type colors are given in Table \\ref{tab:rock.type}.'}
 knitr::include_graphics('figs/figA4.png')
 ```
 
-```{r cdfstep3, out.width='80%', fig.cap='Visualization s of standard model cdf78 at 9.93 $Ma$. (a) Rock type. (b) Temperature. (c) Log$_{10}$ of viscosity. (d) Streamlines. The geodynamics and thermal structure remain approximately constant from 5 $Ma$ (cf. Figure A.4). The system remains in steady state for as long as enough water is supplied to the upper mantle wedge to stabilize antigorite.Rock type colors are given in Table \\ref{tab:rock.type}.'}
+```{r cdfstep3, out.width='100%', fig.cap='Visualization s of standard model cdf78 at 9.93 $Ma$. (a) Rock type. (b) Temperature. (c) Log$_{10}$ of viscosity. (d) Streamlines. The geodynamics and thermal structure remain approximately constant from 5 $Ma$ (cf. Figure A.4). The system remains in steady state for as long as enough water is supplied to the upper mantle wedge to stabilize antigorite.Rock type colors are given in Table \\ref{tab:rock.type}.'}
 knitr::include_graphics('figs/figA5.png')
 ```
 

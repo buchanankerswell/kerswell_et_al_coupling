@@ -32,7 +32,7 @@ p1.grids <- list(
     annotate('text', x = 800, y = 150, label = '0.5 ˚C/km adiabat') +
     annotate('text', x = 1700, y = 78, label = 'upper plate thickness', hjust = 1) +
     annotate('segment', x = 1710, xend = 1950, y = 78, yend = 78, linetype = 'twodash', lineend = 'round', linejoin = 'round') +
-    annotate('curve', x = 150, xend = 5, y = 150, yend = 40, curvature = -0.2, arrow = arrow(length = unit(0.1, 'in'))) +
+    annotate('curve', x = 150, xend = 5, y = 150, yend = 40, curvature = -0.2, arrow = arrow(length = unit(0.1, 'in'), angle = 20)) +
     annotate('text', x = 155, y = 150, label = 'mid-ocean ridge', hjust = 0),
   viscosity = draw_grid(nodes = n78.init$nodes,
                         rocks = r78.init$grid,
@@ -41,22 +41,22 @@ p1.grids <- list(
                         v.pal = 'viridis') +
     annotate('rect', xmin = 490, xmax = 510, ymin = -4, ymax = 40, fill = NA, color = 'black') +
     annotate('rect', xmin = 1790, xmax = 1810, ymin = -4, ymax = 40, fill = NA, color = 'black') +
-    annotate('segment', x = 510, xend = 560, y = 20, yend = 20, arrow = arrow(length = unit(0.1, 'in')), color = 'black', lineend = 'round', linejoin = 'round') +
-    annotate('segment', xend = 1740, x = 1790, y = 20, yend = 20, arrow = arrow(length = unit(0.1, 'in')), color = 'black', lineend = 'round', linejoin = 'round') +
+    annotate('segment', x = 510, xend = 560, y = 20, yend = 20, arrow = arrow(length = unit(0.1, 'in'), angle = 20), color = 'black', lineend = 'round', linejoin = 'round') +
+    annotate('segment', xend = 1740, x = 1790, y = 20, yend = 20, arrow = arrow(length = unit(0.1, 'in'), angle = 20), color = 'black', lineend = 'round', linejoin = 'round') +
     annotate('text', x = 400, y = 150, label = 'convergence region', hjust = 1) +
-    annotate('curve', x = 405, xend = 500, y = 150, yend = 40, curvature = 0.5, arrow = arrow(length = unit(0.1, 'in')), lineend = 'round') +
+    annotate('curve', x = 405, xend = 500, y = 150, yend = 40, curvature = 0.5, arrow = arrow(length = unit(0.1, 'in'), angle = 20), lineend = 'round') +
     annotate('text', x = 1700, y = 150, label = 'weak zone', hjust = 0) +
-    annotate('curve', x = 1695, xend = 1490, y = 150, yend = 75, curvature = -0.2, arrow = arrow(length = unit(0.1, 'in')), lineend = 'round')
+    annotate('curve', x = 1695, xend = 1490, y = 150, yend = 75, curvature = -0.2, arrow = arrow(length = unit(0.1, 'in'), angle = 20), lineend = 'round')
   )
 
 # Plot figure 1
 cat('Saving figure 1 to figs/fig1.png\n')
 p1 <- plot_grid(nodes = p1.grids[2:3],
-                               rocks = p1.grids$rocks,
-                               leg.dir = 'horizontal',
-                               rock.rows = 1,
-                               leg.title.pos = 'left',
-                               leg.title.vjust = 1)
+                rocks = p1.grids$rocks,
+                leg.dir = 'horizontal',
+                rock.rows = 2,
+                leg.title.pos = 'left',
+                leg.title.vjust = 0.8)
 ggsave('figs/fig1.png',
        plot = p1,
        device = 'png',
@@ -98,7 +98,7 @@ p2.a <- expand.grid(1:4, 1:4) %>%
     axis.ticks = element_line(color = 'black'),
     axis.line = element_blank(),
     legend.position = 'bottom',
-    legend.title = element_text(vjust = 1)
+    legend.title = element_text(vjust = 0.8)
   )
 # 2b
 p2.b <- geotherms %>% 
@@ -107,13 +107,13 @@ p2.b <- geotherms %>%
   ggplot() +
   geom_line(aes(x = T, y = depth, linetype = z1100), size=0.5, na.rm = T) +
   annotate('segment', x = 1100, xend = 1100, y = 30, yend = 46,
-           arrow = arrow(length = unit(0.1, 'in')), linejoin = 'round', lineend = 'round') +
+           arrow = arrow(length = unit(0.1, 'in'), angle = 20), linejoin = 'round', lineend = 'round') +
   annotate('segment', x = 1100, xend = 1100, y = 30, yend = 62,
-           arrow = arrow(length = unit(0.1, 'in')), linejoin = 'round', lineend = 'round') +
+           arrow = arrow(length = unit(0.1, 'in'), angle = 20), linejoin = 'round', lineend = 'round') +
   annotate('segment', x = 1100, xend = 1100, y = 30, yend = 78,
-           arrow = arrow(length = unit(0.1, 'in')), linejoin = 'round', lineend = 'round') +
+           arrow = arrow(length = unit(0.1, 'in'), angle = 20), linejoin = 'round', lineend = 'round') +
   annotate('segment', x = 1100, xend = 1100, y = 30, yend = 94,
-           arrow = arrow(length = unit(0.1, 'in')), linejoin = 'round', lineend = 'round') +
+           arrow = arrow(length = unit(0.1, 'in'), angle = 20), linejoin = 'round', lineend = 'round') +
   annotate('text', x = 1100, y = 28, angle = 90, label = bquote(z[1100]), hjust = 0) +
   labs(x = bquote(Temperature~(degree*C)),
        y = 'Depth (km)',
@@ -206,7 +206,7 @@ p3 <-
   ((p3.grids$rocks.zoom + guides(fill = guide_legend(nrow = 5, title.position = 'top', title.hjust = 0.5)) + theme(axis.text.x = element_blank(), axis.title.x = element_blank())) + (p3.grids$temperature + theme(axis.text.x = element_blank(), axis.title.x = element_blank()))) /
   ((p3.grids$viscosity + theme(axis.text.x = element_blank(), axis.title.x = element_blank())) + (p3.grids$strain + theme(axis.text.x = element_blank(), axis.title.x = element_blank()))) /
   (p3.grids$shear + (p3.grids$stream + theme(panel.grid = element_blank(), panel.border = element_blank(), panel.background = element_rect(fill = 'transparent', color = NA)))) +
-  plot_layout(heights = c(2, 2, 3, 3, 3), guides = 'collect') +
+  plot_layout(heights = c(1, 1, 1.11, 1.11, 1.11), guides = 'collect') +
   plot_annotation(tag_levels = 'a', theme = theme(plot.margin = margin(), plot.background = element_rect(fill = 'transparent', color = NA), panel.background = element_rect(fill = 'transparent', color = NA))) &
   theme(legend.position = 'bottom', legend.box = 'horizontal', legend.direction = 'vertical')
   
@@ -298,7 +298,12 @@ p5.a <- mods %>%
 
 # Composition
 cat('Saving figure 5 to figs/fig5.png\n')
-p5 <- p5.a + p5.b + plot_annotation(tag_levels = 'a')
+p5 <- p5.a + p5.b +
+  plot_annotation(tag_levels = 'a',
+                  theme = theme(plot.background = element_rect(fill = 'transparent', color = NA),
+                                panel.background = element_rect(fill = 'transparent', color = NA))) &
+  theme(plot.background = element_rect(fill = 'transparent', color = NA),
+        panel.background = element_rect(fill = 'transparent', color = NA))
 suppressWarnings(ggsave(filename = 'figs/fig5.png',
                         plot = p5,
                         device = 'png',
@@ -316,9 +321,10 @@ grid <- expand.grid(z1100 = seq(0, 120, length.out = 100),
 p6.a <- grid %>% 
   mutate(zc = predict(lm(zc ~ z1100 + phi, mods), newdata = grid)) %>% 
   ggplot() +
-  geom_contour_fill(aes(x = phi, y = z1100, z = zc), show.legend = F, alpha = 0.7) +
+  geom_contour_fill(aes(x = phi, y = z1100, z = zc), size = 0.2, color = 'black', show.legend = F, alpha = 0.75) +
   geom_text_contour(aes(x = phi, y = z1100, z = zc),
                     stroke = 0.2,
+                    size = 3,
                     label.placement = label_placement_fraction(frac = 0.05)) +
   geom_point(data = mods, aes(x = phi, y = z1100), shape = 15) +
   geom_point(data = segs, aes(x = phi, y = z1100), color = 'white') +
@@ -331,9 +337,10 @@ p6.a <- grid %>%
 p6.b <- grid %>% 
   mutate(zc = predict(lm(zc ~ I(z1100^2) + phi, mods), newdata = grid)) %>% 
   ggplot() +
-  geom_contour_fill(aes(x = phi, y = z1100, z = zc), show.legend = F, alpha = 0.7) +
+  geom_contour_fill(aes(x = phi, y = z1100, z = zc), size = 0.2, color = 'black', show.legend = F, alpha = 0.75) +
   geom_text_contour(aes(x = phi, y = z1100, z = zc),
                     stroke = 0.2,
+                    size = 3,
                     label.placement = label_placement_fraction(frac = 0.05)) +
   geom_point(data = mods, aes(x = phi, y = z1100), shape = 15) +
   geom_point(data = segs, aes(x = phi, y = z1100), color = 'white') +
@@ -346,9 +353,10 @@ p6.b <- grid %>%
 p6.c <- grid %>% 
   mutate(zc = predict(lm(zc ~ poly(z1100, 2) + phi, mods), newdata = grid)) %>% 
   ggplot() +
-  geom_contour_fill(aes(x = phi, y = z1100, z = zc), show.legend = F, alpha = 0.7) +
+  geom_contour_fill(aes(x = phi, y = z1100, z = zc), size = 0.2, color = 'black', show.legend = F, alpha = 0.75) +
   geom_text_contour(aes(x = phi, y = z1100, z = zc),
                     stroke = 0.2,
+                    size = 3,
                     label.placement = label_placement_fraction(frac = 0.05)) +
   geom_point(data = mods, aes(x = phi, y = z1100), shape = 15) +
   geom_point(data = segs, aes(x = phi, y = z1100), color = 'white') +
@@ -396,9 +404,9 @@ p7 <- mods %>%
   group_by(z1100) %>% 
   ggplot() +
   geom_path(aes(x = xnorm, y = smooth, group = model, color = phi), size = 0.5) +
-  annotate("segment", x = 1, xend = 1, y = 30, yend = 55, colour = "black", size=1, arrow=arrow(length = unit(0.1,'in'))) +
-  annotate("segment", x = 0, xend = 0, y = 75, yend = 55, colour = "black", size=1, arrow=arrow(length = unit(0.1,'in'))) +
-  annotate("segment", x = 1.02, xend = 1.5, y = 40, yend = 40, colour = "black", size=1, arrow=arrow(length = unit(0.1,'in'))) +
+  annotate("segment", x = 1, xend = 1, y = 30, yend = 55, colour = "black", size=1, arrow=arrow(length = unit(0.1,'in'), angle = 20)) +
+  annotate("segment", x = 0, xend = 0, y = 75, yend = 55, colour = "black", size=1, arrow=arrow(length = unit(0.1,'in'), angle = 20)) +
+  annotate("segment", x = 1.02, xend = 1.5, y = 40, yend = 40, colour = "black", size=1, arrow=arrow(length = unit(0.1,'in'), angle = 20)) +
   annotate('text', x = 1, y = 30, label = 'Arc', size = 3, vjust = 1.25) +
   annotate('text', x = 1.25, y = 38, label = 'Backarc', size = 3, vjust = 1.25) +
   annotate('text', x = 0, y = 75, label = 'Trench', size = 3, vjust = -0.25) +
@@ -406,9 +414,11 @@ p7 <- mods %>%
   coord_cartesian(xlim = c(-0.75, 1.5), ylim = c(0, 200)) +
   scale_color_gradient(low = 'grey0', high = 'grey80') +
   facet_wrap(~z1100, labeller = labeller(z1100 = c('46' = '46km lithosphere', '62' = '62km lithosphere', '78' = '78km lithosphere', '94' = '94km lithosphere'))) +
+  guides(color = guide_colorbar(barwidth = unit(10, 'lines'))) +
   theme_classic() +
   theme(axis.text = element_text(color = 'black'),
         legend.title = element_text(vjust = 0.8),
+        strip.text = element_text(face = 'bold', size = 11),
         legend.position = 'bottom',
         plot.background = element_rect(fill = 'transparent', color = NA),
         panel.background = element_rect(fill = 'transparent', color = NA),
@@ -451,8 +461,8 @@ suppressWarnings(ggsave(filename = 'figs/fig8.png',
                         plot = p8,
                         device = 'png',
                         type = 'cairo',
-                        width = 4,
-                        height = 4,
+                        width = 5,
+                        height = 5,
                         bg = 'transparent'))
 
 # Figure 9
@@ -485,7 +495,8 @@ p9 <- plot_grid(nodes = p9.grids,
           leg.title.pos = 'left',
           leg.dir = 'horizontal',
           leg.title.hjust = 0,
-          leg.collect = T)
+          leg.collect = T) &
+  guides(fill = guide_colorbar(barwidth = unit(8, 'lines'), title.vjust = 0.8))
 cat('Saving figure 9 to figs/fig9.png\n')
 suppressWarnings(ggsave(filename = 'figs/fig9.png',
                         plot = p9,
@@ -526,6 +537,7 @@ p10.grids <- list(
 v.color.pal <- scale_color_viridis_c(option = 'viridis', limits = c(0, 10))
 p10 <- plot_grid(nodes = p10.grids, leg.collect = F) &
   v.color.pal &
+  guides(color = guide_colorbar(barwidth = unit(8, 'lines'), title.vjust = 0.8)) &
   theme(legend.position = 'bottom',
         legend.direction = 'horizontal')
 
@@ -550,7 +562,7 @@ pA1 <- antstab %>%
   theme(plot.background = element_rect(fill = 'transparent', color = NA),
         panel.background = element_rect(fill = 'transparent', color = NA),
         strip.background = element_rect(fill = 'transparent', color = NA),
-        strip.text = element_text(size = 12),
+        strip.text = element_text(size = 11, face = 'bold'),
         axis.text = element_text(color = 'black')) +
   facet_grid(vars(model), vars(z1100), labeller = labeller(z1100 = c('46' = '46km', '62' = '62km', '78' = '78km', '94' = '94km')))
 cat('Saving figure A1 to figs/figA1.png\n')
@@ -558,8 +570,8 @@ suppressWarnings(ggsave(filename = 'figs/figA1.png',
                         plot = pA1,
                         device = 'png',
                         type = 'cairo',
-                        width = 5,
-                        height = 5,
+                        width = 8,
+                        height = 8,
                         bg = 'transparent'))
 # Figure A2
 cat('Drawing figure A2\n')
@@ -601,8 +613,8 @@ suppressWarnings(ggsave(filename = 'figs/figA2.png',
                         plot = pA2,
                         device = 'png',
                         type = 'cairo',
-                        width = 3,
-                        height = 3,
+                        width = 5,
+                        height = 5,
                         bg = 'transparent'))
 
 # Figure A3
@@ -646,8 +658,8 @@ suppressWarnings(ggsave(filename = 'figs/figA3.png',
                         plot = pA3,
                         device = 'png',
                         type = 'cairo',
-                        width = 5,
-                        height = 9,
+                        width = 7,
+                        height = 11,
                         bg = 'transparent'))
 
 # Figure A4
@@ -691,8 +703,8 @@ suppressWarnings(ggsave(filename = 'figs/figA4.png',
                         plot = pA4,
                         device = 'png',
                         type = 'cairo',
-                        width = 5,
-                        height = 9,
+                        width = 7,
+                        height = 11,
                         bg = 'transparent'))
 
 # Figure A5
@@ -736,6 +748,6 @@ suppressWarnings(ggsave(filename = 'figs/figA5.png',
                         plot = pA5,
                         device = 'png',
                         type = 'cairo',
-                        width = 5,
-                        height = 9,
+                        width = 7,
+                        height = 11,
                         bg = 'transparent'))

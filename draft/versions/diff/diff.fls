@@ -247,6 +247,7 @@ INPUT ./figs/figA1.png
 INPUT figs/figA2.png
 INPUT ./figs/figA2.png
 INPUT ./figs/figA2.png
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT figs/figA3.png
 INPUT ./figs/figA3.png
 INPUT ./figs/figA3.png
