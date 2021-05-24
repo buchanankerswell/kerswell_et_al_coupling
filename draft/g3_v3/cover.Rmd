@@ -1,0 +1,26 @@
+---
+# lco: UScommercial9
+# papersize: Letter
+author: Buchanan Kerswell
+return-address: 
+  - 1916 S Grant Ave
+  - Boise, ID 83706
+return-email: buchanankerswell@boisestate.edu
+return-phone: +1 (480) 417-2797
+return-url: buchanankerswell.com
+address:
+  - Geochemistry, Geophysics, Geosystems
+  - John Wiley & Sons Inc
+  - 350 Main Street
+  - Malden MA 02148, USA
+subject: Manuscript resubmission
+opening: Dear Editor,
+closing: Best,
+signature: Buchanan Kerswell \| PhD Candidate \| Boise State University
+output: komaletter::komaletter
+---
+We are pleased to resubmit our manuscript, *Backarc lithospheric thickness and serpentine stability control slab-mantle coupling depths in subduction zones*. We have addressed all of the reviewers comments in the manuscript.
+
+We thank the editor and reviewers for helping us improve this manuscript. We request that it be submitted to the special volume, “*Insights into Subduction Zone Processes from Models and Observations of Exhumed Terranes*”, organized by Maureen Feineman, Pennsylvania State University, Sarah Penniston-Dorland, University of Maryland, Matt Kohn, Boise State University, and Taras Gerya, ETH Zürich. Our manuscript is intended for this audience and will have the greatest impact in this special volume.
+
+Thank you for your consideration.

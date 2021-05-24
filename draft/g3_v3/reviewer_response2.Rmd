@@ -1,0 +1,90 @@
+---
+title: "Reviewer Response"
+subtitle: "Backarc lithospheric thickness and serpentine stability control slab-mantle coupling depths in subduction zones"
+author:
+  - Buchanan Kerswell^[Department of Geosicences, Boise State University, Boise, ID 83725]
+  - Matthew Kohn$^*$
+  - Taras Gerya^[Department of Earth Sciences, ETH-Zurich, Sonneggstrasse 5, Zurich 8092, Switzerland]
+date: "2/16/2021"
+output:
+  pdf_document:
+    pandoc_args: ['--filter=pandoc-crossref', '--csl=g3.csl']
+    citation_package: default
+bibliography: ref.bib
+link-references: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Reviewer One
+
+## Minor Revisions
+
+> 1. Table 2 can likely be moved to supplementary material.
+
+Thank you. We are keeping Table 2 in the body because we feel that easy access to the figure key is important for the reader unfamiliar with these numerical models.
+
+***
+
+> 2. The following reference (Gonzalez, 2016) can be added at line 77 as it investigated the importance of volatile fluxes (especially carbon) under different initial conditions similar to the geometries used in these models with a similar code
+
+Thank you. We have added the Gonzalez reference.
+
+***
+
+# Reviewer Two
+
+## Minor Revisions
+
+> 1. For future responses to reviewers, I would like to recommend that the authors include all comments that were provided by the reviewers in their response letters so that the reviewers do not have to figure out which comments were addressed, which were not, and how they were addressed.
+
+Thank you. We will be more complete in the future.
+
+***
+
+> 2. 215: "We implicitly assume slabs of different ages release water similarly." I think this still needs to be justified or explained, particularly with the sentence that the authors added after the above sentence? This is related to my original comment #2 (as Reviewer #2). The authors indicated in their response that they have included some discussion in the Method section, but I did not find it.
+
+Thank you. We attempted to clarify this assumption in Section 2.3 after Equation 1:
+
+*We implicitly assumed slabs of different ages release water similarly. However, older slabs may carry water to greater depths, relative to younger slabs, because cold subduction thermal gradients may delay water-releasing reactions [@Peacock1996]. Stronger slab-age-dependent differences in mechanical coupling depths were not likely to result by including thermodynamically-computed water contents in our models because mechanical coupling, as our models were parameterized, were controlled by the antigorite-out reaction (Equation 1). We found that alternate models with abrupt water release at the antigorite-out reaction stabilized after 5 Ma in a similar manner to models with gradual water release. The most important reaction to model was the antigorite-out reaction [@Schmidt1998], which was both pressure- and temperature-dependent (Equation 1), and will therefore be affected by differences in slab age. The effects of explicitly modelling other major dehydration reactions at shallower depths in the slabs were thus likely to be insignificant and greatly decrease computational efficiency. We therefore chose a simplified gradual water release model for all slabs.*
+
+***
+
+> 3. 238: "The excess water released by a rock marker was modelled as a fluid particle that migrates through moving rocks with a relative velocity defined by local pressure gradients, scaled by a 10 cm=yr vertical percolation velocity corresponding to a purely lithostatic pressure gradient in the mantle (see Appendix, Faccenda et al., 2009)." This sentence needs clarification. Please be clear about what is scaled by 10cm/yr and what is corresponding to a purely lithostatic pressure gradient. How is the 10 cm/yr obtained? Please also indicate which part of Appendix contains the relevant information.
+
+Thank you, we attempted to clarify this calculation, with references:
+
+*The excess water released by a rock marker was modelled as a fluid particle that migrates through moving rocks with a relative velocity defined by local dynamic (non-lithostatic) pressure gradients [after @Faccenda2009]. The fluid velocities are scaled by a 10 $cm/yr$ vertical percolation velocity to account for purely lithostatic pressure gradients in the mantle [after @Gorczyk2007, see Section A.3]*
+
+***
+
+> 4 The author's response to my original question #5: "As our models are parameterized, only a thin layer of serpentine forms, except near the coupling depth where it thickens with time." Please explain how this is parameterized. If the rest of the mantle wedge can be as weak as the thin layer, the mantle wedge will participate in the flow and will not remain stagnant.
+
+Thank you. We appologize for the confusing comment. The thin layer is not parameterized to increase in thickness with time. We meant that it spontaneously increases in thickness with time as a result of vertical migration of fluid markers. It's thickness is only dependent on the rate of dehyration of the slab.
+
+***
+
+> 5. Equation A2 "vz = vz - vz(percolation)" still needs to be corrected.
+
+Thank you. We used different notation to clarify the variables:
+
+$$\begin{aligned}
+v_{\text{water}} & = (v_{x(\text{fluid})},v_{z(\text{fluid})}) \\
+v_{z(\text{fluid})} & = v_{z(\text{fluid})} - v_{z(\text{percolation})} \\
+\end{aligned}$$
+
+***
+
+> 6. 32-33, 50. It's unclear how hydration and melting under volcanic arcs relate to the lithospheric erosion in the backarc.
+
+Thank you. We have addressed this in the previous version in the last paragraph under the Results section:
+
+*Relatively high backarc heat flow, especially in circum-Pacific subduction zones, suggests relatively stable and uniformly thin backarc lithospheres in mature subduction zones globally that may in turn cause a common depth of slab-mantle coupling. Although we do not yet fully understand why the overriding plates may have similar thicknesses, we can assume that this is likely related to some processes of lithospheric erosion proposed for subarc lithosphere. The following mechanisms of lithospheric erosion have been proposed: lithospheric delamination induced by lower crust eclogitization [e.g., @Sobolev2005], small-scale convection caused by hydration-induced mantle wedge weakening [e.g., @Arcay2006], thermal erosion [e.g., @England2010] and mechanical weakening [e.g., @Gerya2011] by percolating melts and subarc foundering of magmatic cumulates [e.g., @Jull2001]. Most of these mechanisms are thus strongly related to mantle wedge hydration, melting, and melt transport toward volcanic arcs.*
+
+***
+
+\newpage
+
+# References
