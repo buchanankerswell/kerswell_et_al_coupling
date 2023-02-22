@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+coupling_app/.DS_Store
+dataset/.DS_Store
+table_scripts/.DS_Store
+data/**/*.prn
+data/**/*c*.txt
+Rplots.pdf
