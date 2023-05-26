@@ -4,7 +4,13 @@
 
 # Kerswell et al. (2021; G3)
 
-This repository provides all materials for the manuscript *Backarc Lithospheric Thickness and Serpentine Stability Control Slab-Mantle Coupling Depths in Subduction Zones* (Kerswell et al., 2021; G3). You can find the paper [here](https://buchanankerswell.com/assets/pdf/kerswell-et-al-coupling-g3-2021.pdf).
+The notions that mechanical coupling in subduction zones regulate important seismic, volcanic, and geodynamic phenomena, and that depths of mechanical coupling may be invariant among diverse subduction zone segments ([Wada & Wang, 2009](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2009GC002570)), begs the following questions: where, how, and why does mechanical coupling occur along the interface between converging tectonic plates? This study investigates these questions by constructing 64 numerical geodynamic models of oceanic-continental convergent margins. Such a comprehensive suite of numerical models allows us to correlate mechanical coupling depths with thermo-kinematic boundary conditons---ultimately producing an expression for predicting coupling depths in real systems.
+
+The [manuscript](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020GC009304) was published in *Geochemistry, Geophysics, Geosystems* on May 30, 2021. You can find the article [here](https://buchanankerswell.com/assets/pdf/kerswell-et-al-coupling-g3-2021.pdf).
+
+## Repository
+
+This repository provides all materials for the manuscript *Backarc Lithospheric Thickness and Serpentine Stability Control Slab-Mantle Coupling Depths in Subduction Zones* (Kerswell et al., 2021; G3)
 
 This repository includes:
 
